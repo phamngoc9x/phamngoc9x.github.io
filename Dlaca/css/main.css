@@ -14894,7 +14894,8 @@ a {
     line-height: 64px;
     display: inline-block;
     padding-right: 20px;
-    padding-bottom: 10px; }
+    padding-bottom: 8px;
+    margin-bottom: 8px; }
   .weather__decscription {
     position: relative;
     z-index: 2;
