@@ -14364,7 +14364,7 @@ a {
 .header--sticky + .content-wrapper {
   padding-top: 80px; }
 
-.header--default {
+.header--default .header__content {
   background-color: #fff; }
 
 .nav-link {
