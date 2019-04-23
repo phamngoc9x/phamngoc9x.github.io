@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="dist/css/font-awesome.min.css" rel="stylesheet">
+    <link href="dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="dist/css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="dist/css/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <link href="dist/css/monthly.css" rel="stylesheet">
+    <link href="dist/css/style.css" rel="stylesheet">
+    <link href="dist/css/responsive.css" rel="stylesheet">
+    <title>Profile page</title>
+</head>
+<body>
+    <div class="fd-wrapper">
+        <div class="menu-top resize navbar-fixed-top">
+            <div class="search">
+                <input type="text" class="menu-search" placeholder="Nhập thông tin tìm kiếm...">
+                <button type="button" class="btn-search"><img src="dist/images/search-icon.png" alt="search button"></button>
+            </div>
+            <nav class="nav-top">
+                <ul>
+                    <li class="active"><a href="#">Cập nhật mới</a></li>
+                    <li class="has-child">
+                        <a href="#">Công thức</a>
+                        <ul class="menu-child">
+                            <li><a href="#">Công thức 1</a></li>
+                            <li><a href="#">Công thức 2</a></li>
+                            <li><a href="#">Công thức 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Feedy TV</a></li>
+                    <li><a href="#">Chuyên gia</a></li>
+                    <li><a href="#">Sự kiện</a></li>
+                </ul>
+            </nav>
+            <div class="notice-acc">
+                <ul class="all-notice">
+                    <li class="notice-info">
+                        <a href="#"><img src="dist/images/icon-notice.png" alt="icon notice"><span class="total">3</span></a>
+                        <ul class="menu-dropdown">
+                            <li><a href="#">Thông báo 1</a></li>
+                            <li><a href="#">Thông báo 2</a></li>
+                            <li><a href="#">Thông báo 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="chat-info">
+                        <a href="#"><img src="dist/images/icon-chat.png" alt="icon chat"><span class="total">3</span></a>
+                        <ul class="menu-dropdown">
+                            <li><a href="#">Tin nhắn 1</a></li>
+                            <li><a href="#">Tin nhắn 2</a></li>
+                            <li><a href="#">Tin nhắn 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="cart-info">
+                        <a href="#"><img src="dist/images/icon-cart.png" alt="icon cart"><span class="total" style="display: none;">3</span></a>
+                        <ul class="menu-dropdown">
+                            <li><a href="#">Sản phẩm 1</a></li>
+                            <li><a href="#">Sản phẩm 2</a></li>
+                            <li><a href="#">Sản phẩm 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="info-acc active">
+                    <a href="#" class="my-avatar"><img src="dist/images/my-avatar.jpg" alt="my avatar"></a>
+                    <div class="text-info">
+                        <a href="#" class="name">Băng Chi Phạm</a>
+                        <span class="level">Bếp Phó:<strong>300</strong></span>
+                    </div>
+                    <ul class="menu-dropdown">
+                        <li><a href="#">Thông tin</a></li>
+                        <li><a href="#">Đăng xuất</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu-left resize">
+            <div class="fd-logo">
+                <a href="#"><img src="dist/images/logo2.png" alt="logo header"></a>
+            </div>
+            <div class="fb-menu-btn">
+                <h6>Menu</h6>
+                <button type="button" class="resize-menu"><i class="fa fa-angle-left"></i></button>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#"><span><img src="dist/images/icon4.png" alt="icon"></span>Trang chủ</a></li>
+                    <li><a href="#"><span><img src="dist/images/icon5.png" alt="icon"></span>Danh sách đi chợ</a></li>
+                    <li><a href="#"><span><img src="dist/images/icon6.png" alt="icon"></span>Đã lưu</a></li>
+                    <li><a href="#"><span><img src="dist/images/icon7.png" alt="icon"></span>Cửa hàng</a></li>
+                    <li><a href="#"><span><img src="dist/images/icon8.png" alt="icon"></span>Xem offline</a></li>
+                    <li><a href="#"><span><img src="dist/images/icon9.png" alt="icon"></span>Điểm thưởng</a></li>
+                    <li><a href="#"><span><img src="dist/images/icon10.png" alt="icon"></span>Mời bạn bè & chia sẻ mã</a></li>
+                    <li><a href="#"><span><img src="dist/images/icon11.png" alt="icon"></span>Hỗ trợ trực tuyến</a></li>
+                    <li><a href="#"><span><img src="dist/images/icon12.png" alt="icon"></span>Cài đặt</a></li>
+                    <li><a href="#"><span><img src="dist/images/icon13.png" alt="icon"></span>Đăng xuất</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="chat-box resize">
+            <div class="fb-chatbox-btn">
+                <button type="button" class="resize-chatbox"><i class="fa fa-angle-right"></i></button>
+                <button type="button" class="btn-config">Cài đặt</button>
+            </div>
+            <ul class="list-online">
+                <li>
+                    <a href="#">
+                        <div class="fd-img">
+                            <img src="dist/images/avatar.jpg" alt="avatar">
+                        </div>
+                        <div class="name-stt">
+                            <span class="fd-name">
+                                Hoàng Đạo Thúy
+                            </span>
+                            <span class="fd-stt">
+                                Online
+                            </span>
+                        </div>
+                    </a>
+                    <button type="button" class="btn-dot"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></button>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="fd-img">
+                            <img src="dist/images/avatar.jpg" alt="avatar">
+                        </div>
+                        <div class="name-stt">
+                            <span class="fd-name">
+                                Lê Ngọc Hân
+                            </span>
+                            <span class="fd-stt">
+                                Online
+                            </span>
+                        </div>
+                    </a>
+                    <button type="button" class="btn-dot"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></button>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="fd-img">
+                            <img src="dist/images/avatar.jpg" alt="avatar">
+                        </div>
+                        <div class="name-stt">
+                            <span class="fd-name">
+                                Linh Chi
+                            </span>
+                            <span class="fd-stt">
+                                Online
+                            </span>
+                        </div>
+                    </a>
+                    <button type="button" class="btn-dot"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></button>
+                </li>
+                <li>
+                    <a href="#" class="fd-busy">
+                        <div class="fd-img">
+                            <img src="dist/images/avatar.jpg" alt="avatar">
+                        </div>
+                        <div class="name-stt">
+                            <span class="fd-name">
+                                My Diễm Kiều
+                            </span>
+                            <span class="fd-stt">
+                                Busy
+                            </span>
+                        </div>
+                    </a>
+                    <button type="button" class="btn-dot"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></button>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="fd-img">
+                            <img src="dist/images/avatar.jpg" alt="avatar">
+                        </div>
+                        <div class="name-stt">
+                            <span class="fd-name">
+                                Hoàng Trâm
+                            </span>
+                            <span class="fd-stt">
+                                Online
+                            </span>
+                        </div>
+                    </a>
+                    <button type="button" class="btn-dot"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></button>
+                </li>
+                <li>
+                    <a href="#" class="fd-busy">
+                        <div class="fd-img">
+                            <img src="dist/images/avatar.jpg" alt="avatar">
+                        </div>
+                        <div class="name-stt">
+                            <span class="fd-name">
+                                Thúy Kiều
+                            </span>
+                            <span class="fd-stt">
+                                Busy
+                            </span>
+                        </div>
+                    </a>
+                    <button type="button" class="btn-dot"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></button>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="fd-img">
+                            <img src="dist/images/avatar.jpg" alt="avatar">
+                        </div>
+                        <div class="name-stt">
+                            <span class="fd-name">
+                                Trần Ngọc Ánh
+                            </span>
+                            <span class="fd-stt">
+                                Online
+                            </span>
+                        </div>
+                    </a>
+                    <button type="button" class="btn-dot"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></button>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="fd-img">
+                            <img src="dist/images/avatar.jpg" alt="avatar">
+                        </div>
+                        <div class="name-stt">
+                            <span class="fd-name">
+                                Lâm Oanh
+                            </span>
+                            <span class="fd-stt">
+                                Online
+                            </span>
+                        </div>
+                    </a>
+                    <button type="button" class="btn-dot"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></button>
+                </li>
+                <li>
+                    <a href="#" class="fd-busy">
+                        <div class="fd-img">
+                            <img src="dist/images/avatar.jpg" alt="avatar">
+                        </div>
+                        <div class="name-stt">
+                            <span class="fd-name">
+                                Nguyễn Trần Linh
+                            </span>
+                            <span class="fd-stt">
+                                Busy
+                            </span>
+                        </div>
+                    </a>
+                    <button type="button" class="btn-dot"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></button>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="fd-img">
+                            <img src="dist/images/avatar.jpg" alt="avatar">
+                        </div>
+                        <div class="name-stt">
+                            <span class="fd-name">
+                                Phùng Công Thanh
+                            </span>
+                            <span class="fd-stt">
+                                Online
+                            </span>
+                        </div>
+                    </a>
+                    <button type="button" class="btn-dot"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></button>
+                </li>
+                <li>
+                    <a href="#" class="fd-busy">
+                        <div class="fd-img">
+                            <img src="dist/images/avatar.jpg" alt="avatar">
+                        </div>
+                        <div class="name-stt">
+                            <span class="fd-name">
+                                Trương Bá Phi
+                            </span>
+                            <span class="fd-stt">
+                                Busy
+                            </span>
+                        </div>
+                    </a>
+                    <button type="button" class="btn-dot"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></button>
+                </li>
+            </ul>
+            <div class="seperator"></div>
+            <ul class="list-offline">
+                <li>
+                    <a href="#">
+                        <div class="fd-img">
+                            <img src="dist/images/avatar.jpg" alt="avatar">
+                        </div>
+                        <div class="name-stt">
+                            <span class="fd-name">
+                                Trần Hà My
+                            </span>
+                            <span class="fd-stt">
+                                Offline
+                            </span>
+                        </div>
+                    </a>
+                    <button type="button" class="btn-dot"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></button>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="fd-img">
+                            <img src="dist/images/avatar.jpg" alt="avatar">
+                        </div>
+                        <div class="name-stt">
+                            <span class="fd-name">
+                                Hoàng Đạo Thúy
+                            </span>
+                            <span class="fd-stt">
+                                Offline
+                            </span>
+                        </div>
+                    </a>
+                    <button type="button" class="btn-dot"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></button>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="fd-img">
+                            <img src="dist/images/avatar.jpg" alt="avatar">
+                        </div>
+                        <div class="name-stt">
+                            <span class="fd-name">
+                                Linh Chi
+                            </span>
+                            <span class="fd-stt">
+                                Offline
+                            </span>
+                        </div>
+                    </a>
+                    <button type="button" class="btn-dot"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></button>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="fd-img">
+                            <img src="dist/images/avatar.jpg" alt="avatar">
+                        </div>
+                        <div class="name-stt">
+                            <span class="fd-name">
+                                My Diễm Kiều
+                            </span>
+                            <span class="fd-stt">
+                                Busy
+                            </span>
+                        </div>
+                    </a>
+                    <button type="button" class="btn-dot"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></button>
+                </li>
+            </ul>
+            <div class="search">
+                <input type="text" class="friend-search" placeholder="Nhập tìm kiếm bạn bè...">
+                <button type="button" class="btn-search"><img src="dist/images/search-icon2.png" alt="search button"></button>
+                <button type="button" class="btn-search fd-popup"  data-toggle="modal" data-target="#myModalSearch"><img src="dist/images/search-icon2.png" alt="search button"></button>
+            </div>
+        </div>
+        <div class="fd-content-box">
+            <div class="container2">
+                <div class="top-profile">
+                    <ul class="list-images">
+                        <li>
+                            <img id="large" src="dist/images/large.jpg" alt="large">
+                        </li>
+                        <li class="thumb">
+                            <img src="dist/images/thumb2.jpg" alt="thumb2">
+                        </li>
+                        <li class="thumb">
+                            <img src="dist/images/thumb3.jpg" alt="thumb2">
+                        </li>
+                        <li class="thumb">
+                            <img src="dist/images/thumb4.jpg" alt="thumb2">
+                        </li>
+                        <li class="thumb">
+                            <img src="dist/images/thumb5.jpg" alt="thumb2">
+                        </li>
+                        <li class="thumb">
+                            <img src="dist/images/thumb6.jpg" alt="thumb2">
+                        </li>
+                        <li>
+                            <label for="img-profile"><i class="ion-plus-round"></i></label>
+                            <input type="file" id="img-profile" name="upload">
+                        </li>
+                    </ul>  
+                    <div class="menu-profile">
+                        <div class="info-profile">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="name">Băng Chi Phạm</span>
+                                        <span class="level">Bếp Phó:<strong>300</strong></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="follow">
+                                        <span class="count">800</span>
+                                        <span>Lượt theo dõi</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="following">
+                                        <span class="count">500</span>
+                                        <span>Đang theo dõi</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-right">
+                            <ul>
+                                <li class="active">
+                                    <a href="#">
+                                        <img src="dist/images/icon27.png" alt="timeline">
+                                        <span>Dòng thời gian</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="dist/images/icon30.png" alt="timeline">
+                                        <span>Tin nhắn</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="dist/images/icon28.png" alt="timeline">
+                                        <span>Album ảnh</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="dist/images/icon29.png" alt="timeline">
+                                        <span>Công thức</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn-dot large">
+                                        <i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i>
+                                    </button>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>            
+                </div>
+                <div class="fd-content-new">
+                    <div class="content-left col-lg-3">
+                        <div class="content-left-inner">
+                            <div class="intro-box defaul-box">
+                                <h3 class="fd-title">
+                                    <a href="#"><img src="dist/images/icon31.png" alt="Icon film">Giới thiệu<i class="fa fa-angle-double-right"></i></a>
+                                </h3>
+                                <div class="intro-content">
+                                    Thích ăn cháo xong rồi đá bát, thích gây mê rồi bỏ trốn. Hay ăn kem ở Hồ Tây và hóng mát ở tận cầu Long Biên...  Ahihiiiiiiiiii :3
+                                </div>  
+                            </div>
+                            <div class="recent-video defaul-box">
+                                <h3 class="fd-title">
+                                    <a href="#"><img src="dist/images/icon17.png" alt="Icon film">Video xem gần nhất <i class="fa fa-angle-double-right"></i></a>
+                                </h3>
+                                <ul class="video-box">
+                                    <li>
+                                        <div class="content-video">
+                                            <a href="#">
+                                                <img src="dist/images/thumb1.jpg" alt="video thumb1" class="img-thumb">
+                                                <span class="play-btn"><img src="dist/images/icon-play.png" alt="Icon play"></span>
+                                            </a>
+                                            <div class="content-btn">
+                                                <button type="button" class="video-save"><span>+</span>Lưu</button>
+                                                <button type="button" class="video-share"><i class="ion-ios-upload-outline"></i>Chia sẻ</button>
+                                            </div>
+                                        </div>
+                                        <div class="content-text">
+                                            <a href="#" class="video-title">Salad Nga cùng bữa sáng nhẹ nhàng đủ chất</a>
+                                            
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="content-video">
+                                            <a href="#">
+                                                <img src="dist/images/thumb1.jpg" alt="video thumb1" class="img-thumb">
+                                                <span class="play-btn"><img src="dist/images/icon-play.png" alt="Icon play"></span>
+                                            </a>
+                                            <div class="content-btn">
+                                                <button type="button" class="video-save"><span>+</span>Lưu</button>
+                                                <button type="button" class="video-share"><i class="ion-ios-upload-outline"></i>Chia sẻ</button>
+                                            </div>
+                                        </div>
+                                        <div class="content-text">
+                                            <a href="#" class="video-title">Salad Nga cùng bữa sáng nhẹ nhàng đủ chất</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="you-knowns defaul-box">
+                                <h3 class="fd-title">
+                                    <a href="#"><img src="dist/images/icon18.png" alt="Icon Add">Có thể bạn biết<i class="fa fa-angle-double-right"></i></a>
+                                </h3>
+                                <ul class="list-you-knows">
+                                    <li>
+                                        <a href="#"><span class="img-avatar"><img src="dist/images/avatar2.jpg" alt="avatar 2"></span><span>Ba Số Ngoại</span></a>
+                                        <button type="button" class="btn-follow">Theo dõi</button>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span class="img-avatar"><img src="dist/images/avatar3.jpg" alt="avatar 2"></span><span>Ba Số Ngoại</span></a>
+                                        <button type="button" class="btn-follow">Theo dõi</button>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <span class="img-avatar"><img src="dist/images/avatar.jpg" alt="avatar 2"></span><span>Ba Số Ngoại</span></a>
+                                        <button type="button" class="btn-follow">Theo dõi</button>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-content col-lg-6">
+                        <div class="add-new-tabs defaul-box">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#upload" aria-controls="upload" role="tab" data-toggle="tab"><img src="dist/images/icon21.png" alt="upload images"><span>Upload ảnh</span></a></li>
+                                <li role="presentation"><a href="#creative" aria-controls="creative" role="tab" data-toggle="tab"><img src="dist/images/icon22.png" alt="creative"><span>Tạo công thức</span></a></li>
+                            </ul>
+
+                          <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="upload">
+                                    <div class="add-new-content">
+                                        <a href="#"><img src="dist/images/my-avatar.jpg" alt="my avatar"></a>
+                                        <input type="text" class="new-text" placeholder="Hôm nay bạn ăn gì vậy Chi?..."></input type="text">
+                                        <label for="upload-file"></label>
+                                        <input type="file" id="upload-file">
+                                        <div class="button-content">
+                                            <button type="button">Đăng ảnh</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="creative" style="min-height: 104px;">This is create content</div>
+                            </div>
+                        </div>
+
+                        <div class="news-feed defaul-box">
+                            <div class="top-nfeed">
+                                <a href="#">
+                                    <div class="fd-img">
+                                        <img src="dist/images/my-avatar.jpg" alt="avatar">
+                                    </div>
+                                    <div class="name-stt">
+                                        <span class="fd-name">
+                                            Băng Chi Phạm
+                                        </span>
+                                        <span class="fd-time">
+                                            02 phút trước
+                                        </span>
+                                    </div>
+                                </a>
+                                <button type="button" class="btn-dot large">
+                                    <i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i>
+                                </button>
+                            </div>
+                            <div class="content-nfeed">
+                                <p>Vừa trúng lô nên mời anh em đi đập phá một bữa, chả cần mong tụi nó lúc có tiền sẽ mời lại mình hay không. Lala hihaho :D</p>
+                                <button type="button" class="btn-readmore">Xem thêm</button>
+                                <div class="content-img">
+                                    <img src="dist/images/img1.jpg" alt=" img 1">
+                                </div> 
+                            </div>
+                            <div class="bottom-nfeed">
+                                <div class="btn-left">
+                                    <button type="button" class="btn-like"><i class="fa fa-heart"></i>139 Lượt thích</button>
+                                    <button type="button" class="btn-cmt"><img src="dist/images/icon24.png" alt="icon comment">45 Bình luận</button>
+                                </div>
+                                <div class="btn-right">
+                                    <button type="button" class="btn-save"><i class="ion-plus"></i>Lưu</button>
+                                    <button type="button" class="btn-share"><i class="fa fa-mail-forward"></i>Chia sẻ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-feed defaul-box">
+                            <div class="top-nfeed">
+                                <a href="#">
+                                    <div class="fd-img">
+                                        <img src="dist/images/my-avatar.jpg" alt="avatar">
+                                    </div>
+                                    <div class="name-stt">
+                                        <span class="fd-name">
+                                            Băng Chi Phạm
+                                        </span>
+                                        <span class="fd-time">
+                                            02 phút trước
+                                        </span>
+                                    </div>
+                                </a>
+                                <button type="button" class="btn-dot large">
+                                    <i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i>
+                                </button>
+                            </div>
+                            <div class="content-nfeed">
+                                <p>Vừa trúng lô nên mời anh em đi đập phá một bữa, chả cần mong tụi nó lúc có tiền sẽ mời lại mình hay không. Lala hihaho :D</p>
+                                <button type="button" class="btn-readmore">Xem thêm</button>
+                                <div class="content-img">
+                                    <img src="dist/images/img1.jpg" alt=" img 1">
+                                </div> 
+                            </div>
+                            <div class="bottom-nfeed">
+                                <div class="btn-left">
+                                    <button type="button" class="btn-like"><i class="fa fa-heart"></i>139 Lượt thích</button>
+                                    <button type="button" class="btn-cmt"><img src="dist/images/icon24.png" alt="icon comment">45 Bình luận</button>
+                                </div>
+                                <div class="btn-right">
+                                    <button type="button" class="btn-save"><i class="ion-plus"></i>Lưu</button>
+                                    <button type="button" class="btn-share"><i class="fa fa-mail-forward"></i>Chia sẻ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-right col-lg-3">
+                        <div class="recent-activity defaul-box">
+                            <h3 class="fd-title">
+                                <a href="#"><img src="dist/images/icon19.png" alt="Icon beat">Hoạt động gần nhất<i class="fa fa-angle-double-right"></i></a>
+                            </h3>
+                            <ul class="list-activity">
+                                <li>
+                                    <div class="info-activity">
+                                        <a href="#" class="avatar"><img src="dist/images/avatar.jpg" alt="avatar"></a>
+                                        <p><a href="#">Đinh Công Mạnh</a> vừa thích hình ảnh của <a href="#">Trần Hoàng Mỹ Linh</a></p>
+                                    </div>
+                                    <div class="time-activity">
+                                        30 phút trước
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info-activity">
+                                        <a href="#" class="avatar"><img src="dist/images/avatar.jpg" alt="avatar"></a>
+                                        <p><a href="#">Đinh Công Mạnh</a> vừa thích hình ảnh của <a href="#">Trần Hoàng Mỹ Linh</a></p>
+                                    </div>
+                                    <div class="time-activity">
+                                        30 phút trước
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info-activity">
+                                        <a href="#" class="avatar"><img src="dist/images/avatar.jpg" alt="avatar"></a>
+                                        <p><a href="#">Đinh Công Mạnh</a> vừa thích hình ảnh của <a href="#">Trần Hoàng Mỹ Linh</a></p>
+                                    </div>
+                                    <div class="time-activity">
+                                        30 phút trước
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info-activity">
+                                        <a href="#" class="avatar"><img src="dist/images/avatar.jpg" alt="avatar"></a>
+                                        <p><a href="#">Đinh Công Mạnh</a> vừa thích hình ảnh của <a href="#">Trần Hoàng Mỹ Linh</a></p>
+                                    </div>
+                                    <div class="time-activity">
+                                        30 phút trước
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info-activity">
+                                        <a href="#" class="avatar"><img src="dist/images/avatar.jpg" alt="avatar"></a>
+                                        <p><a href="#">Đinh Công Mạnh</a> vừa thích hình ảnh của <a href="#">Trần Hoàng Mỹ Linh</a></p>
+                                    </div>
+                                    <div class="time-activity">
+                                        30 phút trước
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info-activity">
+                                        <a href="#" class="avatar"><img src="dist/images/avatar.jpg" alt="avatar"></a>
+                                        <p><a href="#">Đinh Công Mạnh</a> vừa thích hình ảnh của <a href="#">Trần Hoàng Mỹ Linh</a></p>
+                                    </div>
+                                    <div class="time-activity">
+                                        30 phút trước
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info-activity">
+                                        <a href="#" class="avatar"><img src="dist/images/avatar.jpg" alt="avatar"></a>
+                                        <p><a href="#">Đinh Công Mạnh</a> vừa thích hình ảnh của <a href="#">Trần Hoàng Mỹ Linh</a></p>
+                                    </div>
+                                    <div class="time-activity">
+                                        30 phút trước
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="chat-popup">
+                <div class="chat-popup-header">
+                    <div class="content-header-left">
+                        <a href="#">
+                            <div class="fd-img">
+                                <img src="dist/images/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="name-stt">
+                                <span class="fd-name">
+                                    Hoàng Đạo Thúy
+                                </span>
+                            </div> 
+                        </a>
+                    </div>
+                    <div class="content-header-right">
+                        <button class="btn-icon"><img src="dist/images/icon-smile.png" alt="Smile Icon"></button>
+                        <a href="#"><img src="dist/images/icon-link.png" alt="link"></a>
+                        <button class="btn-close"><img src="dist/images/icon-close.png" alt="Smile Close"></button>
+                    </div>
+                </div>
+                <div class="list-chat">
+                    <ul>
+                        <li>
+                            <div class="avatar-chat">
+                                <span class="img-content">
+                                    <img src="dist/images/avatar3.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="content-chat">
+                                <p>Bạn đang làm gì vậy? Qua đây nấu
+                                cơm cùng tớ đi :D</p>
+                                <span class="time-out">30 phút trước</span>
+                            </div>
+                        </li>
+                        <li class="my-chat">
+                            <div class="content-chat">
+                                <p>Bạn đang làm gì vậy? Qua đây nấu
+                                cơm cùng tớ đi :D</p>
+                                <span class="time-out">30 phút trước</span>
+                            </div>
+                            <div class="avatar-chat">
+                                <span class="img-content">
+                                    <img src="dist/images/avatar2.jpg" alt="">
+                                </span>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="avatar-chat">
+                                <span class="img-content">
+                                    <img src="dist/images/avatar3.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="content-chat">
+                                <p>Bạn đang làm gì vậy? Qua đây nấu
+                                cơm cùng tớ đi :D</p>
+                                <span class="time-out">30 phút trước</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chat-popup-footer">
+                    <input type="text" placeholder="Nhập nội dung hội thoại...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModalSearch" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Search friend</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text">
+                    <button type="button">Search</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+          </div>
+        </div>
+    <script type="text/javascript"  src="dist/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript"  src="dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript"  src="dist/js/owl.carousel.min.js"></script>
+    <script type="text/javascript"  src="dist/js/monthly.js"></script>
+    <script type="text/javascript"  src="dist/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript"  src="dist/js/countdown.js"></script>
+    <script type="text/javascript"  src="dist/js/main.js"></script>
+    <script type="text/javascript">
+        //Fixed right sidebar
+        $('.thumb img').click(function(){
+            $('#large').attr('src',$(this).attr('src'));
+        });
+        function rightBarControl(){
+            var windowHeight = $(window).height();
+            var scrollHeight = $(window).scrollTop() - 669;
+            var rightBarWidth = $('.fd-content-new').width()*.27 //27% of .main width
+            var rightBarHeight = $('.content-right').outerHeight();
+            var rightBarOffset = $('.main-content').offset().left + $('.main-content').outerWidth();
+            var leftBarWidth = $('.fd-content-new').width()*.27 -15 //27% of .main width
+            var leftBarHeight = $('.content-left-inner').outerHeight();
+            var leftBarOffset = $('.main-content').offset().left + $('.main-content').outerWidth() + 7.5;
+            var leftBarTop = 66; //30 because .head is 30px high
+            var rightBarTop = 66; //30 because .head is 30px high
+            if((windowHeight - 66 < leftBarHeight)){ //Again including 30 because of .head
+                leftBarTop = windowHeight - leftBarHeight;
+                
+            }
+
+            if(((windowHeight + scrollHeight) >= leftBarHeight) && (scrollHeight + 669 >= 669)){
+                $('.content-left-inner').css({
+                    position:'fixed',
+                    right: leftBarOffset,
+                    top: leftBarTop,
+                    width: leftBarWidth
+                })
+            }
+            else{
+                $('.content-left-inner').css({
+                    position: 'static',
+                    left: '',
+                    top: '',
+                    /*width: '20%'*/
+                })   
+            }
+            if(windowHeight - 66 < rightBarHeight){ //Again including 30 because of .head
+                rightBarTop = windowHeight - rightBarHeight; 
+            }
+            if(((windowHeight + scrollHeight) >= rightBarHeight) && (scrollHeight + 669 >= 669)){
+                $('.content-right').css({
+                    position:'fixed',
+                    left: rightBarOffset,
+                    top: rightBarTop,
+                    width: rightBarWidth
+                })
+            }
+            else{
+                $('.content-right').css({
+                    position: 'static',
+                    left: '',
+                    top: '',
+                    /*width: '20%'*/
+                })
+            }
+        }
+        $(window).scroll(rightBarControl); //Run control on window scroll
+        $(window).resize(rightBarControl); //Run control on window resize
+    </script>
+</body>
+</html>

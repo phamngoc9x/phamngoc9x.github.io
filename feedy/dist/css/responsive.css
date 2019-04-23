@@ -1,0 +1,223 @@
+/*Container responsive*/
+@media(min-width: 1025px){
+    .container{
+        width: 1190px;
+    }
+    .container2{
+        width: 1050px;
+        margin: 0 auto;
+    }
+    .fd-content-new .content-left{
+        width: 27%;
+        float: left;
+    }
+    .fd-content-new .main-content{
+        width: 46%;
+        float: left;
+    }
+    .fd-content-new .content-right{
+        width: 27%;
+        float: left;
+    }
+}
+@media(min-width: 1519px){
+    .container2{
+        width: 1380px;
+        margin: 0 auto;
+    }
+}
+/*responsive menu 1920 > 1380px*/
+@media(max-width:1900px){
+    .menu-top .search input{
+        width: 300px;
+    }
+    .menu-top .nav-top li:first-child{
+        padding-left: 40px;
+
+    }
+    .menu-top.resize .search input{
+        width: 490px;
+    }
+}
+@media(max-width:1650px){
+    .menu-top .nav-top li{
+        padding: 0 15px;
+    }
+}
+@media(max-width:1560px){
+    .menu-top .search input{
+        width: 200px;
+    }
+    .menu-top .nav-top li:first-child{
+        padding-left: 30px;
+    }
+    .menu-top.resize .search input{
+        width: 390px;
+    }
+}
+@media(max-width:1518px){
+    .fd-title,
+    .recent-video .video-box, 
+    .you-knowns .list-you-knows li{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .you-knowns .list-you-knows li .btn-follow{
+        padding: 0 10px;
+        right: 20px;
+    }
+    .recent-video .video-box li .content-text a{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .monthly-day-wrap,.monthly-day-title-wrap{
+        width: 90%;
+    }
+    .news-feed .bottom-nfeed button.btn-save{
+        margin-right: 10px;
+    }
+    .news-feed .bottom-nfeed button.btn-cmt{
+        margin-left: 10px;
+    }
+    .cooking-recipe .list-recipe .content-text{
+        padding: 15px 0;
+    }
+    .fd-slider-video, .cooking-recipe, .users-recipe{
+        padding: 15px 40px;
+    }
+    .users-recipe ul li .content-user{
+        padding-left: 2px;
+        padding-right: 0;
+    }
+    .users-recipe ul li .content-user .info-user{
+        padding-left: 0;
+    }
+    .users-recipe ul li .content-btn button{
+        padding: 0 5px;
+    }
+    .recipe-right-content .users-recipe ul li .content-btn button{
+        padding: 0 3px;
+    }
+    .users-recipe ul li .content-btn .recipe-like{
+        padding-left: 0;
+    }
+    .users-recipe ul li .content-btn button.recipe-share{
+        padding-right: 0;
+    }
+    .fd-content-master .list-master li a .content-img .master-name{
+        left: 15px;
+        bottom: 15px;
+    }
+    .fd-content-master .list-master li a .master-info{
+        padding: 0 15px;
+    }
+    .event-list ul li .content-event button.btn-join{
+        padding: 8px 10px;
+    }
+    .event-list ul li .content-event .content-text{
+        padding: 20px 15px;
+    }
+    .event-list ul li .content-event button{
+        padding-left: 4px;
+    }
+    .featured-event .event-content .content-text h1{
+        margin: 15px 0;
+    }
+    .featured-event .event-content .content-text p.decs{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .featured-event .event-content .content-text .time-join{
+        margin-top: 15px;
+    }
+    .featured-event .event-content .content-text .countdown ul li span{
+        width: 80px;
+        height: 65px;
+        font-size: 40px;
+    }
+    .featured-event .event-content .content-text .countdown ul li{
+        margin-right: 10px;
+    }
+    .featured-event .event-content .content-text .time-join .btn-join{
+        padding: 10px 20px;
+    }
+    .detail-event .users-recipe .content-recipe .content-text {
+        padding: 0 10px;
+    }
+    .intro-content{
+        padding: 20px;
+    }
+    .menu-profile .menu-right li{
+        padding: 0 18px;
+    }
+    .menu-profile .info-profile ul li{
+        padding: 0 15px;
+    } 
+    .menu-top .notice-acc  .all-notice > li{
+        padding: 0 10px;
+    }
+    .chat-popup .chat-popup-header{
+        padding: 10px;
+    }
+    .chat-popup .chat-popup-header .content-header-right{
+        right: 5px;
+    }
+    .chat-popup .list-chat{
+        height: 260px;
+    }
+    .perform-box .perform-content {
+        padding: 15px 50px;
+    }
+}
+@media(max-width:1439px){
+    .menu-top .notice-acc .info-acc{
+        padding-right: 15px;
+        padding-left: 5px;
+    }
+    .menu-top .notice-acc  .all-notice{
+        padding-right: 0px;
+    }
+    .menu-top .nav-top li{
+        padding: 0 10px;
+    }
+}
+@media(max-width:1379px){
+    .menu-top .search input{
+        width: 130px;
+        padding-left: 10px;
+        padding-right: 55px;
+    }
+    .menu-top .search .btn-search{
+        right: 8px;
+    }
+    .menu-top.resize .search input {
+        width: 320px;
+    }
+}
+@media(max-width:1310px){
+    .menu-top .nav-top li{
+        padding: 0 10px;
+    }
+}
+@media(max-width:1279px){
+    .menu-top .search input{
+        width: 100px;
+        padding-left: 10px;
+        padding-right: 50px;
+    }
+
+    .menu-top .nav-top li:first-child {
+        padding-left: 20px;
+    }
+    .menu-top.resize .search input{
+        width: 290px;
+    }
+    .menu-top .nav-top li{
+        padding: 0 10px;
+    }
+}
