@@ -7,6 +7,10 @@ const PetProject = {
     this.sliderGallery();
     this.sumoSelect();
     this.sliderNearby();
+    this.manificPopup();
+    this.sliderReview();
+    this.btnDetail();
+    this.btnSelect();
   },
 
   onLoad: function () {
@@ -149,6 +153,86 @@ const PetProject = {
         dots: false,
       })
     }
+  },
+  // manific Popup
+  manificPopup: function() {
+    $('.gallery-top').each(function() { // the containers for all your galleries
+      $(this).magnificPopup({
+          delegate: 'a.img-link', // the selector for gallery item
+          type: 'image',
+          gallery: {
+            enabled:true
+          }
+      });
+    });
+    $('.video-link').magnificPopup({type:'iframe'});
+  },
+
+  // Slider Gallery
+  sliderReview: function() {
+    var owl = $('.slider-review');
+    if(owl != null){
+      owl.owlCarousel({
+        margin: 0,
+        items: 1,
+          responsive: {
+              0: {
+                  items: 1
+              },
+              500: {
+                  items: 1
+              },
+              991: {
+                  items: 1
+              },
+              1200: {
+                  items: 1
+              },
+              1300: {
+                  items: 1
+              }
+          },
+        nav: true,
+        navText: ["<span class='icon icon--arrow-left'></i>","<i class='icon icon--arrow-right'></i>"],
+        loop: true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        center: false,
+        dots: false,
+      })
+    }
+  },
+
+  // Toggle Content
+  btnDetail: function() {
+    $( ".button--detail" ).click(function() {
+      $(this).toggleClass('active');
+      if($(this).hasClass('active')){
+        $(this).html('Less'+'<img src="./images/icon-btn-right.svg">');
+      }
+      else{
+        $(this).html('Detail'+'<img src="./images/icon-btn-right.svg">');
+      }
+      event.preventDefault()
+      $(this).parent().find( ".list-info" ).slideToggle( "slow", function() {
+        // Animation complete.
+      });
+    });
+  },
+  // Toggle select
+  btnSelect: function() {
+    $( ".button--select" ).click(function() {
+      $(this).toggleClass('active');
+      //console.log('fdsfsd');
+      $(this).parents(".box-select").toggleClass('active');
+      if($(this).hasClass('active')){
+        $(this).html('Selected');
+      }
+      else{
+        $(this).html('Select');
+      }
+    });
   },
 }
 
