@@ -15673,6 +15673,31 @@ a {
 .list-review p {
   margin-top: 10px; }
 
+.pagination__item {
+  height: 34px;
+  width: 34px;
+  margin-right: 10px;
+  text-align: center;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  transition: all .35s ease; }
+  .pagination__item.active, .pagination__item:hover {
+    background-color: #0ac4bb;
+    color: #fff; }
+    .pagination__item.active a, .pagination__item:hover a {
+      color: #fff; }
+
+.pagination__next, .pagination__prev {
+  background-color: #fff;
+  border-color: #c0e8ea; }
+  .pagination__next .icon, .pagination__prev .icon {
+    background-color: #0ac4bb; }
+  .pagination__next:hover .icon, .pagination__prev:hover .icon {
+    background-color: #fff; }
+
 .slider-review {
   padding-top: 10px; }
   .slider-review .owl-nav {
