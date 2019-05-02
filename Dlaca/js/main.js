@@ -11,6 +11,8 @@ const PetProject = {
     this.sliderReview();
     this.btnDetail();
     this.btnSelect();
+    this.datePicker();
+    this.btnCartSelect();
   },
 
   onLoad: function () {
@@ -232,6 +234,27 @@ const PetProject = {
       else{
         $(this).html('Select');
       }
+    });
+  },
+  // Datepicker 
+  datePicker: function() {
+    $('.datepicker').datepicker({
+      trigger: '.date-btn',
+      getMonthName: true
+    });
+    $('.datepicker1').datepicker({
+      trigger: '.date-btn1',
+      getMonthName: true
+    });
+  },
+
+  // Toggle cart select
+  btnCartSelect: function() {
+    $( ".cart__inner" ).click(function() {
+      $(this).find('.arrow-change').toggleClass('active');
+      $(this).parent().find(".cart__select").slideToggle( "slow", function() {
+        // Animation complete.
+      });
     });
   },
 }
