@@ -15981,6 +15981,19 @@ a {
   .box-cart .rate-dot {
     padding: 0 10px; }
 
+.cart__option-wrapper {
+  max-height: 250px;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  .cart__option-wrapper::-webkit-scrollbar {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: inherit; }
+  .cart__option-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: #c6c6c6; }
+
 .cart .sep {
   margin-top: 30px; }
 
