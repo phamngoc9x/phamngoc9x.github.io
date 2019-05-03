@@ -13,6 +13,7 @@ const PetProject = {
     this.btnSelect();
     this.datePicker();
     this.btnCartSelect();
+    this.scrollFixed();
   },
 
   onLoad: function () {
@@ -255,6 +256,43 @@ const PetProject = {
       $(this).parent().find(".cart__select").slideToggle( "slow", function() {
         // Animation complete.
       });
+    });
+  },
+  // Scroll fixed cart
+  scrollFixed: function() {
+    var length = $('.content-left').height() - $('.box-cart').height() + $('.content-left').offset().top;
+
+    $(window).scroll(function () {
+
+        var scroll = $(this).scrollTop();
+        var height = $('.cart').height() + 60 + 'px';
+        var width = $('.content-right').width() + 'px';
+        if (scroll < $('.content-left').offset().top) {
+
+            $('.box-cart').css({
+                'position': 'absolute',
+                'top': '0',
+                'width': width
+            });
+
+        } else if (scroll > length) {
+
+            $('.box-cart').css({
+                'position': 'absolute',
+                'bottom': '0',
+                'top': 'auto',
+                'width': width
+            });
+
+        } else {
+
+            $('.box-cart').css({
+                'position': 'fixed',
+                'top': '85px',
+                'height': height,
+                'width': width
+            });
+        }
     });
   },
 }

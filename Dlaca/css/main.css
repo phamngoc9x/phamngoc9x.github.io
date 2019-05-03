@@ -15955,7 +15955,12 @@ a {
 
 .box-cart {
   padding: 30px 20px;
-  border: 1px solid #efefef; }
+  border: 1px solid #efefef;
+  position: relative; }
+  .box-cart:after {
+    content: '';
+    display: block;
+    clear: both; }
   .box-cart .sep {
     border-color: #efefef; }
   .box-cart .product__price .d-block {
