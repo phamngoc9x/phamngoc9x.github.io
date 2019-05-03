@@ -260,16 +260,14 @@ const PetProject = {
   },
   // Scroll fixed cart
   scrollFixed: function() {
-    var length = $('.content-left').height() - $('.box-cart').height() + $('.content-left').offset().top;
-
+    var length = $('.content-left').height() - $('.sidebar-cart').height() + $('.content-left').offset().top;
     $(window).scroll(function () {
-
-        var scroll = $(this).scrollTop();
         var height = $('.cart').height() + 60 + 'px';
+        var scroll = $(this).scrollTop();
         var width = $('.content-right').width() + 'px';
         if (scroll < $('.content-left').offset().top) {
 
-            $('.box-cart').css({
+            $('.sidebar-cart').css({
                 'position': 'absolute',
                 'top': '0',
                 'width': width
@@ -277,7 +275,7 @@ const PetProject = {
 
         } else if (scroll > length) {
 
-            $('.box-cart').css({
+            $('.sidebar-cart').css({
                 'position': 'absolute',
                 'bottom': '0',
                 'top': 'auto',
@@ -286,7 +284,7 @@ const PetProject = {
 
         } else {
 
-            $('.box-cart').css({
+            $('.sidebar-cart').css({
                 'position': 'fixed',
                 'top': '85px',
                 'height': height,
