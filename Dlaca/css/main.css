@@ -16329,6 +16329,8 @@ button {
   .product-detail .sep {
     margin-top: 20px; }
   .slider-review .owl-nav {
-    top: -51px; } }
+    top: -51px; }
+  .product-detail .meta__item {
+    min-width: 95px; } }
 
 /*# sourceMappingURL=main.css.map */
