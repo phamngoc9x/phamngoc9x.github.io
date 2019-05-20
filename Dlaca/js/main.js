@@ -14,6 +14,7 @@ const PetProject = {
     this.datePicker();
     this.btnCartSelect();
     this.scrollFixed();
+    this.tooltip();
   },
 
   onLoad: function () {
@@ -68,13 +69,13 @@ const PetProject = {
                   items: 2
               },
               500: {
-                  items: 2
+                  items: 3
               },
               991: {
-                  items: 2
+                  items: 4
               },
               1200: {
-                  items: 3
+                  items: 5
               },
               1300: {
                   items: 7
@@ -135,16 +136,20 @@ const PetProject = {
         items: 5,
         responsive: {
             0: {
-                items: 2
+                items: 2,
+                center: false,
             },
-            500: {
-                items: 2
+            575: {
+                items: 3,
             },
-            991: {
-                items: 2
+            768: {
+                items: 3,
+            },
+            992: {
+                items: 3
             },
             1200: {
-                items: 3
+                items: 5
             },
             1300: {
                 items: 5
@@ -258,10 +263,19 @@ const PetProject = {
       });
     });
   },
+  //button
+  tooltip: function() {
+    $('button[data-toggle="tooltip"]').tooltip({
+      animated: 'fade',
+      placement: 'top',
+      html: true
+    });
+  },
   // Scroll fixed cart
   scrollFixed: function() {
-    var length = $('.content-left').height() - $('.sidebar-cart').height() + $('.content-left').offset().top;
-    $(window).scroll(function () {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) != true  ) {
+      var length = $('.content-left').height() - $('.sidebar-cart').height() + $('.content-left').offset().top;
+      $(window).scroll(function () {
         var height = $('.cart').height() + 60 + 'px';
         var scroll = $(this).scrollTop();
         var width = $('.content-right').width() + 'px';
@@ -291,7 +305,8 @@ const PetProject = {
                 'width': width
             });
         }
-    });
+      });
+    }
   },
 }
 
