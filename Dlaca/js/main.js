@@ -15,6 +15,7 @@ const PetProject = {
     this.btnCartSelect();
     this.scrollFixed();
     this.tooltip();
+    this.blogSlider();
   },
 
   onLoad: function () {
@@ -280,7 +281,6 @@ const PetProject = {
         var scroll = $(this).scrollTop();
         var width = $('.content-right').width() + 'px';
         if (scroll < $('.content-left').offset().top) {
-
             $('.sidebar-cart').css({
                 'position': 'absolute',
                 'top': '0',
@@ -306,6 +306,41 @@ const PetProject = {
             });
         }
       });
+    }
+  },
+  // Slider Gallery
+  blogSlider: function() {
+    var owl = $('.blog--slider');
+    if(owl != null){
+      owl.owlCarousel({
+        margin: 30,
+        items: 4,
+          responsive: {
+              0: {
+                  items: 1
+              },
+              500: {
+                  items: 2
+              },
+              991: {
+                  items: 3
+              },
+              1200: {
+                  items: 4
+              },
+              1300: {
+                  items: 4
+              }
+          },
+        nav: true,
+        navText: ["<span class='icon icon--arrow-left'></i>","<i class='icon icon--arrow-right'></i>"],
+        loop: true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        center: false,
+        dots: false,
+      })
     }
   },
 }
