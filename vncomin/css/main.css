@@ -15223,7 +15223,8 @@ button,
     height: 100vh; }
   .sidebar-active {
     left: 270px;
-    overflow: hidden; }
+    overflow: hidden;
+    height: 100vh; }
     .sidebar-active .header-mobile__overlay {
       opacity: 1;
       z-index: 11; }
@@ -15597,7 +15598,9 @@ button,
   .header__nav {
     padding: 0 15px; }
   .content-wrapper__inner {
-    padding: 20px 15px; } }
+    padding: 20px 15px; }
+  .slider-future .owl-stage-outer {
+    width: 100%; } }
 
 @media (max-width: 375px) {
   .search-box {
