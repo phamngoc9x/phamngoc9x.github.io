@@ -41,7 +41,7 @@
         <section class="sidebar__list menu-list menu-user"><span class="menu-list__title">thông tin cá nhân</span>
           <ul class="main-menu list-count">
             <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="icon icon--menu icon--dolar"></span><span class="main-menu__text">Nạp tiền</span></a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="icon icon--menu icon--user"></span><span class="main-menu__text">Thông tin chung</span></a></li>
+            <li class="main-menu__item"><a class="main-menu__link active" href="#"><span class="icon icon--menu icon--user"></span><span class="main-menu__text">Thông tin chung</span></a></li>
             <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="icon icon--menu icon--key"></span><span class="main-menu__text">Mật khẩu</span></a></li>
           </ul>
         </section>
@@ -68,7 +68,72 @@
         </section>
       </div>
     </aside>
-    <div class="content-wrapper"></div>
+    <div class="content-wrapper">
+      <div class="top-page d-flex justify-content-end">
+        <button class="btn button--back button--outline" role="button"><span class="icon icon--back"></span>Quay lại trang chủ</button>
+      </div>
+      <div class="content-wrapper__inner">
+        <div class="row normal-form">
+          <div class="col-md-9">
+            <div class="normal-form__group">
+              <div class="normal-form__control">
+                <label><span>Họ và Tên</span></label>
+                <input class="normal-form__input">
+              </div>
+              <div class="normal-form__control">
+                <label><span>Email</span></label>
+                <input class="normal-form__input">
+              </div>
+            </div>
+            <div class="normal-form__group">
+              <div class="normal-form__control">
+                <label><span>Giới tính</span></label>
+                <div class="normal-form__radio radio">
+                  <div class="custom-control custom-radio radio__inner">
+                    <input class="radio__input custom-control-input" id="customRadio1" type="radio" name="example1" value="customEx">
+                    <label class="radio__label custom-control-label" for="customRadio1">Nam</label>
+                  </div>
+                  <div class="custom-control custom-radio radio__inner">
+                    <input class="radio__input custom-control-input" id="customRadio2" type="radio" name="example1" value="customEx">
+                    <label class="radio__label custom-control-label" for="customRadio2">Nữ</label>
+                  </div>
+                </div>
+              </div>
+              <div class="normal-form__control">
+                <label><span>Điện thoại</span></label>
+                <input class="normal-form__input">
+              </div>
+            </div>
+            <div class="normal-form__group">
+              <div class="normal-form__control">
+                <label><span>Địa chỉ</span></label>
+                <input class="normal-form__input">
+              </div>
+              <div class="normal-form__control">
+                <label><span>Mô tả chung</span></label>
+                <input class="normal-form__input">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="file">
+              <label class="file__label" for="customFile">
+                <div class="file__content"><span class="icon icon--avatar"></span><span>Thêm ảnh đại diện</span></div>
+              </label>
+              <input class="file__input" id="customFile" type="file">
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="normal-form__group">
+              <div class="normal-form__control">
+                <button class="btn normal-form__btn btn-block button--primary" role="button">Cập nhập
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

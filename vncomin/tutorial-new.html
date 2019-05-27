@@ -19,30 +19,54 @@
       </div>
       <div class="header-mobile__overlay"></div>
     </header>
+    <header class="header main-header">
+      <div class="header__nav navbar nav">
+        <div class="search-box">
+          <button class="btn search-box__btn"><span class="search-box__icon icon icon--search"></span></button>
+          <input class="search-box__input" placeholder="Tìm kiếm chia sẻ, hướng dẫn ..." />
+        </div>
+        <ul class="nav__ul">
+          <li class="nav__item dropdown"><a class="dropdown__link" href="#!" data-toggle="dropdown"><img class="dropdown__avatar" src="images/avatar.jpg" alt="avatar" /></a>
+            <ul class="dropdown-menu dropdown-box">
+              <li><a class="dropdown-box__item" href="#">Profile</a></li>
+              <li><a class="dropdown-box__item" href="#">Sign out</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <button class="btn add-new button--primary" role="button">Đăng tin
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
     <aside class="sidebar">
       <div class="sidebar__inner">
-        <section class="sidebar__info info">
-          <div class="info__avatar"><img src="./images/avatar.jpg" alt="avatar user" /></div>
-          <div class="info__name">Ilovegame4MU</div>
-          <div class="info__price">1.230.000 vnđ</div>
-          <div class="info__btn">
-            <button class="btn user__btn button--outline" role="button">Thoát
-            </button>
-          </div>
-        </section>
+        <section class="sidebar__logo"><a class="logo" href="/"><img class="logo-lg logo__images" src="images/logo.svg" /></a></section>
         <hr class="sep-menu" />
-        <section class="sidebar__list menu-list menu-user"><span class="menu-list__title">QUẢN LÝ BÀI VIẾT</span>
+        <section class="sidebar__list menu-list"> <span class="menu-list__title">Danh sách game</span>
           <ul class="main-menu list-count">
-            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="icon icon--all icon--menu"></span><span class="main-menu__text">Tất cả tin</span></a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="icon icon--all icon--pen"></span><span class="main-menu__text">Đăng tin</span></a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="icon icon--all icon--picture"></span><span class="main-menu__text">Thư viện</span></a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__text">Võ lâm truyền kỳ</span><span class="main-menu__count">1.300</span></a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__text">Thiên Long Bát Bộ</span><span class="main-menu__count">130</span></a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__text">MU Online</span><span class="main-menu__count">324</span></a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__text">Kiếm thế</span><span class="main-menu__count">539</span></a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__text">Gunny</span><span class="main-menu__count">15.000</span></a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__text">Silkroad Online</span><span class="main-menu__count"> </span></a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__text">Webgame</span><span class="main-menu__count">30</span></a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__text">Game Mobile</span><span class="main-menu__count">10</span></a></li>
           </ul>
         </section>
-        <section class="sidebar__list menu-list menu-user"><span class="menu-list__title">thông tin cá nhân</span>
+        <div class="sep-wraper">
+          <hr class="sep-menu" />
+        </div>
+        <section class="sidebar__list menu-list">
           <ul class="main-menu list-count">
-            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="icon icon--menu icon--dolar"></span><span class="main-menu__text">Nạp tiền</span></a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="icon icon--menu icon--user"></span><span class="main-menu__text">Thông tin chung</span></a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="icon icon--menu icon--key"></span><span class="main-menu__text">Mật khẩu</span></a></li>
+            <li class="main-menu__item has-child"><a class="main-menu__link" href="#"><span class="main-menu__text">Hướng dẫn chơi game</span><span class="main-menu__more icon icon--down"></span></a>
+              <ul class="main-menu__child has-child__list">
+                <li class="main-menu__item has-child__item"><a class="main-menu__link active" href="#"><span class="main-menu__text">Thiên Long Bát Bộ</span><span class="main-menu__count">130</span></a></li>
+                <li class="main-menu__item has-child__item"><a class="main-menu__link" href="#"><span class="main-menu__text">MU Online</span><span class="main-menu__count">324</span></a></li>
+                <li class="main-menu__item has-child__item"><a class="main-menu__link" href="#"><span class="main-menu__text">Kiếm thế</span><span class="main-menu__count">539 </span></a></li>
+              </ul>
+            </li>
           </ul>
         </section>
         <section class="sidebar__bottom menu-list">
@@ -68,7 +92,101 @@
         </section>
       </div>
     </aside>
-    <div class="content-wrapper"></div>
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <section class="section--breadcrumb">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a class="breadcrumb__link" href="#">Trang chủ </a></li>
+              <li class="breadcrumb-item active" aria-current="page">Thiên Long Bát Bộ</li>
+            </ol>
+          </nav>
+        </section>
+        <section class="section--special new-special">
+          <div class="section__title">
+            <h2 class="section__text color-gray">giới thiệu về tin đặc biệt</h2>
+          </div>
+          <p class="color-black-light section__subtitle">Tin đặc biệt được hiển thị nằm tách biệt với các tin khác trên Trang chủ, nổi bật với khung lớn và ảnh hiển thị</p>
+          <div class="new-special__intro">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="new-special__img d-inline-block"><img src="./images/laptop.png" alt="laptop">
+                  <div class="new-special__title text-center">Phiên bản máy tính</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="new-special__img d-inline-block"><img src="./images/mobile.png" alt="mobile">
+                  <div class="new-special__title text-center">Phiên bản di động</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section__title">
+            <h2 class="section__text color-gray">tin đặc biệt khác các dịch vụ khác như thế nào?</h2>
+          </div>
+          <ul class="info-special">
+            <li class="info-special__item">
+              <div class="info-special__inner">
+                <div class="info-special__header"></div>
+                <div class="info-special__body">
+                  <div class="info-special__method">Cách thức hiển thị</div>
+                  <div class="info-special__time">Thời gian hiển thị</div>
+                  <div class="info-special__price">Giá dịch vụ</div>
+                </div>
+              </div>
+            </li>
+            <li class="info-special__item active">
+              <div class="info-special__inner">
+                <div class="info-special__header"><span class="icon icon--future svg"></span>
+                  <div class="info-special__title">Tin đặc biệt</div>
+                </div>
+                <div class="info-special__body">
+                  <div class="info-special__method">Hiển thị ở vị trí tách biệt với các tin bình thường trên Trang chủ</div>
+                  <div class="info-special__time">Trong <strong>24h </strong>kể từ khi bắt đầu thực hiện dịch vụ.</div>
+                  <div class="info-special__price"> <span class="text-lg">1000 đ</span>/1 ngày</div>
+                </div>
+              </div>
+            </li>
+            <li class="info-special__item">
+              <div class="info-special__inner">
+                <div class="info-special__header"><span class="icon icon--star-lg svg"></span>
+                  <div class="info-special__title">Tin nổi bật</div>
+                </div>
+                <div class="info-special__body">
+                  <div class="info-special__method">Trong 7 ngày kể từ khi bắt đầu thực hiện dịch vụ.</div>
+                  <div class="info-special__time">Trong <strong>7 ngày </strong>kể từ khi bắt đầu thực hiện dịch vụ.</div>
+                  <div class="info-special__price"> <span class="text-lg">1000 đ</span>/1 ngày</div>
+                </div>
+              </div>
+            </li>
+            <li class="info-special__item">
+              <div class="info-special__inner">
+                <div class="info-special__header"><span class="icon icon--award svg"></span>
+                  <div class="info-special__title">Tin ưu tiên</div>
+                </div>
+                <div class="info-special__body">
+                  <div class="info-special__method">Hiển thị ở 1-2 vị trí đầu tiên trong danh sách tin đăng</div>
+                  <div class="info-special__time">Trong <strong>24h </strong>kể từ khi bắt đầu thực hiện dịch vụ.</div>
+                  <div class="info-special__price"> <span class="text-lg">1000 đ</span>/1 ngày</div>
+                </div>
+              </div>
+            </li>
+            <li class="info-special__item">
+              <div class="info-special__inner">
+                <div class="info-special__header"><span class="icon icon--push svg"></span>
+                  <div class="info-special__title">đẩy tin</div>
+                </div>
+                <div class="info-special__body">
+                  <div class="info-special__method">Đẩy tin đăng hợp lệ đang hiển thị lên đầu trang</div>
+                  <div class="info-special__time"><strong>1 lần/ ngày </strong>kể từ khi bắt đầu thực hiện dịch vụ.</div>
+                  <div class="info-special__price"> <span class="text-lg">100 đ</span>/1 ngày</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -4,7 +4,8 @@ const PetProject = {
     console.log('init project');
     this.toggleDropdown();
     this.toggleMobileSidebar();
-    this.sliderFuture();
+    this.sliderCol4();
+    this.sliderCol3();
   },
 
   onLoad: function () {
@@ -18,11 +19,14 @@ const PetProject = {
   // Toggle dropdown menu
   toggleDropdown: function() {
     $( ".has-child > .main-menu__link" ).click(function() {
-      $(this).toggleClass('active');
       event.preventDefault()
-      $(this).parent().find( ".has-child__list" ).slideToggle( "slow", function() {
-        // Animation complete.
-      });
+      $(this).toggleClass('active');
+      $(this).parent().find( ".has-child__list" ).slideToggle( "slow", function() {});
+    });
+    $( ".has-child > .sub-menu__link" ).click(function() {
+      event.preventDefault()
+      $(this).toggleClass('active');
+      $(this).parent().find( ".child-menu" ).slideToggle( "slow", function() {});
     });
   },
 
@@ -30,13 +34,12 @@ const PetProject = {
   toggleMobileSidebar: function() {
     $(".header-mobile__btn, .header-mobile__overlay").click(function() {
       $('body').toggleClass('sidebar-active');
-      $('html').toggleClass('hidden-scroll');
     });
   },
 
-  // Slider Future
-  sliderFuture: function() {
-    var owl = $('.slider-future');
+  // Slider col4
+  sliderCol4: function() {
+    var owl = $('.slider-col4');
     if(owl != null){
       owl.owlCarousel({
         margin: 20,
@@ -59,6 +62,44 @@ const PetProject = {
               },
               1300: {
                   items: 4
+              }
+          },
+        nav: true,
+        navText: ["<span class='icon icon--arrow-left'></i>","<i class='icon icon--arrow-right'></i>"],
+        loop: true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        center: false,
+        dots: false,
+      })
+    }
+  },
+
+  sliderCol3: function() {
+    var owl = $('.slider-col3');
+    if(owl != null){
+      owl.owlCarousel({
+        margin: 20,
+        items: 3,
+          responsive: {
+              0: {
+                  items: 1
+              },
+              574: {
+                  items: 2
+              },
+              768: {
+                  items: 3
+              },
+              991: {
+                  items: 3
+              },
+              1200: {
+                  items: 3
+              },
+              1300: {
+                  items: 3
               }
           },
         nav: true,
