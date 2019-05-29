@@ -68,7 +68,124 @@
         </section>
       </div>
     </aside>
-    <div class="content-wrapper"></div>
+    <div class="content-wrapper">
+      <div class="top-page d-flex justify-content-end">
+        <button class="btn button--back button--outline" role="button"><span class="icon icon--back"></span>Quay lại trang chủ</button>
+      </div>
+      <div class="content-wrapper__inner add-new-page">
+        <div class="row normal-form">
+          <div class="col-md-8">
+            <div class="normal-form__control">
+              <label><span>Tiêu đề</span><span class="color-red">*</span></label>
+              <input class="normal-form__input">
+            </div>
+            <div class="normal-form__control">
+              <label><span>Nội dung bài viết</span><span class="color-red">*</span></label>
+              <textarea class="normal-form__textarea" name="editor1">   </textarea>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="normal-form__control">
+              <label><span>Danh mục</span><span class="color-red">*</span></label>
+              <select class="normal-form__select select">
+                <option value="thienlong"> Thiên Long Bát Bộ</option>
+                <option value="volam">Võ Lâm Truyền Kì</option>
+              </select>
+            </div>
+            <div class="normal-form__control">
+              <label><span>Kiểu tin</span></label>
+              <select class="normal-form__select select">
+                <option value="thienlong"> Thường</option>
+                <option value="volam">Mới nhất</option>
+              </select>
+            </div>
+            <div class="normal-form__control">
+              <button class="btn normal-form__btn btn-block button--primary" role="button" data-toggle="modal" data-target="#myModal">Đăng bài
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-upgrade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header-->
+            <div class="modal-header">
+              <h4 class="modal-title">Đăng tin thành công!</h4>
+              <p class="modal-subtitle">Nâng cấp tin để tăng gấp đôi cơ hội bán hàng </p>
+              <button class="close" type="button" data-dismiss="modal"> <span class="icon icon--close"></span></button>
+            </div>
+            <!-- Modal body-->
+            <div class="modal-body normal-form">
+              <ul class="list-upgrade">
+                <li class="list-upgrade__item active">
+                  <div class="list-upgrade__inner"><span class="icon icon--future"></span>
+                    <div class="list-upgrade__title">Tin đặc biệt</div>
+                    <div class="list-upgrade__subtitle">Hiển thị tách biệt, ảnh đại diện</div>
+                    <div class="list-upgrade__price"> <span class="text-lg">1000 đ</span>/1 ngày</div>
+                  </div>
+                </li>
+                <li class="list-upgrade__item">
+                  <div class="list-upgrade__inner"><span class="icon icon--star-lg"> </span>
+                    <div class="list-upgrade__title">Tin nổi bật</div>
+                    <div class="list-upgrade__subtitle">Gắn nhãn nổi bật</div>
+                    <div class="list-upgrade__price"> <span class="text-lg">300 đ</span>/1 ngày</div>
+                  </div>
+                </li>
+                <li class="list-upgrade__item">
+                  <div class="list-upgrade__inner"><span class="icon icon--award"></span>
+                    <div class="list-upgrade__title">Tin ưu tiên</div>
+                    <div class="list-upgrade__subtitle">Hiển thị ở 1-2 vị trí đầu tiên</div>
+                    <div class="list-upgrade__price"> <span class="text-lg">100 đ</span>/1 ngày</div>
+                  </div>
+                </li>
+                <li class="list-upgrade__item">
+                  <div class="list-upgrade__inner"><span class="icon icon--push"></span>
+                    <div class="list-upgrade__title">đẩy tin</div>
+                    <div class="list-upgrade__subtitle">Đẩy tin lên trang đầu</div>
+                    <div class="list-upgrade__price"> <span class="text-lg">100 đ</span>/1 ngày</div>
+                  </div>
+                </li>
+              </ul>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="normal-form__control select-date">
+                    <label>Chọn số ngày hiển thị</label>
+                    <div class="d-flex">
+                      <ul class="list-date">
+                        <li class="list-date__item active"><a href="#">3</a></li>
+                        <li class="list-date__item"><a href="#">5</a></li>
+                        <li class="list-date__item"><a href="#">7</a></li>
+                        <li class="list-date__item"><a href="#">15</a></li>
+                        <li class="list-date__item"><a href="#">30</a></li>
+                      </ul>
+                      <input class="normal-form__input" placeholder="Nhập số khác ...">
+                    </div>
+                  </div>
+                  <div class="normal-form__control">
+                    <label>Tổng tiền</label>
+                    <p class="price-total">5000 đ</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="normal-form__control">
+                    <label>Chọn ảnh đại diện</label>
+                  </div>
+                  <div class="file">
+                    <label class="file__label" for="customFile">
+                      <div class="file__content"><span class="icon icon--avatar"></span><span>Thêm ảnh đại diện</span></div>
+                    </label>
+                    <input class="file__input" id="customFile" type="file">
+                  </div>
+                </div>
+              </div>
+              <button class="btn normal-form__btn btn-block button--primary" role="button">Nâng cấp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -77,6 +194,7 @@
     <script type="text/javascript" src="js/jquery.sumoselect.min.js"></script>
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/datepicker.js"></script>
+    <script type="text/javascript" src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

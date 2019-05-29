@@ -6,6 +6,8 @@ const PetProject = {
     this.toggleMobileSidebar();
     this.sliderCol4();
     this.sliderCol3();
+    this.ckEditor();
+    this.sumoSelect();
   },
 
   onLoad: function () {
@@ -28,6 +30,14 @@ const PetProject = {
       $(this).toggleClass('active');
       $(this).parent().find( ".child-menu" ).slideToggle( "slow", function() {});
     });
+    $( ".list-upgrade__item" ).click(function() {
+      $( ".list-upgrade__item" ).removeClass('active');
+      $(this).toggleClass('active');
+    });
+    $( ".list-date__item" ).click(function() {
+      $( ".list-date__item" ).removeClass('active');
+      $(this).toggleClass('active');
+    });
   },
 
   // Toggle Mobile Sidebar
@@ -35,6 +45,23 @@ const PetProject = {
     $(".header-mobile__btn, .header-mobile__overlay").click(function() {
       $('body').toggleClass('sidebar-active');
     });
+  },
+
+  // Toggle Mobile Sidebar
+  ckEditor: function() {
+    CKEDITOR.replace( 'editor1',{
+      height: '100px',
+      toolbar: [
+        { name: 'document', items: [ 'Source', '-', 'NewPage', 'Preview', '-', 'Templates' ] },	// Defines toolbar group with name (used to create voice label) and items in 3 subgroups.
+        [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ],			// Defines toolbar group without name.
+        { name: 'basicstyles', items: [ 'Bold', 'Italic' ] }
+      ]
+    });
+  },
+
+  // Sumo Select
+  sumoSelect: function() {
+    $('.select').SumoSelect();
   },
 
   // Slider col4
