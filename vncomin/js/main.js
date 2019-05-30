@@ -49,14 +49,17 @@ const PetProject = {
 
   // Toggle Mobile Sidebar
   ckEditor: function() {
-    CKEDITOR.replace( 'editor1',{
-      height: '100px',
-      toolbar: [
-        { name: 'document', items: [ 'Source', '-', 'NewPage', 'Preview', '-', 'Templates' ] },	// Defines toolbar group with name (used to create voice label) and items in 3 subgroups.
-        [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ],			// Defines toolbar group without name.
-        { name: 'basicstyles', items: [ 'Bold', 'Italic' ] }
-      ]
-    });
+    var name = $("textarea").attr("name");
+    if(name == 'editor1'){
+      CKEDITOR.replace( 'editor1',{
+        height: '100px',
+        toolbar: [
+          { name: 'document', items: [ 'Source', '-', 'NewPage', 'Preview', '-', 'Templates' ] },	// Defines toolbar group with name (used to create voice label) and items in 3 subgroups.
+          [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ],			// Defines toolbar group without name.
+          { name: 'basicstyles', items: [ 'Bold', 'Italic' ] }
+        ]
+      });
+    }
   },
 
   // Sumo Select
@@ -70,7 +73,7 @@ const PetProject = {
     if(owl != null){
       owl.owlCarousel({
         margin: 20,
-        items: 4,
+        items: 5,
           responsive: {
               0: {
                   items: 1
@@ -85,10 +88,10 @@ const PetProject = {
                   items: 3
               },
               1200: {
-                  items: 4
+                  items: 5
               },
               1300: {
-                  items: 4
+                  items: 5
               }
           },
         nav: true,
