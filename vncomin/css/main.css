@@ -15862,6 +15862,11 @@ button,
   .modal-upgrade .normal-form .select-date .d-flex {
     flex-wrap: wrap; }
 
+.new-manager .table-new-manager tbody td .cover-img,
+.new-manager .table-new-manager-special tbody td .cover-img {
+  width: 60px;
+  height: 40px; }
+
 @media (max-width: 1199px) {
   .social--center {
     color: #fff; } }
@@ -16322,7 +16327,7 @@ button,
     height: 40px;
     border: 2px solid transparent !important; }
   .table-new-manager tbody td:nth-child(2) {
-    text-align: center;
+    text-align: left;
     padding-left: 15px;
     color: #282929;
     font-weight: 600; }
@@ -16382,7 +16387,7 @@ button,
     height: 40px;
     border: 2px solid transparent !important; }
   .table-new-manager-special tbody td:nth-child(2) {
-    text-align: center;
+    text-align: left;
     padding-left: 15px;
     color: #282929;
     font-weight: 600; }
@@ -16441,7 +16446,7 @@ button,
     height: 40px;
     border: 2px solid transparent !important; }
   .table-new-manager-hot tbody td:nth-child(2) {
-    text-align: center;
+    text-align: left;
     padding-left: 15px;
     color: #282929;
     font-weight: 600; }
