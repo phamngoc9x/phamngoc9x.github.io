@@ -15949,7 +15949,10 @@ button,
   .modal-upgrade .modal-body {
     padding-top: 20px; }
   .modal-upgrade .list-upgrade {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .menu-tutorial .sub-menu > .sub-menu__item {
+    width: 50%;
+    float: left; } }
 
 @media (max-width: 375px) {
   .search-box {
