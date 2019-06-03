@@ -15956,14 +15956,15 @@ button,
 
 @media (max-width: 375px) {
   .search-box {
-    width: 100%; }
+    width: 50%; }
     .search-box__input {
       width: calc(100% - 35px); }
   .dropdown__link {
     padding: 0; }
   .nav__ul {
-    width: 100%;
-    text-align: center; }
+    width: 50%; }
+    .nav__ul .button--primary.add-new {
+      padding: 7px 10px; }
   .auth-page .auth .auth-form__body {
     padding: 15px; }
   .normal-form__group {
