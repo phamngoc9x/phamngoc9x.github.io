@@ -26,10 +26,22 @@ const PetProject = {
     });
     $( ".has-child > .sub-menu__link" ).click(function() {
       event.preventDefault()
-      $( ".has-child > .sub-menu__link" ).removeClass('active');
-      $(this).toggleClass('active');
-      $(".sub-menu__item .child-menu" ).css("display","none");
-      $(this).parent().find( ".child-menu" ).slideToggle( "slow", function() {});
+      //$(".sub-menu__item .child-menu" ).css("display","none");
+      if($(this).hasClass('active')){
+        $( ".has-child > .sub-menu__link" ).removeClass('active');
+        $(this).removeClass('active');
+        $(this).parent().find( ".child-menu" ).slideUp( "slow", function() {});
+      }
+      else{
+        $( ".has-child > .sub-menu__link" ).removeClass('active');
+        $(this).addClass('active');
+        $(".sub-menu__item .child-menu" ).css("display","none");
+        $(this).parent().find( ".child-menu" ).slideDown( "slow", function() {});
+      }
+     
+      //$( ".has-child > .sub-menu__link" ).removeClass('active');
+      //$(this).toggleClass('active');
+      
     });
     $( ".list-upgrade__item" ).click(function() {
       $( ".list-upgrade__item" ).removeClass('active');
