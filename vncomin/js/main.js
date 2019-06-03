@@ -1,4 +1,3 @@
-
 const PetProject = {
   Init: function () {
     console.log('init project');
@@ -27,7 +26,9 @@ const PetProject = {
     });
     $( ".has-child > .sub-menu__link" ).click(function() {
       event.preventDefault()
+      $( ".has-child > .sub-menu__link" ).removeClass('active');
       $(this).toggleClass('active');
+      $(".sub-menu__item .child-menu" ).css("display","none");
       $(this).parent().find( ".child-menu" ).slideToggle( "slow", function() {});
     });
     $( ".list-upgrade__item" ).click(function() {
