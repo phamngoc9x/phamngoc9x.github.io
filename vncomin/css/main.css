@@ -15924,7 +15924,9 @@ button,
   .modal-upgrade .modal-dialog {
     padding: 0 5px; }
   .slider-blog .owl-stage-outer {
-    width: 100%; } }
+    width: 100%; }
+  .slider-blog__item {
+    width: 240px; } }
 
 @media (max-width: 575px) {
   .modal-upgrade .list-upgrade__item {

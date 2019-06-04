@@ -89,16 +89,18 @@ const PetProject = {
         items: 5,
           responsive: {
               0: {
-                  items: 1
+                items: 2,
+                autoWidth:true
               },
               574: {
-                  items: 2
+                  items: 3,
+                  autoWidth:true
               },
               768: {
                   items: 3
               },
               991: {
-                  items: 3
+                  items: 4
               },
               1200: {
                   items: 5
@@ -127,10 +129,12 @@ const PetProject = {
         items: 3,
           responsive: {
               0: {
-                  items: 1
+                items: 2,
+                autoWidth:true
               },
               574: {
-                  items: 2
+                  items: 3,
+                  autoWidth:true
               },
               768: {
                   items: 3
