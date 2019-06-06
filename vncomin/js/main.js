@@ -122,9 +122,6 @@ const PetProject = {
         nav: true,
         navText: ["<span class='icon icon--arrow-left'></i>","<i class='icon icon--arrow-right'></i>"],
         loop: true,
-        autoplay:true,
-        autoplayTimeout:5000,
-        autoplayHoverPause:true,
         center: false,
         dots: false,
       })
@@ -136,7 +133,7 @@ const PetProject = {
     if(owl != null){
       owl.owlCarousel({
         margin: 20,
-        items: 3,
+        items: 4,
           responsive: {
               0: {
                 items: 2,
@@ -172,9 +169,6 @@ const PetProject = {
         nav: true,
         navText: ["<span class='icon icon--arrow-left'></i>","<i class='icon icon--arrow-right'></i>"],
         loop: true,
-        autoplay:true,
-        autoplayTimeout:3000,
-        autoplayHoverPause:true,
         center: false,
         dots: false,
       })
