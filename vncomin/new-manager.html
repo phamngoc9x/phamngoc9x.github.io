@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>new mamager</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="new mamager" />
+    <meta name="keywords" content="new mamager" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header-mobile">
+      <div class="header-mobile__inner">
+        <button class="header-mobile__btn"><i class="fas fa-bars"></i></button><a class="header-mobile__logo" href="/"><img src="./images/logo.svg" alt="logo" /></a>
+      </div>
+      <div class="header-mobile__overlay"></div>
+    </header>
+    <aside class="sidebar">
+      <div class="sidebar__inner">
+        <section class="sidebar__info info">
+          <div class="info__avatar"><img src="./images/avatar.jpg" alt="avatar user" /></div>
+          <div class="info__name">Ilovegame4MU</div>
+          <div class="info__price">1.230.000 vnđ</div>
+          <div class="info__btn">
+            <button class="btn user__btn button--outline" role="button">Thoát
+            </button>
+          </div>
+        </section>
+        <hr class="sep-menu" />
+        <section class="sidebar__list menu-list menu-user"><span class="menu-list__title">QUẢN LÝ BÀI VIẾT</span>
+          <ul class="main-menu list-count">
+            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="icon icon--all icon--menu"></span><span class="main-menu__text">Tất cả tin</span></a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="icon icon--all icon--pen"></span><span class="main-menu__text">Đăng tin</span></a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="icon icon--all icon--picture"></span><span class="main-menu__text">Thư viện</span></a></li>
+          </ul>
+        </section>
+        <section class="sidebar__list menu-list menu-user"><span class="menu-list__title">thông tin cá nhân</span>
+          <ul class="main-menu list-count">
+            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="icon icon--menu icon--dolar"></span><span class="main-menu__text">Nạp tiền</span></a></li>
+            <li class="main-menu__item"><a class="main-menu__link active" href="#"><span class="icon icon--menu icon--user"></span><span class="main-menu__text">Thông tin chung</span></a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="icon icon--menu icon--key"></span><span class="main-menu__text">Mật khẩu</span></a></li>
+          </ul>
+        </section>
+        <section class="sidebar__bottom menu-list">
+          <ul class="main-menu">
+            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__text">Về chúng tôi</span></a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__text">Hướng dẫn </span></a></li>
+          </ul>
+          <ul class="menu-info">
+            <li class="menu-info__item">
+              <div class="menu-info__icon"> <span class="icon icon--phone"></span></div>
+              <div class="menu-info__text">0393 685 809</div>
+            </li>
+            <li class="menu-info__item">
+              <div class="menu-info__icon"> <span class="icon icon--email"></span></div>
+              <div class="menu-info__text">alobabyday@gmail.com</div>
+            </li>
+            <li class="menu-info__item">
+              <div class="menu-info__icon"> <span class="icon icon--facebook"></span></div>
+              <div class="menu-info__text">facebook.com/vncomin </div>
+            </li>
+          </ul>
+          <div class="sidebar__copyright">© Desgin & develop by vncomin.com</div>
+        </section>
+      </div>
+    </aside>
+    <div class="content-wrapper new-manager">
+      <div class="col-xs-12">
+        <div class="content-top-common content-top-manager">
+          <form class="form-inline form-manager" action=""><span class="icon icon--search"></span>
+            <input type="text" placeholder="Tìm kiếm bài viết...">
+          </form>
+          <nav class="tab-common d-none d-xl-block">
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist"><a class="nav-item nav-item-manager nav-link active" id="nav-manager-tab" data-toggle="tab" href="#nav-manager" role="tab" aria-controls="nav-manager" aria-selected="true">Tât cả tin</a><a class="nav-item nav-item-manager nav-link" id="nav-manager-special-tab" data-toggle="tab" href="#nav-manager-special" role="tab" aria-controls="nav-manager-special" aria-selected="false">Đặc biệt</a><a class="nav-item nav-item-manager nav-link" id="nav-manager-hot-tab" data-toggle="tab" href="#nav-manager-hot" role="tab" aria-controls="nav-manager-hot" aria-selected="false">Nổi bật</a><a class="nav-item nav-item-manager nav-link" id="nav-manager-important-tab" data-toggle="tab" href="#nav-manager-important" role="tab" aria-controls="nav-manager-important" aria-selected="false">Ưu tiên</a><a class="nav-item nav-item-manager nav-link" id="nav-manager-normal-tab" data-toggle="tab" href="#nav-manager-normal" role="tab" aria-controls="nav-manager-normal" aria-selected="false">Thường</a></div>
+          </nav>
+          <button class="btn-back btn user__btn button--outline" role="button"><span class="icon icon--back"></span><span class="d-none d-sm-block">Quay lại trang chủ</span></button>
+          <nav class="tab-common d-xl-none d-block">
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist"><a class="nav-item nav-item-manager nav-link active" id="nav-manager-tab" data-toggle="tab" href="#nav-manager" role="tab" aria-controls="nav-manager" aria-selected="true">Tât cả tin</a><a class="nav-item nav-item-manager nav-link" id="nav-manager-special-tab" data-toggle="tab" href="#nav-manager-special" role="tab" aria-controls="nav-manager-special" aria-selected="false">Đặc biệt</a><a class="nav-item nav-item-manager nav-link" id="nav-manager-hot-tab" data-toggle="tab" href="#nav-manager-hot" role="tab" aria-controls="nav-manager-hot" aria-selected="false">Nổi bật</a><a class="nav-item nav-item-manager nav-link" id="nav-manager-important-tab" data-toggle="tab" href="#nav-manager-important" role="tab" aria-controls="nav-manager-important" aria-selected="false">Ưu tiên</a><a class="nav-item nav-item-manager nav-link" id="nav-manager-normal-tab" data-toggle="tab" href="#nav-manager-normal" role="tab" aria-controls="nav-manager-normal" aria-selected="false">Thường</a></div>
+          </nav>
+        </div>
+        <div class="content-common tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-manager" role="tabpanel" aria-labelledby="nav-manager-tab">
+            <div class="table-responsive">
+              <table class="table-new-manager table table-bordered">
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>Ảnh bài viết</th>
+                    <th>Tiêu đề</th>
+                    <th>Lượt xem</th>
+                    <th>Trạng thái</th>
+                    <th>Kiểu tin</th>
+                    <th></th>
+                    <th> </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td> </td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>Thường</td>
+                    <td>
+                      <button class="btn update" role="button" data-toggle="modal" data-target="#myModal">Nâng cấp
+                      </button>
+                    </td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>
+                      <div class="cover-img"><img src="./images/ads1.jpg" alt=""></div>
+                    </td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>Ưu tiên</td>
+                    <td>
+                      <button class="btn update" role="button" data-toggle="modal" data-target="#myModal">Nâng cấp
+                      </button>
+                    </td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td> </td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>Thường</td>
+                    <td>
+                      <button class="btn update" role="button" data-toggle="modal" data-target="#myModal">Nâng cấp
+                      </button>
+                    </td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td> </td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>Nổi bật</td>
+                    <td>
+                      <button class="btn update" role="button" data-toggle="modal" data-target="#myModal">Nâng cấp
+                      </button>
+                    </td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"></span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td> </td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>Đặc biệt</td>
+                    <td></td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td> </td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>Thường</td>
+                    <td>
+                      <button class="btn update" role="button" data-toggle="modal" data-target="#myModal">Nâng cấp
+                      </button>
+                    </td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td> </td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>Đặc biệt</td>
+                    <td></td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td> </td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>Thường</td>
+                    <td>
+                      <button class="btn update" role="button" data-toggle="modal" data-target="#myModal">Nâng cấp
+                      </button>
+                    </td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td> </td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>Nổi bật</td>
+                    <td>
+                      <button class="btn update" role="button" data-toggle="modal" data-target="#myModal">Nâng cấp
+                      </button>
+                    </td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"></span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td> </td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>Thường</td>
+                    <td>
+                      <button class="btn update" role="button" data-toggle="modal" data-target="#myModal">Nâng cấp
+                      </button>
+                    </td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td> </td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>Nổi bật</td>
+                    <td>
+                      <button class="btn update" role="button" data-toggle="modal" data-target="#myModal">Nâng cấp
+                      </button>
+                    </td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td> </td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>Thường</td>
+                    <td>
+                      <button class="btn update" role="button" data-toggle="modal" data-target="#myModal">Nâng cấp
+                      </button>
+                    </td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td> </td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>Ưu tiên</td>
+                    <td>
+                      <button class="btn update" role="button" data-toggle="modal" data-target="#myModal">Nâng cấp
+                      </button>
+                    </td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row paging">
+              <div class="col-md-6">
+                <div class="paging-left"><span>Hiển thị</span>
+                  <ul class="pagination paging-common">
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link active" href="#">10</a></li>
+                    <li class="page-item"><a class="page-link" href="#">25</a></li>
+                    <li class="page-item"><a class="page-link" href="#">50</a></li>
+                  </ul><span>trên 245 kết quả</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <ul class="pagination paging-common paging-right">
+                  <li class="page-item"><a class="page-icon" href="#"> <span class="icon icon--prev"> </span></a></li>
+                  <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">31</a></li>
+                  <li class="page-item"><a class="page-icon" href="#"><span class="icon icon--next"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-manager-special" role="tabpanel" aria-labelledby="nav-manager-special-tab">
+            <div class="table-responsive">
+              <table class="table-new-manager-special table table-bordered">
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>Ảnh bài viết</th>
+                    <th>Tiêu đề</th>
+                    <th>Lượt xem</th>
+                    <th>Trạng thái</th>
+                    <th>Ngày nâng cấp</th>
+                    <th> </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td> </td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>20/03/2019 </td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>
+                      <div class="cover-img"><img src="./images/ads1.jpg" alt=""></div>
+                    </td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>20/03/2019</td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td> </td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>20/03/2019</td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-manager-hot" role="tabpanel" aria-labelledby="nav-manager-hot-tab">
+            <div class="table-responsive">
+              <table class="table-new-manager-hot table table-bordered">
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>Tiêu đề</th>
+                    <th>Lượt xem</th>
+                    <th>Trạng thái</th>
+                    <th>Ngày nâng cấp</th>
+                    <th></th>
+                    <th> </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>20/03/2019</td>
+                    <td>
+                      <button class="btn update" role="button" data-toggle="modal" data-target="#myModal">Nâng cấp
+                      </button>
+                    </td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>20/03/2019</td>
+                    <td>
+                      <button class="btn update" role="button" data-toggle="modal" data-target="#myModal">Nâng cấp
+                      </button>
+                    </td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>20/03/2019</td>
+                    <td>
+                      <button class="btn update" role="button" data-toggle="modal" data-target="#myModal">Nâng cấp
+                      </button>
+                    </td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"> </span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG – Đấu Trường Vinh ...</td>
+                    <td>1.200.000</td>
+                    <td> </td>
+                    <td>20/03/2019</td>
+                    <td>
+                      <button class="btn update" role="button" data-toggle="modal" data-target="#myModal">Nâng cấp
+                      </button>
+                    </td>
+                    <td>
+                      <div class="action"><span class="icon icon--edit"></span><span class="icon icon--delete"></span></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-manager-important" role="tabpanel" aria-labelledby="nav-manager-important-tab">tab4</div>
+          <div class="tab-pane fade" id="nav-manager-normal" role="tabpanel" aria-labelledby="nav-manager-normal-tab">tab5</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-upgrade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header-->
+          <div class="modal-header">
+            <h4 class="modal-title text-left">“Tất tần tật” những cập nhật thú vị của bản Update đầu tiên AOG ...</h4>
+            <p class="modal-subtitle text-left">Tin nổi bật - Còn 01 ngày hiển thị</p>
+            <button class="close" type="button" data-dismiss="modal"> <span class="icon icon--close"></span></button>
+          </div>
+          <!-- Modal body-->
+          <div class="modal-body normal-form">
+            <ul class="list-upgrade">
+              <li class="list-upgrade__item active">
+                <div class="list-upgrade__inner"><span class="icon icon--future"></span>
+                  <div class="list-upgrade__title">Tin đặc biệt</div>
+                  <div class="list-upgrade__subtitle">Hiển thị tách biệt, ảnh đại diện</div>
+                  <div class="list-upgrade__price"> <span class="text-lg">1000 đ</span>/1 ngày</div>
+                </div>
+              </li>
+              <li class="list-upgrade__item">
+                <div class="list-upgrade__inner"><span class="icon icon--star-lg"> </span>
+                  <div class="list-upgrade__title">Tin nổi bật</div>
+                  <div class="list-upgrade__subtitle">Gắn nhãn nổi bật</div>
+                  <div class="list-upgrade__price"> <span class="text-lg">300 đ</span>/1 ngày</div>
+                </div>
+              </li>
+              <li class="list-upgrade__item">
+                <div class="list-upgrade__inner"><span class="icon icon--award"></span>
+                  <div class="list-upgrade__title">Tin ưu tiên</div>
+                  <div class="list-upgrade__subtitle">Hiển thị ở 1-2 vị trí đầu tiên</div>
+                  <div class="list-upgrade__price"> <span class="text-lg">100 đ</span>/1 ngày</div>
+                </div>
+              </li>
+              <li class="list-upgrade__item">
+                <div class="list-upgrade__inner"><span class="icon icon--push"></span>
+                  <div class="list-upgrade__title">đẩy tin</div>
+                  <div class="list-upgrade__subtitle">Đẩy tin lên trang đầu</div>
+                  <div class="list-upgrade__price"> <span class="text-lg">100 đ</span>/1 ngày</div>
+                </div>
+              </li>
+            </ul>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="normal-form__control select-date">
+                  <label>Chọn số ngày hiển thị</label>
+                  <div class="d-flex">
+                    <ul class="list-date">
+                      <li class="list-date__item active"><a href="#">3</a></li>
+                      <li class="list-date__item"><a href="#">5</a></li>
+                      <li class="list-date__item"><a href="#">7</a></li>
+                      <li class="list-date__item"><a href="#">15</a></li>
+                      <li class="list-date__item"><a href="#">30</a></li>
+                    </ul>
+                    <input class="normal-form__input" placeholder="Nhập số khác ...">
+                  </div>
+                </div>
+                <div class="normal-form__control">
+                  <label>Tổng tiền</label>
+                  <p class="price-total">5000 đ</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="normal-form__control">
+                  <label>Chọn ảnh đại diện</label>
+                </div>
+                <div class="file">
+                  <label class="file__label" for="customFile">
+                    <div class="file__content"><span class="icon icon--avatar"></span><span>Thêm ảnh đại diện</span></div>
+                  </label>
+                  <input class="file__input" id="customFile" type="file">
+                </div>
+              </div>
+            </div>
+            <button class="btn normal-form__btn btn-block button--primary" role="button">Nâng cấp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sumoselect.min.js"></script>
+    <script type="text/javascript" src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
