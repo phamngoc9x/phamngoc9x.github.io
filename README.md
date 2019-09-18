@@ -1,8 +1,6 @@
 ## HTML CSS JS
 
-### Vncomin
-
-![Tên link](https://phamngoc9x.github.io/vncomin/links.html) (&lt;a&gt;)
+### [Vncomin](https://phamngoc9x.github.io/vncomin/links.html)
 
 ### Dlaca
 
