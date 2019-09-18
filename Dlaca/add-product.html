@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add Products</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Add Products" />
+    <meta name="keywords" content="Add Products" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header header--default header--list">
+      <nav class="navbar navbar-expand-lg header__content" id="navbar" data-spy="affix">
+        <div class="container-fluid justify-content-between">
+          <div class="col-md-12 col-lg-2 header-mobile d-flex p-0"><a class="navbar-brand header__logo" href="#"> <img src="./images/logo-scm.svg" alt="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuToggle" aria-controls="menuToggle" aria-expanded="false" aria-label="Toggle navigation"><span class="nav-icon"></span><span class="nav-icon"></span><span class="nav-icon"></span></button>
+          </div>
+          <div class="col-md-12 col-lg-8 p-0">
+            <div class="collapse navbar-collapse justify-content-center menu-center" id="menuToggle">
+              <ul class="navbar-nav text-lg-right">
+                <li class="nav-item"><a class="nav-link" href="#"><span class="icon icon--cart"> </span>List Order</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span class="icon icon--chat"> </span>Feedback</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"><span class="icon icon--bag"></span>Products</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"><span class="icon icon--tag"></span>Promotions</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"><span class="icon icon--report"></span>Reports</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-2 p-0 admin-menu">
+            <ul class="navbar-nav justify-content-lg-end right-menu">
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle dropdown__notify" href="#" data-toggle="dropdown"><span class="icon icon--ring"></span></a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="#">Fr</a><a class="dropdown-item" href="#">Ja</a><a class="dropdown-item" href="#">Vi</a></div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle dropdown__avatar" href="#" data-toggle="dropdown">
+                  <div class="dropdown__img"><img src="./images/avartar-review.jpg" alt="avartar" /></div>
+                </a>
+                <div class="dropdown-menu"><a class="dropdown-item dropdown__info" href="#">NguyenLee.HNtravel<br /><img src="./images/icon-diamond.svg" alt="diamond" /><span>Diamond Level</span></a><a class="dropdown-item" href="#">Business Information</a><a class="dropdown-item" href="#">Payment Method</a><a class="dropdown-item" href="#">Account Informations</a><a class="dropdown-item" href="#">Change Password</a><a class="dropdown-item dropdown__logout" href="#">Logout</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content-wrapper list-page add-product-page">
+      <div class="box-header d-flex justify-content-between align-items-center">
+        <div class="page-title">Add a new product</div>
+        <div class="page-option d-flex">
+          <div class="add-new">
+            <button class="btn button--primary button--back" role="button"><img src="./images/icon-back.svg" />Back to the list products
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="box-content">
+        <div class="box-content__left">
+          <ul class="list-sidebar">
+            <li class="list-sidebar__item"><a class="list-sidebar__link" href="#">Basic Information</a><span class="icon icon--check"></span></li>
+            <li class="list-sidebar__item"><a class="list-sidebar__link" href="#">Images</a><span class="icon icon--check"></span></li>
+            <li class="list-sidebar__item"><a class="list-sidebar__link" href="#">Service Packages</a><span class="icon icon--check"></span></li>
+            <li class="list-sidebar__item"><a class="list-sidebar__link" href="#">Itinerary</a><span class="icon icon--check"></span></li>
+            <li class="list-sidebar__item"><a class="list-sidebar__link" href="#">Experience</a><span class="icon icon--check"></span></li>
+            <li class="list-sidebar__item"><a class="list-sidebar__link" href="#">How to Use</a><span class="icon icon--check"></span></li>
+            <li class="list-sidebar__item"><a class="list-sidebar__link" href="#">Terms & Conditions</a><span class="icon icon--check"></span></li>
+          </ul>
+        </div>
+        <div class="box-content__right">
+          <div class="box-content__top">
+            <div class="select-box">
+              <div class="select-list">
+                <label>Language</label>
+                <select class="select">
+                  <option value="1">English(US)</option>
+                  <option value="1">Vietnam </option>
+                </select>
+              </div>
+              <div class="select-list">
+                <label>Type</label>
+                <select class="select">
+                  <option value="1">Tours</option>
+                  <option value="1">Activeties</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="box-content__item box-basic">
+            <h3 class="box-content__title">Basic Information</h3>
+            <div class="box-content__control">
+              <label class="auth-form__text">Product name</label>
+              <input class="box-content__input auth-form__input form-control" type="text">
+            </div>
+            <div class="row">
+              <div class="col-12 col-xl-6 box-content__control">
+                <label class="auth-form__text">Available date</label>
+                <div class="row">
+                  <div class="col-12 col-sm-6">
+                    <div class="box-input-calendar">
+                      <input class="box-content__input select-form__input form-control" type="text" value="25/05/2019"><span class="icon icon--calendar"></span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="box-input-calendar">
+                      <input class="box-content__input select-form__input form-control" type="text" value="25/05/2019"><span class="icon icon--calendar"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xl-6 box-content__control">
+                <div class="row">
+                  <div class="col-12 col-sm-6">
+                    <label class="auth-form__text">Unavailable date</label>
+                    <div class="box-input-calendar">
+                      <input class="box-content__input select-form__input form-control" type="text" value="25/05, 26/05, 30/05 ..."><span class="icon icon--calendar"></span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <label class="auth-form__text">Time</label>
+                    <input class="box-content__input select-form__input form-control" type="text" value="3 - 5 Hours">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-xl-6 box-content__control">
+                <label class="auth-form__text">Address</label>
+                <div class="row">
+                  <div class="col-12 col-sm-4">
+                    <div class="select-list">
+                      <select class="select">
+                        <option value="1">Zone area</option>
+                        <option value="1">Zone area</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-4">
+                    <div class="select-list">
+                      <select class="select">
+                        <option value="1">Country</option>
+                        <option value="1">Country</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-4">
+                    <div class="select-list">
+                      <select class="select">
+                        <option value="1">Province / city</option>
+                        <option value="1">Province / city</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xl-6 box-content__control">
+                <label class="auth-form__text">Promotions</label>
+                <div class="select-list">
+                  <select class="select">
+                    <option value="1">The Autumn tourist ( sale 30%)</option>
+                    <option value="1">The Autumn tourist ( sale 30%)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="box-content__control">
+              <label class="auth-form__text">Descriptions</label>
+              <textarea class="box-content__input auth-form__input form-control" type="text" rows="6" value=""></textarea>
+            </div>
+          </div>
+          <div class="box-content__item box-image">
+            <h3 class="box-content__title">Images</h3>
+            <div class="box-content-image">
+              <label class="input-content-image" for="input_image">Upload images to library
+                <input class="input_images" type="file" name="" accept="image/*" id="input_image">
+              </label>
+              <label class="auth-form__text text-input-image">10 images uploaded</label>
+            </div>
+            <div class="box-images-up box-content__control">
+              <div class="box-images-up-left">
+                <label class="auth-form__text text-title-image">Image of Services</label>
+                <label class="text-info-image">Uploaded images follow the layout below, from left -> right, top - bottom.</label>
+              </div>
+              <div class="box-images-up-right">
+                <div class="box-content-image">
+                  <label class="input-content-image" for="input_image">Upload images to library</label>
+                  <input class="input_images" type="file" name="" accept="image/*" id="input_image">
+                </div>
+              </div>
+            </div>
+            <div class="gallery-top"><a class="img-link gallery-top__item" href="#">
+                <div class="gallery-top__img">
+                  <div class="bg-content" style="background-color: #e6e6e6"></div>
+                </div>
+              </a><a class="img-link gallery-top__item" href="#">
+                <div class="gallery-top__img">
+                  <div class="bg-content" style="background-color: #e6e6e6"></div>
+                </div>
+              </a><a class="img-link gallery-top__item" href="#">
+                <div class="gallery-top__img">
+                  <div class="bg-content" style="background-color: #e6e6e6"></div>
+                </div>
+              </a><a class="img-link gallery-top__item" href="#">
+                <div class="gallery-top__img">
+                  <div class="bg-content" style="background-color: #e6e6e6"></div>
+                </div>
+              </a><a class="img-link gallery-top__item" href="#">
+                <div class="gallery-top__img">
+                  <div class="bg-content" style="background-color: #e6e6e6"></div>
+                </div>
+              </a><a class="img-link gallery-top__item" href="#">
+                <div class="gallery-top__img">
+                  <div class="bg-content" style="background-color: #e6e6e6"></div>
+                </div>
+              </a><a class="img-link gallery-top__item" href="#">
+                <div class="gallery-top__img">
+                  <div class="bg-content" style="background-color: #e6e6e6"></div>
+                </div>
+              </a></div>
+          </div>
+          <div class="box-content__item box-service-package">
+            <div class="box-content-service-package">
+              <h3 class="box-content__title">Service packages</h3>
+              <div class="add-package">
+                <button class="btn button--primary button--add-package" role="button"><img src="./images/icon-plus.svg" />Add package
+                </button>
+              </div>
+            </div>
+            <div class="box-content__control">
+              <label class="auth-form__text">Service name</label>
+              <input class="box-content__input auth-form__input form-control" type="text">
+            </div>
+            <div class="row">
+              <div class="col-12 col-xl-6 box-content__control">
+                <label class="auth-form__text">Highlights note</label>
+                <input class="box-content__input select-form__input form-control" type="text">
+              </div>
+              <div class="col-12 col-xl-6 box-content__control">
+                <label class="auth-form__text">Prices </label>
+                <div class="row">
+                  <div class="col">
+                    <div class="row">
+                      <div class="col-12 col-sm-6">
+                        <div class="select-list">
+                          <select class="select">
+                            <option value="1">Adult</option>
+                            <option value="1">Adult</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <input class="box-content__input select-form__input form-control" type="text" placeholder="Price value">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="add-prices">
+                      <button class="button-prices"><i></i><i></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-content__control">
+              <label class="auth-form__text">Descriptions</label>
+              <textarea class="box-content__input auth-form__input form-control" type="text" rows="6" value=""></textarea>
+            </div>
+          </div>
+          <div class="box-content__item box-itinerary">
+            <h3 class="box-content__title">Itinerary</h3>
+            <div class="box-content__control">
+              <label class="auth-form__text">Descriptions</label>
+              <textarea class="box-content__input auth-form__input form-control" type="text" rows="6" value=""></textarea>
+            </div>
+          </div>
+          <div class="box-content__item box-experience">
+            <div class="box-content-experience">
+              <h3 class="box-content__title">Experience</h3>
+              <div class="add-package">
+                <button class="btn button--primary button--add-package" role="button"><img src="./images/icon-plus.svg" />Add Experience
+                </button>
+              </div>
+            </div>
+            <div class="box-content__control">
+              <label class="auth-form__text">Descriptions</label>
+              <textarea class="box-content__input auth-form__input form-control" type="text" rows="6" value=""></textarea>
+            </div>
+          </div>
+          <div class="box-content__item box-howtouse">
+            <h3 class="box-content__title">How to Use</h3>
+            <div class="box-content__control">
+              <label class="auth-form__text">Descriptions</label>
+              <textarea class="box-content__input auth-form__input form-control" type="text" rows="6" value=""></textarea>
+            </div>
+            <div class="box-content__control">
+              <label class="auth-form__text">Address</label>
+              <input class="box-content__input auth-form__input form-control" type="text" placeholder="URL: Map">
+            </div>
+          </div>
+          <div class="box-content__item box-terms">
+            <h3 class="box-content__title">Terms & Conditions</h3>
+            <div class="box-content__control radio-check">
+              <input class="input-radio-check" type="radio" id="test2" name="radio-group" checked>
+              <label class="radio-form__text" for="test2">Refund Service</label>
+              <input class="input-radio-check" type="radio" id="test3" name="radio-group">
+              <label class="radio-form__text" for="test3">Don't refund</label>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="row">
+                  <div class="col-12 col-sm-4 box-content__control">
+                    <label class="auth-form__text">Type</label>
+                    <div class="select-list">
+                      <select class="select">
+                        <option value="1">Before date used</option>
+                        <option value="1">Before date used</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-4 box-content__control">
+                    <label class="auth-form__text">Number date used</label>
+                    <input class="box-content__input select-form__input form-control" type="text" placeholder="Price">
+                  </div>
+                  <div class="col-12 col-sm-4 box-content__control">
+                    <label class="auth-form__text">Value</label>
+                    <input class="box-content__input select-form__input form-control" type="text" value="50%">
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto box-content__control">
+                <label class="auth-form__text"> </label>
+                <div class="add-terms">
+                  <button class="button-terms"><i></i><i></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-link">
+            <div class="link-preview">
+              <button class="btn btn-info btn-lg link-preview-text" type="button" data-toggle="modal" data-target="#myModal">Preview</button>
+            </div>
+            <div class="link-save">
+              <button class="link-save-text" type="button" data-toggle="" data-target="">Save</button>
+            </div><!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="h2-preview">Preview</h2>
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="gallery-top"><a class="img-link gallery-top__item" href="./images/gallery2.jpg">
+                        <div class="gallery-top__img">
+                          <div class="bg-content" style="background-image: url('./images/gallery2.jpg')"></div>
+                        </div>
+                      </a><a class="img-link gallery-top__item" href="./images/gallery3.jpg">
+                        <div class="gallery-top__img">
+                          <div class="bg-content" style="background-image: url('./images/gallery3.jpg')"></div>
+                        </div>
+                      </a><a class="img-link gallery-top__item" href="./images/gallery4.jpg">
+                        <div class="gallery-top__img">
+                          <div class="bg-content" style="background-image: url('./images/gallery4.jpg')"></div>
+                        </div>
+                      </a><a class="img-link gallery-top__item" href="./images/gallery5.jpg">
+                        <div class="gallery-top__img">
+                          <div class="bg-content" style="background-image: url('./images/gallery5.jpg')"></div>
+                        </div>
+                      </a><a class="img-link gallery-top__item" href="./images/gallery6.jpg">
+                        <div class="gallery-top__img">
+                          <div class="bg-content" style="background-image: url('./images/gallery6.jpg')"></div>
+                        </div>
+                      </a><a class="img-link gallery-top__item" href="./images/gallery7.jpg">
+                        <div class="gallery-top__img">
+                          <div class="bg-content" style="background-image: url('./images/gallery7.jpg')"></div>
+                        </div>
+                      </a><a class="img-link gallery-top__item" href="./images/gallery8.jpg">
+                        <div class="gallery-top__img">
+                          <div class="bg-content" style="background-image: url('./images/gallery8.jpg')"></div>
+                        </div>
+                      </a></div>
+                    <div class="box-wine">
+                      <h2 class="product-detail__title">Wine & Cheese Tasting in Santorini</h2>
+                      <div class="product-detail__local">Santorini, Greece</div>
+                      <div class="product-detail__meta meta">
+                        <div class="meta__item meta__time"><img src="./images/icon-clock.svg" alt="clock"><span>1 day</span></div>
+                        <div class="meta__item meta__ticket"><img src="./images/icon-ticket-e.svg" alt="ticket"><span>E - ticket</span></div>
+                        <div class="meta__item meta__language"><img src="./images/icon-global.svg" alt="global"><span>Guide language </span></div>
+                      </div>
+                      <hr class="sep">
+                      <h3 class="product-detail__heading">Information & Package Options</h3>
+                      <ul class="list-info">
+                        <li class="list-info__item">Take unlimited rides on most Korail trains for 3 or 5 consecutive days or any flexible 2 and 4 days</li>
+                        <li class="list-info__item">Discover South Korea by traveling on over 80 routes and 600 stations with the Korea Rail Pass</li>
+                        <li class="list-info__item">Enjoy a discount that is only available for foreign nationals</li>
+                        <li class="list-info__item">Take advantage of additional discounts on accommodation and tourist attractions when you use your KR PASS</li>
+                        <li class="list-info__item">Save even more on child or group Korail Passes </li>
+                      </ul>
+                      <div class="box-select">
+                        <div class="box-select__top">
+                          <div class="info-left">
+                            <h5 class="heading">Flexible Hours Pass (Saver Pass)</h5><span>2 - 4 hours</span><span class="dot">•</span><span>2 - 5 peoples</span><span class="dot">•</span><span>use common photographer</span>
+                          </div>
+                          <div class="info-right">
+                            <div class="price">$471</div>
+                            <button class="btn button--select button--primary" role="button">Select
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <h3 class="product-detail__heading pt-5"> Itinerary</h3>
+                      <h4 class="product-detail__subheading">1.2 Discover Santorini culture</h4>
+                      <ul class="list-info">
+                        <li class="list-info__item">7:20am depart from Hongik Univ. Station Exit 4</li>
+                        <li class="list-info__item">8:00am depart from Myeongdong Station Exit 2</li>
+                        <li class="list-info__item">8:10am depart from Dongdaemun History & Culture Park Station Exit 10</li>
+                        <li class="list-info__item">9:00am-9:30am arrive at 1st spot</li>
+                        <li class="list-info__item">11:00am leave for 2nd spot</li>
+                        <li class="list-info__item">11:30am-12:00pm arrive at 2nd spot</li>
+                      </ul>
+                      <h4 class="product-detail__subheading mt-3">1.2 Santorini BBQ Picnic</h4>
+                      <ul class="list-info mb-5">
+                        <li class="list-info__item">2:20pm leave for 3rd spot</li>
+                        <li class="list-info__item">3:00pm-3:30pm arrive at 3rd spot</li>
+                        <li class="list-info__item">5:00pm leave for Seoul</li>
+                        <li class="list-info__item">5:30pm-6:30pm arrive at Dongdaemun History & Culture Park Station</li>
+                        <li class="list-info__item">5:30pm-6:30pm arrive at Myeongdong Station</li>
+                        <li class="list-info__item">5:30pm-6:30pm arrive at Hongik Univ. Station</li>
+                      </ul>
+                      <h3 class="product-detail__heading">Experience to Customers</h3>
+                      <div class="product-detail__text">
+                        <p>Book your daytime or sunset tour and start your experience with a hotel pickup. Your destinations depend on your chosen tour.Daytime Tour (available April 1 to November 15):Travel by air-conditioned minibus to the first of the three traditional wineries and, on route, learn from your guide about wine production on Santorini and the varietals that you may try during the day.Producing some of the most distinctive wine in the Mediterranean, the island owes its success largely to aspa, a unique blend of volcanic soil that lends its wines a rich minerality and light flavor. Grapes are grown in baskets close to the ground, allowing much-needed moisture from the island’s minimal rainfall to be retained effectively.At each winery, enjoy a cellar tour with your guide to see how the winemaking process unfolds, from harvesting to maturing the wine.</p><img src="./images/detail1.jpg" alt="detail">
+                        <p> <i>Grape wine is processed in Santorini</i></p><img src="./images/detail2.jpg" alt="detail">
+                        <p class="mb-3"> <i>Cake made from barley and cheese</i></p>
+                        <P>Plus, walk around a volcanic vineyard to see the grapes first-hand, and sample glasses of Santorini wine galore – up to 12 glasses in total.Try popular varietals such as assyrtiko and vinsanto, and enjoy local delicacies such as cheese, bread and olives. Sunset Tour (available May 15 to September 30): After visiting Estate Argyros or Boutari Winery, continue to the renowned Venetsanos Winery in time for Santorini’s legendary sunset. Head to the open-air terrace and enjoy a plate of local cheeses to complement your wines against a stunning backdrop of the caldera and Aegean, just as the sun sets over the sea. Plus, enjoy a delicious extra surprise here before finishing your trip with a hotel drop-off. *** Please note that sunset tour option includes visits at two wineries and tastings of 9 different samples of wine.</P>
+                      </div>
+                      <h3 class="product-detail__heading mt-5">How to Use</h3>
+                      <ul class="list-info mb-1">
+                        <li class="list-info__item">2:20pm leave for 3rd spot</li>
+                        <li class="list-info__item">3:00pm-3:30pm arrive at 3rd spot</li>
+                        <li class="list-info__item">5:00pm leave for Seoul</li>
+                        <li class="list-info__item">5:30pm-6:30pm arrive at Dongdaemun History & Culture Park Station</li>
+                        <li class="list-info__item">5:30pm-6:30pm arrive at Myeongdong Station</li>
+                        <li class="list-info__item">5:30pm-6:30pm arrive at Hongik Univ. Station</li>
+                      </ul>
+                      <h4 class="product-detail__subheading mt-3">Opening Hours</h4>
+                      <ul class="list-info mb-1">
+                        <li class="list-info__item">2:20pm leave for 3rd spot</li>
+                        <li class="list-info__item">3:00pm-3:30pm arrive at 3rd spot</li>
+                      </ul>
+                      <h4 class="product-detail__subheading mt-3">Address</h4>
+                      <p class="mb-2">18 Marina Gardens Drive, Singapore 018953</p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.5204386609175!2d105.795294114455!3d21.051866092366048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab388fcf4b29%3A0x8252add43a520ff2!2zTmd1eeG7hW4gVsSDbiBIdXnDqm4sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1556381984792!5m2!1svi!2s" width="100%" height="450" frameborder="0" style="border:0; max-width: 100%" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sumoselect.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

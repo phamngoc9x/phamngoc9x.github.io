@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cus cart</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Cus cart" />
+    <meta name="keywords" content="Cus cart" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header header--default">
+      <nav class="navbar navbar-expand-lg header__content" id="navbar" data-spy="affix">
+        <div class="container">
+          <div class="col-md-12 col-lg-6 header-mobile d-flex p-0"><a class="navbar-brand header__logo" href="#"> <img src="./images/logo.svg" alt="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuToggle" aria-controls="menuToggle" aria-expanded="false" aria-label="Toggle navigation"><span class="nav-icon"></span><span class="nav-icon"></span><span class="nav-icon"></span></button>
+            <div class="header__search search d-none d-lg-flex">
+              <input class="form-control search__input" type="text" placeholder="Santorini" />
+              <button class="btn search__btn button--search" role="button"><img src="./images/icon-search-header.svg" />
+              </button>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 p-0">
+            <div class="collapse navbar-collapse justify-content-end" id="menuToggle">
+              <ul class="social social--center">
+                <li><a class="social__link" href="#"><span class="icon icon--fb"></span></a></li>
+                <li><a class="social__link" href="#"><span class="icon icon--twitter"></span></a></li>
+                <li><a class="social__link" href="#"><span class="icon icon--instagram"></span></a></li>
+              </ul>
+              <ul class="navbar-nav text-lg-right">
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">En</a>
+                  <div class="dropdown-menu"><a class="dropdown-item" href="#">Fr</a><a class="dropdown-item" href="#">Ja</a><a class="dropdown-item" href="#">Vi</a></div>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">USD</a>
+                  <div class="dropdown-menu"><a class="dropdown-item" href="#">USD</a><a class="dropdown-item" href="#">VND</a></div>
+                </li>
+                <li class="nav-item"><a class="nav-link nav__signin" href="#" data-toggle="modal" data-target=".modal--signin">
+                    Sign in</a></li>
+                <li class="nav-item"><a class="nav-link nav__signup" href="#">Sign up</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content-wrapper cart-page">
+      <div class="container auth-form">
+        <h2 class="cart-page__title">My Cart <span class="cart-page__count">( 3 Products)</span></h2>
+        <div class="cart-page__inner">
+          <div class="cart-page__left cart-box">
+            <div class="cart-box__top d-flex justify-content-between">
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" id="customCheck" type="checkbox" name="example1">
+                <label class="custom-control-label" for="customCheck">Select All Products</label>
+              </div>
+              <button class="cart-box__clear"><span class="icon icon--delete"></span>Clear All</button>
+            </div>
+            <table class="table cart-table">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" id="customCheck1" type="checkbox" name="example2">
+                      <label class="custom-control-label" for="customCheck1"></label>
+                    </div>
+                  </th>
+                  <th colspan="5">
+                    <div class="info-cart">
+                      <div class="info-cart__img"><img src="./images/cart-image.jpg" alt="cart image"></div>
+                      <div class="info-cart__text">
+                        <div class="info-cart__title">Hong Kong Airport Express Train Tickets (QR Code Direct )</div>
+                        <div class="info-cart__package">2 Package Order</div>
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" id="customCheck2" type="checkbox" name="example3">
+                      <label class="custom-control-label" for="customCheck2"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cart-table__info">
+                      <h4>Flexible Hours Pass (Saver Pass)</h4><span>25/05/2019, 13:00 - 20:00</span><a class="button--edit-table" href="#" role="button">Edit</a>
+                    </div>
+                  </td>
+                  <td>2 Guest</td>
+                  <td>
+                    <div class="cart-table__quantity">
+                      <button> <span class="icon icon--minus"></span></button><span class="quantity">1</span>
+                      <button> <span class="icon icon--plus2"></span></button>
+                    </div>
+                  </td>
+                  <td> <strong>$ 1,200</strong></td>
+                  <td>
+                    <button class="btn-delete"><span class="icon icon--delete"></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" id="customCheck" type="checkbox" name="example2">
+                      <label class="custom-control-label" for="customCheck"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cart-table__info">
+                      <h4>Flexible Hours Pass (Saver Pass)</h4><span>25/05/2019, 13:00 - 20:00</span><a class="button--edit-table" href="#" role="button">Edit</a>
+                    </div>
+                  </td>
+                  <td>2 Guest</td>
+                  <td>
+                    <div class="cart-table__quantity">
+                      <button> <span class="icon icon--minus"></span></button><span class="quantity">1</span>
+                      <button> <span class="icon icon--plus2"></span></button>
+                    </div>
+                  </td>
+                  <td> <strong>$ 1,200</strong></td>
+                  <td>
+                    <button class="btn-delete"><span class="icon icon--delete"></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td> </td>
+                  <td colspan="5">
+                    <div class="cart-table__update update d-flex">
+                      <div class="update__select">
+                        <select>
+                          <option value="1">10 August 2019</option>
+                          <option value="1">11 August 2019</option>
+                        </select>
+                      </div>
+                      <div class="update__select">
+                        <select>
+                          <option value="1">13:00 - 22:00</option>
+                          <option value="1">14:00 - 23:00</option>
+                        </select>
+                      </div>
+                      <div class="update__select">
+                        <select>
+                          <option value="1">2 Guest</option>
+                          <option value="1">3 Guest</option>
+                        </select>
+                      </div>
+                      <button class="update__btn">Update</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table cart-table">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" id="customCheck1" type="checkbox" name="example2">
+                      <label class="custom-control-label" for="customCheck1"></label>
+                    </div>
+                  </th>
+                  <th colspan="5">
+                    <div class="info-cart">
+                      <div class="info-cart__img"><img src="./images/cart-image.jpg" alt="cart image"></div>
+                      <div class="info-cart__text">
+                        <div class="info-cart__title">Hong Kong Airport Express Train Tickets (QR Code Direct )</div>
+                        <div class="info-cart__package">2 Package Order</div>
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" id="customCheck2" type="checkbox" name="example3">
+                      <label class="custom-control-label" for="customCheck2"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cart-table__info">
+                      <h4>Flexible Hours Pass (Saver Pass)</h4><span>25/05/2019, 13:00 - 20:00</span><a class="button--edit-table" href="#" role="button">Edit</a>
+                    </div>
+                  </td>
+                  <td>2 Guest</td>
+                  <td>
+                    <div class="cart-table__quantity">
+                      <button> <span class="icon icon--minus"></span></button><span class="quantity">1</span>
+                      <button> <span class="icon icon--plus2"></span></button>
+                    </div>
+                  </td>
+                  <td> <strong>$ 1,200</strong></td>
+                  <td>
+                    <button class="btn-delete"><span class="icon icon--delete"></span></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="cart-page__right payment-box">
+            <div class="payment-box__title">Order Infomation</div>
+            <div class="box-price">
+              <div class="box-price__label">Products Quantity</div>
+              <div class="box-price__value">2</div>
+            </div>
+            <div class="box-price">
+              <div class="box-price__label">Temporarily calculated</div>
+              <div class="box-price__value">$ 1,000</div>
+            </div>
+            <div class="payment-box__coupon coupon">
+              <div class="auth-form__control coupon__left">
+                <label class="auth-form__text">Promotion Code</label>
+                <input class="auth-form__input form-control" type="text">
+              </div>
+              <div class="auth-form__control coupon__right">
+                <button class="btn button--coupon button--primary" role="button">Apply
+                </button>
+              </div>
+            </div>
+            <div class="box-price">
+              <div class="box-price__label">Total<span class="sub-total">VAT included (if applicable)</span></div>
+              <div class="box-price__value total">$ 1,640</div>
+            </div>
+            <div class="auth-form__control">
+              <button class="btn button--payment btn-block button--primary" role="button">Payment
+              </button>
+            </div>
+            <div class="text-center"><span class="text-end">Completed service added 120 DPs</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sumoselect.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <footer class="footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3 col-lg-4 footer__info"><a class="footer__logo" href="#"><img src="./images/logo.svg" alt="logo footer" /></a>
+            <p class="footer__info">© 2019 DLACA Travel Technology Limited. </p>
+            <p class="footer__info">All Rights Reserved.</p>
+            <p class="footer__info">HK Travel Agent Licence: 354005.</p>
+            <p class="footer__info">SG Travel Agent Licence: 02851.</p>
+            <p class="footer__info">TW Travel Agent License: 甲 03950.</p>
+          </div>
+          <div class="col-sm-12 col-md-9 col-lg-8">
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="footer__title">ABOUT KLOOK</h3>
+                <ul class="list-link">
+                  <li class="list-link__item"><a href="#">About Us</a></li>
+                  <li class="list-link__item"><a href="#">Press Releases</a></li>
+                  <li class="list-link__item"><a href="#">Dlica Blog</a></li>
+                  <li class="list-link__item"><a href="#">Partner With Us</a></li>
+                  <li class="list-link__item"><a href="#">Careers</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h3 class="footer__title">PARTNERSHIPS</h3>
+                <ul class="list-link">
+                  <li class="list-link__item"><a href="#">Partner Login</a></li>
+                  <li class="list-link__item"><a href="#">Affiliate Partnership</a></li>
+                  <li class="list-link__item"><a href="#">Influencer Program</a></li>
+                  <li class="list-link__item"><a href="#">Agent Marketplace</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h3 class="footer__title">TERMS OF USE</h3>
+                <ul class="list-link">
+                  <li class="list-link__item"><a href="#">Terms And Conditions</a></li>
+                  <li class="list-link__item"><a href="#">Privacy Policy</a></li>
+                  <li class="list-link__item"><a href="#">Cookie Policy</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3"><a class="footer__btn btn-block button--outline" href="#" role="button">Ask Dlaca</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

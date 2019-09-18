@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Products</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Products" />
+    <meta name="keywords" content="Products" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header header--default header--list">
+      <nav class="navbar navbar-expand-lg header__content" id="navbar" data-spy="affix">
+        <div class="container-fluid justify-content-between">
+          <div class="col-md-12 col-lg-2 header-mobile d-flex p-0"><a class="navbar-brand header__logo" href="#"> <img src="./images/logo-scm.svg" alt="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuToggle" aria-controls="menuToggle" aria-expanded="false" aria-label="Toggle navigation"><span class="nav-icon"></span><span class="nav-icon"></span><span class="nav-icon"></span></button>
+          </div>
+          <div class="col-md-12 col-lg-8 p-0">
+            <div class="collapse navbar-collapse justify-content-center menu-center" id="menuToggle">
+              <ul class="navbar-nav text-lg-right">
+                <li class="nav-item"><a class="nav-link" href="#"><span class="icon icon--cart"> </span>List Order</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span class="icon icon--chat"> </span>Feedback</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"><span class="icon icon--bag"></span>Products</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"><span class="icon icon--tag"></span>Promotions</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"><span class="icon icon--report"></span>Reports</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-2 p-0 admin-menu">
+            <ul class="navbar-nav justify-content-lg-end right-menu">
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle dropdown__notify" href="#" data-toggle="dropdown"><span class="icon icon--ring"></span></a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="#">Fr</a><a class="dropdown-item" href="#">Ja</a><a class="dropdown-item" href="#">Vi</a></div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle dropdown__avatar" href="#" data-toggle="dropdown">
+                  <div class="dropdown__img"><img src="./images/avartar-review.jpg" alt="avartar" /></div>
+                </a>
+                <div class="dropdown-menu"><a class="dropdown-item dropdown__info" href="#">NguyenLee.HNtravel<br /><img src="./images/icon-diamond.svg" alt="diamond" /><span>Diamond Level</span></a><a class="dropdown-item" href="#">Business Information</a><a class="dropdown-item" href="#">Payment Method</a><a class="dropdown-item" href="#">Account Informations</a><a class="dropdown-item" href="#">Change Password</a><a class="dropdown-item dropdown__logout" href="#">Logout</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content-wrapper list-page">
+      <div class="box-header d-flex justify-content-between align-items-center">
+        <div class="page-title">Products</div>
+        <div class="page-option d-flex">
+          <div class="add-new">
+            <button class="btn button--primary button--add-new" role="button"><img src="./images/icon-plus.svg" />Add new
+            </button>
+          </div>
+          <div class="search-box">
+            <div class="header__search search d-lg-flex">
+              <button class="btn search__btn button--search" role="button"><img src="./images/icon-search-header.svg" />
+              </button>
+              <input class="form-control search__input" type="text" placeholder="Search...">
+            </div>
+          </div>
+          <div class="select-box">
+            <div class="select-list">
+              <select class="select">
+                <option value="1">Select stattus</option>
+                <option value="1">Activeties</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box-content">
+        <div class="row">
+          <div class="box-table table-responsive col">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Stattus</th>
+                  <th>Product ID</th>
+                  <th>Product Name</th>
+                  <th>Type</th>
+                  <th>Quantity</th>
+                  <th>Date Created</th>
+                  <th>Price (USD)</th>
+                  <th> </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td class="status color-passed">Passed</td>
+                  <td>PR 1200A</td>
+                  <td class="table-list-title">
+                    <p>Hong Kong Airport Express Train Tickets (QR Code Direct ...</p>
+                  </td>
+                  <td>Tour</td>
+                  <td>02</td>
+                  <td>25/05/2019</td>
+                  <td> <strong>1,200</strong></td>
+                  <td class="text-right">
+                    <button class="button--transparent add"><span class="icon icon--edit"></span></button>
+                    <button class="button--transparent"><span class="icon icon--del"></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td class="status color-yellow">Waiting</td>
+                  <td>PR 1200A</td>
+                  <td class="table-list-title">
+                    <p>Hong Kong Airport Express Train Tickets (QR Code Direct ...</p>
+                  </td>
+                  <td>Tour</td>
+                  <td>02</td>
+                  <td>25/05/2019</td>
+                  <td> <strong>1,200</strong></td>
+                  <td class="text-right">
+                    <button class="button--transparent add"><span class="icon icon--edit"></span></button>
+                    <button class="button--transparent"><span class="icon icon--del"></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td class="status color-yellow">Waiting</td>
+                  <td>PR 1200A</td>
+                  <td class="table-list-title">
+                    <p>Hong Kong Airport Express Train Tickets (QR Code Direct ...</p>
+                  </td>
+                  <td>Tour</td>
+                  <td>02</td>
+                  <td>25/05/2019</td>
+                  <td> <strong>1,200</strong></td>
+                  <td class="text-right">
+                    <button class="button--transparent add"><span class="icon icon--edit"></span></button>
+                    <button class="button--transparent"><span class="icon icon--del"></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td class="status color-yellow">Waiting</td>
+                  <td>PR 1200A</td>
+                  <td class="table-list-title">
+                    <p>Hong Kong Airport Express Train Tickets (QR Code Direct ...</p>
+                  </td>
+                  <td>Tour</td>
+                  <td>02</td>
+                  <td>25/05/2019</td>
+                  <td> <strong>1,200</strong></td>
+                  <td class="text-right">
+                    <button class="button--transparent add"><span class="icon icon--edit"></span></button>
+                    <button class="button--transparent"><span class="icon icon--del"></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td class="status color-yellow">Waiting</td>
+                  <td>PR 1200A</td>
+                  <td class="table-list-title">
+                    <p>Hong Kong Airport Express Train Tickets (QR Code Direct ...</p>
+                  </td>
+                  <td>Tour</td>
+                  <td>02</td>
+                  <td>25/05/2019</td>
+                  <td> <strong>1,200</strong></td>
+                  <td class="text-right">
+                    <button class="button--transparent add"><span class="icon icon--edit"></span></button>
+                    <button class="button--transparent"><span class="icon icon--del"></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td class="status color-green-light">Confirmed</td>
+                  <td>PR 1200A</td>
+                  <td class="table-list-title">
+                    <p>Hong Kong Airport Express Train Tickets (QR Code Direct ...</p>
+                  </td>
+                  <td>Tour</td>
+                  <td>02</td>
+                  <td>25/05/2019</td>
+                  <td> <strong>1,200</strong></td>
+                  <td class="text-right">
+                    <button class="button--transparent add"><span class="icon icon--edit"></span></button>
+                    <button class="button--transparent"><span class="icon icon--del"></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td class="status color-green-light">Confirmed</td>
+                  <td>PR 1200A</td>
+                  <td class="table-list-title">
+                    <p>Hong Kong Airport Express Train Tickets (QR Code Direct ...</p>
+                  </td>
+                  <td>Tour</td>
+                  <td>02</td>
+                  <td>25/05/2019</td>
+                  <td> <strong>1,200</strong></td>
+                  <td class="text-right">
+                    <button class="button--transparent add"><span class="icon icon--edit"></span></button>
+                    <button class="button--transparent"><span class="icon icon--del"></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td class="status color-green-light">Confirmed</td>
+                  <td>PR 1200A</td>
+                  <td class="table-list-title">
+                    <p>Hong Kong Airport Express Train Tickets (QR Code Direct ...</p>
+                  </td>
+                  <td>Tour</td>
+                  <td>02</td>
+                  <td>25/05/2019</td>
+                  <td> <strong>1,200</strong></td>
+                  <td class="text-right">
+                    <button class="button--transparent add"><span class="icon icon--edit"></span></button>
+                    <button class="button--transparent"><span class="icon icon--del"></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td class="status color-green-light">Confirmed</td>
+                  <td>PR 1200A</td>
+                  <td class="table-list-title">
+                    <p>Hong Kong Airport Express Train Tickets (QR Code Direct ...</p>
+                  </td>
+                  <td>Tour</td>
+                  <td>02</td>
+                  <td>25/05/2019</td>
+                  <td> <strong>1,200</strong></td>
+                  <td class="text-right">
+                    <button class="button--transparent add"><span class="icon icon--edit"></span></button>
+                    <button class="button--transparent"><span class="icon icon--del"></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td class="status color-green-light">Confirmed</td>
+                  <td>PR 1200A</td>
+                  <td class="table-list-title">
+                    <p>Hong Kong Airport Express Train Tickets (QR Code Direct ...</p>
+                  </td>
+                  <td>Tour</td>
+                  <td>02</td>
+                  <td>25/05/2019</td>
+                  <td> <strong>1,200</strong></td>
+                  <td class="text-right">
+                    <button class="button--transparent add"><span class="icon icon--edit"></span></button>
+                    <button class="button--transparent"><span class="icon icon--del"></span></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-right col-3 detail-confirm info">
+            <h3 class="col-title">Hong Kong Airport Express Train Tickets (QR Code Direct Entry).</h3>
+            <div class="tip-list">
+              <ul class="tip-list__content">
+                <li class="tip-list__item tip"><span class="tip__title">Order ID</span><span class="tip__detail">PR 1200A</span></li>
+                <li class="tip-list__item tip"><span class="tip__title">Service Packages</span><span class="tip__detail">Tour 2 days 3 nights</span></li>
+                <li class="tip-list__item tip"><span class="tip__title">Quantily Packages</span><span class="tip__detail">2 guests</span></li>
+                <li class="tip-list__item tip"><span class="tip__title">Date order</span><span class="tip__detail">25/05/2019</span></li>
+                <li class="tip-list__item tip"><span class="tip__title">Date use</span><span class="tip__detail">25/06/2019</span></li>
+              </ul>
+            </div>
+            <div class="tip-list">
+              <h4 class="tip-list__title">Customer informations</h4>
+              <ul class="tip-list__content">
+                <li class="tip-list__item tip"><span class="tip__title">Name</span><span class="tip__detail">Vu Thanh Tung</span></li>
+                <li class="tip-list__item tip"><span class="tip__title">Address</span><span class="tip__detail">Ngo 34, Nguyen van Huyen, Cau Giay, Ha Noi</span></li>
+                <li class="tip-list__item tip"><span class="tip__title">Phone number</span><span class="tip__detail">0978245216</span></li>
+                <li class="tip-list__item tip"><span class="tip__title">Email</span><span class="tip__detail">tungtv@dlaca.com</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-right col-3 detail-waiting info">
+            <div class="col-right-inner">
+              <h3 class="col-title">Hong Kong Airport Express Train Tickets (QR Code Direct Entry).</h3>
+              <div class="tip-list">
+                <ul class="tip-list__content">
+                  <li class="tip-list__item tip"><span class="tip__title">Order ID</span><span class="tip__detail">PR 1200A</span></li>
+                  <li class="tip-list__item tip"><span class="tip__title">Service Packages</span><span class="tip__detail">Tour 2 days 3 nights</span></li>
+                  <li class="tip-list__item tip"><span class="tip__title">Quantily Packages</span><span class="tip__detail">2 guests</span></li>
+                  <li class="tip-list__item tip"><span class="tip__title">Date order</span><span class="tip__detail">25/05/2019</span></li>
+                  <li class="tip-list__item tip"><span class="tip__title">Date use</span><span class="tip__detail">25/06/2019</span></li>
+                </ul>
+              </div>
+              <div class="button-content d-flex">
+                <div class="btn-item">
+                  <button class="btn button--auth button--gray btn-block button--primary" role="button">Refuse
+                  </button>
+                </div>
+                <div class="btn-item">
+                  <button class="btn button--auth btn-block button--primary" role="button">Confirm
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled"><a class="page-link" href="javascript:void(0);"> <span class="icon icon--left"></span></a></li>
+          <li class="page-item"><a class="page-link active" href="javascript:void(0);">1</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+          <li class="page-item"><a class="page-link dots" href="javascript:void(0);">...</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">31</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);"> <span class="icon icon--right"></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sumoselect.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

@@ -13,7 +13,7 @@
   </head>
   <body>
     <header class="header header--default">
-      <nav class="navbar navbar-expand-lg fixed-top header__content" id="navbar" data-spy="affix">
+      <nav class="navbar navbar-expand-lg header__content" id="navbar" data-spy="affix">
         <div class="container">
           <div class="col-md-12 col-lg-6 header-mobile d-flex p-0"><a class="navbar-brand header__logo" href="#"> <img src="./images/logo.svg" alt="logo" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuToggle" aria-controls="menuToggle" aria-expanded="false" aria-label="Toggle navigation"><span class="nav-icon"></span><span class="nav-icon"></span><span class="nav-icon"></span></button>
@@ -37,7 +37,8 @@
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">USD</a>
                   <div class="dropdown-menu"><a class="dropdown-item" href="#">USD</a><a class="dropdown-item" href="#">VND</a></div>
                 </li>
-                <li class="nav-item"><a class="nav-link nav__signin" href="#">Sign in</a></li>
+                <li class="nav-item"><a class="nav-link nav__signin" href="#" data-toggle="modal" data-target=".modal--signin">
+                    Sign in</a></li>
                 <li class="nav-item"><a class="nav-link nav__signup" href="#">Sign up</a></li>
               </ul>
             </div>
@@ -496,7 +497,7 @@
         <div class="container">
           <div class="subscribe__title">Travel discounts up to 60% off sent straight to your inbox</div>
           <div class="subscribe__form">
-            <input class="form-control subscribe__input" type="text" placeholder="Enter your email address ...">
+            <input class="form-control subscribe__input" type="text" placeholder="Enter your email address ..." />
             <button class="btn subscribe__btn button--primary" role="button">Subscrible
             </button>
           </div>
@@ -506,7 +507,7 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-3 col-lg-4 footer__info"><a class="footer__logo" href="#"><img src="./images/logo.svg" alt="logo footer"></a>
+          <div class="col-sm-12 col-md-3 col-lg-4 footer__info"><a class="footer__logo" href="#"><img src="./images/logo.svg" alt="logo footer" /></a>
             <p class="footer__info">© 2019 DLACA Travel Technology Limited. </p>
             <p class="footer__info">All Rights Reserved.</p>
             <p class="footer__info">HK Travel Agent Licence: 354005.</p>

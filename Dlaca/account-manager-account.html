@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Account Manager Account</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Account Manager Account" />
+    <meta name="keywords" content="Account Manager Account" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header header--default header--list">
+      <nav class="navbar navbar-expand-lg header__content" id="navbar" data-spy="affix">
+        <div class="container-fluid justify-content-between">
+          <div class="col-md-12 col-lg-2 header-mobile d-flex p-0"><a class="navbar-brand header__logo" href="#"> <img src="./images/logo-scm.svg" alt="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuToggle" aria-controls="menuToggle" aria-expanded="false" aria-label="Toggle navigation"><span class="nav-icon"></span><span class="nav-icon"></span><span class="nav-icon"></span></button>
+          </div>
+          <div class="col-md-12 col-lg-8 p-0">
+            <div class="collapse navbar-collapse justify-content-center menu-center" id="menuToggle">
+              <ul class="navbar-nav text-lg-right">
+                <li class="nav-item"><a class="nav-link" href="#"><span class="icon icon--cart"> </span>List Order</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span class="icon icon--chat"> </span>Feedback</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"><span class="icon icon--bag"></span>Products</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"><span class="icon icon--tag"></span>Promotions</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"><span class="icon icon--report"></span>Reports</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-2 p-0 admin-menu">
+            <ul class="navbar-nav justify-content-lg-end right-menu">
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle dropdown__notify" href="#" data-toggle="dropdown"><span class="icon icon--ring"></span></a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="#">Fr</a><a class="dropdown-item" href="#">Ja</a><a class="dropdown-item" href="#">Vi</a></div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle dropdown__avatar" href="#" data-toggle="dropdown">
+                  <div class="dropdown__img"><img src="./images/avartar-review.jpg" alt="avartar" /></div>
+                </a>
+                <div class="dropdown-menu"><a class="dropdown-item dropdown__info" href="#">NguyenLee.HNtravel<br /><img src="./images/icon-diamond.svg" alt="diamond" /><span>Diamond Level</span></a><a class="dropdown-item" href="#">Business Information</a><a class="dropdown-item" href="#">Payment Method</a><a class="dropdown-item" href="#">Account Informations</a><a class="dropdown-item" href="#">Change Password</a><a class="dropdown-item dropdown__logout" href="#">Logout</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content-wrapper account account-manager-account">
+      <div class="content-account-left">
+        <div class="box-account-top">
+          <div class="box-image-account"><img class="image-account-top" src="./images/gallery4.jpg" alt=""><img class="image-icon-diamond" src="./images/icon-diamond.svg" alt=""></div><span class="text-name-account">NguyenLee.HNtravel</span>
+        </div>
+        <div class="box-account-bottom">
+          <ul class="list-link">
+            <li class="link-user active"><a class="link-user-detail" href="#"><span class="icon icon--business"></span> Business Information</a></li>
+            <li class="link-user"><a class="link-user-detail" href="#"><span class="icon icon--payment"></span> Payment Method</a></li>
+            <li class="link-user"><a class="link-user-detail" href="#"><span class="icon icon--user"></span> Account Informations</a></li>
+            <li class="link-user"><a class="link-user-detail" href="#"><span class="icon icon--key"></span> Change Password</a></li>
+          </ul>
+        </div>
+        <div class="box-account-logout"><a class="link-logout" href="#">Logout</a></div>
+      </div>
+      <div class="content-account-left-mobile">
+        <ul class="list-link">
+          <li class="img-user-mobile"><img class="image-user-mobile" src="./images/gallery4.jpg" alt=""></li>
+          <li class="link-user"><a class="link-user-mobile" href="#"><span class="icon icon--business"></span></a></li>
+          <li class="link-user"><a class="link-user-mobile" href="#"><span class="icon icon--payment"></span></a></li>
+          <li class="link-user"><a class="link-user-mobile" href="#"><span class="icon icon--user"></span></a></li>
+          <li class="link-user"><a class="link-user-mobile" href="#"><span class="icon icon--key"></span></a></li>
+          <li class="link-user"><a class="link-user-mobile" href="#"><span class="icon icon--del"></span></a></li>
+        </ul>
+      </div>
+      <div class="content-account-change-avatar">
+        <div class="box-avatar">
+          <div class="box-content-image">
+            <label class="input-content-image" for="input_image">Change Avatar
+              <input class="input_images" type="file" name="" accept="image/*" id="input_image">
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="content-account-update">
+        <div class="box-content__control">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <label class="auth-form__text"> Account name</label>
+              <input class="box-content__input auth-form__input form-control" type="text" value=" NguyenLee.HNtravel">
+            </div>
+            <div class="col-12 col-lg-6">
+              <label class="auth-form__text">Email</label>
+              <input class="box-content__input auth-form__input form-control" type="text" value=" contact@hanotravel.com   ">
+            </div>
+            <div class="col-12 col-lg-6">
+              <label class="auth-form__text">Phone</label>
+              <input class="box-content__input auth-form__input form-control" type="text" value="  1900888029">
+            </div>
+          </div>
+        </div>
+        <div class="box-content__control">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-6">
+              <div class="link-update">
+                <button class="link-update-text" type="button" data-toggle="" data-target="">Update</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sumoselect.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
