@@ -4,6 +4,6 @@
 
 ### [Dlaca](https://phamngoc9x.github.io/Dlaca/links.html)
 
-### [Feedy](https://phamngoc9x.github.io/feedy/index.html)
+### [Feedy](https://phamngoc9x.github.io/feedy/links.html)
 
 ## REACT
