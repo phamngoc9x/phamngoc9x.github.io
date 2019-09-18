@@ -1,9 +1,12 @@
 ## HTML CSS JS
 
-### ![vncomin](https://phamngoc9x.github.io/vncomin/links.html)
+### Vncomin
+https://phamngoc9x.github.io/vncomin/links.html
 
-### https://phamngoc9x.github.io/Dlaca/links.html
+### Dlaca
+https://phamngoc9x.github.io/Dlaca/links.html
 
-### https://phamngoc9x.github.io/feedy/index.html
+### Feedy
+https://phamngoc9x.github.io/feedy/index.html
 
 ## REACT
