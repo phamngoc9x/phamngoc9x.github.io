@@ -1,5 +1,3 @@
-# phamngoc9x.github.io Demo List
-
 ## HTML CSS JS
 
 ### https://phamngoc9x.github.io/vncomin/links.html
