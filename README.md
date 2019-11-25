@@ -7,3 +7,7 @@
 ### [Feedy](https://phamngoc9x.github.io/feedy/links.html)
 
 ## REACT
+
+### [Manager member](https://phamngoc9x.github.io/Manager-member)
+
+### [Note firebase](https://phamngoc9x.github.io/note-firebase)
