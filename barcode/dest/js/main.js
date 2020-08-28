@@ -58,7 +58,7 @@ const ChutProject = {
     this.toggleMenu();
     this.makeQrcode();
     this.scannerBarcode();
-    this.checkInput();
+    // this.checkInput();
   },
 
   datepicker: function() {
