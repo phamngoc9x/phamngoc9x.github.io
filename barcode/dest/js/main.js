@@ -147,7 +147,7 @@ const ChutProject = {
         ? navigator.hardwareConcurrency
         : 4,
       decoder: {
-        readers: [{ format: "ean_reader", config: {} }]
+        readers: [{ format: "code_39_reader", config: {} }]
       },
       locate: true
     };
