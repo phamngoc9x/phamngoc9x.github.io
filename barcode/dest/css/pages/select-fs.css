@@ -1,0 +1,43 @@
+.select-fs__content {
+  width: 630px;
+  margin: 0 auto;
+}
+
+.list-staff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.list-staff__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+  text-align: center;
+  padding: 11px;
+}
+
+.list-staff__content {
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 16px #ededed;
+          box-shadow: 0 4px 16px #ededed;
+  padding-top: 8px;
+  display: block;
+}
+
+.list-staff__name {
+  font-size: 18px;
+  color: #2f2f2f;
+  padding: 10px 0 16px;
+}
+
+.list-staff__image img {
+  max-width: 100%;
+  height: 188px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*# sourceMappingURL=select-fs.css.map */

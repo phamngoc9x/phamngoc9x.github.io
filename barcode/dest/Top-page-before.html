@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Top page</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Top page" />
+    <meta name="keywords" content="Top page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/pages/top-page-before.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-default">
+        <div class="tablet-container">
+          <div class="header__content d-flex align-items-center justify-content-between">
+            <div class="header__left">
+              <button class="btn header__toggle js-toggle-menu"><i class="icon icon--list"></i>
+              </button>
+            </div>
+            <div class="header__text">CONCIERGE CARTE</div>
+            <div class="header__right d-flex justify-content-end">
+              <button class="btn btn--white-outline btn--sm header__qrcode js-header-qrcode" data-toggle="modal" data-target=".modal-qr" data-staff="199144"><i class="icon icon--qrcode"></i><span class="btn-text">QR表示</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="menu-list" id="menu-list">
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center active" href="#">
+            <div class="menu-list__link-content"><span>トップ</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>マイ顧客台帳</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>ログアウト</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>管理者メニュー</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item menu-list__item--title">管理者メニュー</li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>設定メッセージ検索</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>FS一覧・登録</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>テンプレートメッセージ一覧・登録</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>カード一覧・登録</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>シリーズ一覧・登録</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="header-overlay"></div>
+      <div class="modal modal-qr fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal__dialog modal-dialog-centered" role="document">
+          <div class="modal-content modal__content">
+            <button class="modal__close close" type="button" data-dismiss="modal" aria-label="Close"><i class="icon icon--close"></i>
+            </button>
+            <div class="modal-body modal__body">
+              <div id="qrcode"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="main-content top-page">
+        <div class="top-page__content">
+          <div class="page-title text-center">ルミネ新宿店</div>
+          <div class="top-page__staff"><img class="top-page__avatar" src="./images/avatar1.png" alt="avatar">
+            <div class="top-page__name">伊藤</div>
+          </div>
+          <div class="top-page__button"><a class="top-page__scan" href="#" data-toggle="modal" data-target=".modal-barcode"><i class="icon icon--barcode"></i><span class="top-page__button-text">会員バーコードカメラ読み込み</span></a><a class="top-page__id" href="#"><i class="icon icon--users"></i><span class="top-page__button-text">会員ID登録</span></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-barcode">
+      <div class="modal-dialog modal__dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal__content">
+          <button class="modal__close close" type="button" data-dismiss="modal" aria-label="Close"><i class="icon icon--close"></i>
+          </button>
+          <div class="modal-body modal__body">
+            <div class="viewport" id="interactive"></div>
+            <div class="error"></div>
+          </div>
+          <input class="form-control" id="scanner_input" placeholder="" type="text">
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

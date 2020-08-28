@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Styleguides</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Styleguides" />
+    <meta name="keywords" content="Styleguides" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      body
+      {
+        background-color: #fff;
+      }
+
+      .code-example
+      {
+        margin-bottom: 25px;
+      }
+
+      .code-example .demo
+      {
+        border: 1px solid rgba(0, 0, 0, .125);
+        border-radius: .25rem .25rem 0 0;
+        box-sizing: border-box;
+        min-height: 100px;
+        padding: 1.5rem;
+        position: relative;
+      }
+
+      .code-example .demo.dark
+      {
+        background-color: #e2e4e9;
+      }
+
+      .code-example pre
+      {
+        background-color: rgba(0, 0, 0, .125);
+        border-radius: 0 0 .25rem .25rem;
+        margin: 0;
+        padding: 15px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-between align-items-center pt-4 pb-4">
+        <div class="col-auto mr-auto">
+          <h2>Chut Style Guides</h2>
+        </div>
+        <div class="col-auto"><a class="btn btn-success btn-sm" href="index.html">Back to list of page</a></div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-2">
+          <div class="list-group" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="position: sticky; top: 0"><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-colors-tab" href="#v-pills-colors" aria-controls="v-pills-colors">Colors</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-buttons-tab" href="#v-pills-buttons" aria-controls="v-pills-buttons">Buttons</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-inputs-tab" href="#v-pills-inputs" aria-controls="v-pills-inputs">Inputs</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-checkboxs-tab" href="#v-pills-checkboxs" aria-controls="v-pills-checkboxs">Checkboxs</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-radio-buttons-tab" href="#v-pills-radio-buttons" aria-controls="v-pills-radio-buttons">Radio Buttons</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-textareas-tab" href="#v-pills-textareas" aria-controls="v-pills-textareas">Textareas</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-icons-tab" href="#v-pills-icons" aria-controls="v-pills-icons">Icons</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-selects-tab" href="#v-pills-selects" aria-controls="v-pills-selects">Selects</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-pagings-tab" href="#v-pills-pagings" aria-controls="v-pills-pagings">Pagings</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-tabs-tab" href="#v-pills-tabs" aria-controls="v-pills-tabs">Tabs</a><a class="list-group-item active" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-accordion-tab" href="#v-pills-accordion" aria-controls="v-pills-accordion">Accordion</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-10">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-colors" aria-labelledby="v-pills-colors-tab">
+              <div class="row">
+                <div class="col-2">
+                  <div class="code-example">
+                    <div class="demo" style="background-color: #fff; width: 100%; height: 100px"></div>
+                    <pre><code>$white: #fff</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <div class="code-example">
+                    <div class="demo" style="background-color: #000; width: 100%; height: 100px"></div>
+                    <pre><code>$black: #000</code></pre>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="code-example">
+                    <div class="demo" style="background-color: #2f2f2f; width: 100%; height: 100px"></div>
+                    <pre><code>$black-2: #2f2f2f</code></pre>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="code-example">
+                    <div class="demo" style="background-color: #888; width: 100%; height: 100px"></div>
+                    <pre><code>$black-3: #888</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <div class="code-example">
+                    <div class="demo" style="background-color: #0976fe; width: 100%; height: 100px"></div>
+                    <pre><code>$blue: #0976fe</code></pre>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="code-example">
+                    <div class="demo" style="background-color: #5d99b1; width: 100%; height: 100px"></div>
+                    <pre><code>$blue-2: #5d99b1</code></pre>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="code-example">
+                    <div class="demo" style="background-color: #5c99b0; width: 100%; height: 100px"></div>
+                    <pre><code>$blue-3: #5c99b0</code></pre>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="code-example">
+                    <div class="demo" style="background-color: #9fbeca; width: 100%; height: 100px"></div>
+                    <pre><code>$blue-4: #9fbeca</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <div class="code-example">
+                    <div class="demo" style="background-color: #bc5371; width: 100%; height: 100px"></div>
+                    <pre><code>$red: #bc5371</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <div class="code-example">
+                    <div class="demo" style="background-color: #efefef; width: 100%; height: 100px"></div>
+                    <pre><code>$gray: #efefef</code></pre>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="code-example">
+                    <div class="demo" style="background-color: #e5e5e5; width: 100%; height: 100px"></div>
+                    <pre><code>$gray-2: #e5e5e5</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-buttons" aria-labelledby="v-pills-buttons-tab">
+              <h5 class="my-4">Button blue</h5>
+              <div class="row">
+                <div class="col-12">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--blue btn--xs"><span class="btn-text">済</span>
+                      </button>
+                      <button class="btn btn--blue btn--sm"><span class="btn-text">blue</span>
+                      </button>
+                      <button class="btn btn--blue"><span class="btn-text">blue</span>
+                      </button>
+                      <button class="btn btn--blue btn--md"><span class="btn-text">blue</span>
+                      </button>
+                      <button class="btn btn--blue btn--lg"><span class="btn-text">blue</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'blue',
+  type: 'blue',
+  size: 'xs | sm | null | md | lg'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-4">Button blue-outline</h5>
+              <div class="row">
+                <div class="col-12">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--blue-outline btn--xs"><span class="btn-text">済</span>
+                      </button>
+                      <button class="btn btn--blue-outline btn--sm"><span class="btn-text">blue-outline</span>
+                      </button>
+                      <button class="btn btn--blue-outline"><span class="btn-text">blue-outline</span>
+                      </button>
+                      <button class="btn btn--blue-outline btn--md"><span class="btn-text">blue-outline</span>
+                      </button>
+                      <button class="btn btn--blue-outline btn--lg"><span class="btn-text">blue-outline</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'blue-outline',
+  type: 'blue-outline',
+  size: 'xs | sm | null | md | lg'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-4">Button red</h5>
+              <div class="row">
+                <div class="col-12">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--red btn--xs"><span class="btn-text">済</span>
+                      </button>
+                      <button class="btn btn--red btn--sm"><span class="btn-text">red</span>
+                      </button>
+                      <button class="btn btn--red"><span class="btn-text">red</span>
+                      </button>
+                      <button class="btn btn--red btn--md"><span class="btn-text">red</span>
+                      </button>
+                      <button class="btn btn--red btn--lg"><span class="btn-text">red</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'red',
+  type: 'red',
+  size: 'xs | sm | null | md | lg'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-4">Button red-outline</h5>
+              <div class="row">
+                <div class="col-12">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--red-outline btn--xs"><span class="btn-text">済</span>
+                      </button>
+                      <button class="btn btn--red-outline btn--sm"><span class="btn-text">red-outline</span>
+                      </button>
+                      <button class="btn btn--red-outline"><span class="btn-text">red-outline</span>
+                      </button>
+                      <button class="btn btn--red-outline btn--md"><span class="btn-text">red-outline</span>
+                      </button>
+                      <button class="btn btn--red-outline btn--lg"><span class="btn-text">red-outline</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'red-outline',
+  type: 'red-outline',
+  size: 'xs | sm | null | md | lg'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-4">Button outline</h5>
+              <div class="row">
+                <div class="col-12">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--outline btn--xs"><span class="btn-text">済</span>
+                      </button>
+                      <button class="btn btn--outline btn--sm"><span class="btn-text">outline</span>
+                      </button>
+                      <button class="btn btn--outline"><span class="btn-text">outline</span>
+                      </button>
+                      <button class="btn btn--outline btn--md"><span class="btn-text">outline</span>
+                      </button>
+                      <button class="btn btn--outline btn--lg"><span class="btn-text">outline</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'outline',
+  type: 'outline',
+  size: 'xs | sm | null | md | lg'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-4">Button Link</h5>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <a class="btn btn--blue" href="#"><span class="btn-text">blue</span>
+                      </a>
+                    </div>
+                    <pre><code>+button-link({
+  text: 'blue',
+  type: 'blue',
+  href: '#'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <a class="btn btn--blue-outline" href="#"><span class="btn-text">blue-outline</span>
+                      </a>
+                    </div>
+                    <pre><code>+button-link({
+  text: 'blue-outline',
+  type: 'blue-outline',
+  href: '#'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <a class="btn btn--red" href="#"><span class="btn-text">red</span>
+                      </a>
+                    </div>
+                    <pre><code>+button-link({
+  text: 'red',
+  type: 'red',
+  href: '#'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <a class="btn btn--red-outline" href="#"><span class="btn-text">red-outline</span>
+                      </a>
+                    </div>
+                    <pre><code>+button-link({
+  text: 'red-outline',
+  type: 'red-outline',
+  href: '#'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <a class="btn btn--outline" href="#"><span class="btn-text">outline</span>
+                      </a>
+                    </div>
+                    <pre><code>+button-link({
+  text: 'outline',
+  type: 'outline',
+  href: '#'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-4">Button Input</h5>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <input class="btn btn--blue" type="button" value="blue">
+                      </input>
+                    </div>
+                    <pre><code>+button-input({
+  value: 'blue',
+  type: 'blue'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <input class="btn btn--blue-outline" type="button" value="blue-outline">
+                      </input>
+                    </div>
+                    <pre><code>+button-input({
+  value: 'blue-outline',
+  type: 'blue-outline'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <input class="btn btn--red" type="button" value="red">
+                      </input>
+                    </div>
+                    <pre><code>+button-input({
+  value: 'red',
+  type: 'red'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <input class="btn btn--red-outline" type="button" value="red-outline">
+                      </input>
+                    </div>
+                    <pre><code>+button-input({
+  value: 'red-outline',
+  type: 'red-outline'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <input class="btn btn--outline" type="button" value="outline">
+                      </input>
+                    </div>
+                    <pre><code>+button-input({
+  value: 'outline',
+  type: 'outline'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-4">Button Disabled</h5>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--blue btn--disabled" disabled="disabled"><span class="btn-text">blue</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'blue',
+  type: 'blue',
+  notSelect: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--blue-outline btn--disabled" disabled="disabled"><span class="btn-text">blue-outline</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'blue-outline',
+  type: 'blue-outline',
+  notSelect: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--red btn--disabled" disabled="disabled"><span class="btn-text">red</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'red',
+  type: 'red',
+  notSelect: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--red-outline btn--disabled" disabled="disabled"><span class="btn-text">red-outline</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'red-outline',
+  type: 'red-outline',
+  notSelect: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--outline btn--disabled" disabled="disabled"><span class="btn-text">outline</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'outline',
+  type: 'outline',
+  notSelect: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-4">Button Full size</h5>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--blue btn-block"><span class="btn-text">blue</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'blue',
+  type: 'blue',
+  isFull: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--blue-outline btn-block"><span class="btn-text">blue-outline</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'blue-outline',
+  type: 'blue-outline',
+  isFull: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--red btn-block"><span class="btn-text">red</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'red',
+  type: 'red',
+  isFull: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--red-outline btn-block"><span class="btn-text">red-outline</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'red-outline',
+  type: 'red-outline',
+  isFull: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--outline btn-block"><span class="btn-text">outline</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'outline',
+  type: 'outline',
+  isFull: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-4">Button icon before</h5>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--blue"><i class="icon icon--update"></i><span class="btn-text">blue</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'blue',
+  type: 'blue',
+  iconBefore: 'update'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--blue-outline"><i class="icon icon--update"></i><span class="btn-text">blue-outline</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'blue-outline',
+  type: 'blue-outline',
+  iconBefore: 'update'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--red"><i class="icon icon--update"></i><span class="btn-text">red</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'red',
+  type: 'red',
+  iconBefore: 'update'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--red-outline"><i class="icon icon--update"></i><span class="btn-text">red-outline</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'red-outline',
+  type: 'red-outline',
+  iconBefore: 'update'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--outline"><i class="icon icon--update"></i><span class="btn-text">outline</span>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'outline',
+  type: 'outline',
+  iconBefore: 'update'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h5 class="my-4">Button icon after</h5>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--blue btn--icon-after"><span class="btn-text">blue</span><i class="icon icon--next"></i>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'blue',
+  type: 'blue',
+  iconAfter: 'next'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--blue-outline btn--icon-after"><span class="btn-text">blue-outline</span><i class="icon icon--next"></i>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'blue-outline',
+  type: 'blue-outline',
+  iconAfter: 'next'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--red btn--icon-after"><span class="btn-text">red</span><i class="icon icon--next"></i>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'red',
+  type: 'red',
+  iconAfter: 'next'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--red-outline btn--icon-after"><span class="btn-text">red-outline</span><i class="icon icon--next"></i>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'red-outline',
+  type: 'red-outline',
+  iconAfter: 'next'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo">
+                      <button class="btn btn--outline btn--icon-after"><span class="btn-text">outline</span><i class="icon icon--next"></i>
+                      </button>
+                    </div>
+                    <pre><code>+button({
+  text: 'outline',
+  type: 'outline',
+  iconAfter: 'next'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-inputs" aria-labelledby="v-pills-inputs-tab">
+              <div class="row bg-light">
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Input Group larged</h5>
+                    <div class="form-group form-group--large">
+                      <label class="form-group__label" for="input-group-0"><span class="form-group__label-text">パスワード</span>
+                      </label>
+                      <input class="form-control form-control--input form-control--lg form-control--full" id="input-group-0" type="text" placeholder="Text info" />
+                      <div class="form-group__error">
+                        <p class="form-group--error__msg"></p>
+                      </div>
+                    </div>
+                    <pre><code>+input-group({
+  type: 'text',
+  label: 'Title',
+  large: true,
+  placeholder: 'Text info',
+  id: 'input-group-1',
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Input Group larged Gray</h5>
+                    <div class="form-group form-group--large">
+                      <label class="form-group__label" for="input-group-0"><span class="form-group__label-text">パスワード</span>
+                      </label>
+                      <input class="form-control form-control--input form-control--lg form-control--gray form-control--full" id="input-group-0" type="text" placeholder="Text info" />
+                      <div class="form-group__error">
+                        <p class="form-group--error__msg"></p>
+                      </div>
+                    </div>
+                    <pre><code>+input-group({
+  type: 'text',
+  label: 'Title',
+  placeholder: 'Text info',
+  id: 'input-group-1',
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Input Group Default</h5>
+                    <div class="form-group">
+                      <label class="form-group__label" for="input-group-1"><span class="form-group__label-text">Title</span>
+                      </label>
+                      <input class="form-control form-control--input" id="input-group-1" type="text" placeholder="Text info" />
+                      <div class="form-group__error">
+                        <p class="form-group--error__msg"></p>
+                      </div>
+                    </div>
+                    <pre><code>+input-group({
+  type: 'text',
+  label: 'Title',
+  placeholder: 'Text info',
+  id: 'input-group-1',
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Input Group Outline</h5>
+                    <div class="form-group">
+                      <label class="form-group__label" for="input-group-1"><span class="form-group__label-text">Title</span>
+                      </label>
+                      <input class="form-control form-control--input form-control--outline" id="input-group-1" type="text" placeholder="Text info" />
+                      <div class="form-group__error">
+                        <p class="form-group--error__msg"></p>
+                      </div>
+                    </div>
+                    <pre><code>+input-group({
+  type: 'text',
+  label: 'Title',
+  placeholder: 'Text info',
+  id: 'input-group-1',
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Input Group Readonly</h5>
+                    <div class="form-group">
+                      <label class="form-group__label" for="input-group-2"><span class="form-group__label-text">Input group label</span>
+                      </label>
+                      <input class="form-control form-control--input form-control--readonly" id="input-group-2" type="text" placeholder="Input group placeholder" value="Input group value" readonly="readonly" />
+                      <div class="form-group__error">
+                        <p class="form-group--error__msg"></p>
+                      </div>
+                    </div>
+                    <pre><code>+input-group({
+  type: 'text',
+  label: 'Input Group',
+  placeholder: 'Input Group Placeholder',
+  value: 'Input group value',
+  id: 'input-group-1',
+  readonly: true,
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Input Group Disabled</h5>
+                    <div class="form-group">
+                      <label class="form-group__label" for="input-group-3"><span class="form-group__label-text">Input group label</span>
+                      </label>
+                      <input class="form-control form-control--input form-control--disabled" id="input-group-3" type="text" placeholder="Input group placeholder" value="Input group value" disabled="disabled" />
+                      <div class="form-group__error">
+                        <p class="form-group--error__msg"></p>
+                      </div>
+                    </div>
+                    <pre><code>+input-group({
+  type: 'text',
+  label: 'Input Group',
+  placeholder: 'Input Group Placeholder',
+  value: 'Input group value',
+  id: 'input-group-1',
+  disabled: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Input Group URL</h5>
+                    <div class="form-group form-group--link">
+                      <label class="form-group__label" for="input-group-4"><span class="form-group__label-text">Input group label</span>
+                      </label>
+                      <input class="form-control form-control--input" id="input-group-4" type="text" placeholder="Input group placeholder" value="URL" />
+                      <div class="form-group__error">
+                        <p class="form-group--error__msg"></p>
+                      </div>
+                    </div>
+                    <pre><code>+input-group({
+  type: 'text',
+  label: 'Input group label',
+  placeholder: 'Input group placeholder',
+  value: 'URL',
+  id: 'input-group-1',
+  link: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Input Group Require</h5>
+                    <div class="form-group form-group--required">
+                      <label class="form-group__label" for="input-group-5"><span class="form-group__label-text">Input group label</span><span class="form-group__label-required">*</span>
+                      </label>
+                      <input class="form-control form-control--input" id="input-group-5" type="text" placeholder="Input group placeholder" value="Input group value" required="required" />
+                      <div class="form-group__error">
+                        <p class="form-group--error__msg"></p>
+                      </div>
+                    </div>
+                    <pre><code>+input-group({
+  type: 'text',
+  label: 'Input group label',
+  placeholder: 'Input group placeholder',
+  value: 'Input group value',
+  id: 'input-group-1',
+  required: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Input Group Error</h5>
+                    <div class="form-group form-group--error">
+                      <label class="form-group__label" for="input-group-6"><span class="form-group__label-text">Input group label</span>
+                      </label>
+                      <input class="form-control form-control--input" id="input-group-6" type="text" placeholder="Input group placeholder" value="Input group value" />
+                      <div class="form-group__error">
+                        <p class="form-group--error__msg"></p>
+                      </div>
+                    </div>
+                    <pre><code>+input-group({
+  type: 'text',
+  label: 'Input group label',
+  placeholder: 'Input group placeholder',
+  value: 'Input group value',
+  id: 'input-group-1',
+  error: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Input Group Success</h5>
+                    <div class="form-group form-group--success">
+                      <label class="form-group__label" for="input-group-7"><span class="form-group__label-text">Input group label</span>
+                      </label>
+                      <input class="form-control form-control--input" id="input-group-7" type="text" placeholder="Input group placeholder" value="Input group value" />
+                      <div class="form-group__error">
+                        <p class="form-group--error__msg"></p>
+                      </div>
+                    </div>
+                    <pre><code>+input-group({
+  type: 'text',
+  label: 'Input group label',
+  placeholder: 'Input group placeholder',
+  value: 'Input group value',
+  id: 'input-group-1',
+  success: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Input Group Datepicker</h5>
+                    <div class="form-group">
+                      <label class="form-group__label" for="input-group-8"><span class="form-group__label-text">Input group label</span>
+                      </label>
+                      <div class="form-group__input-group">
+                        <input class="form-control form-control--input js-datepicker" id="input-group-8" type="text" placeholder="yyyy/mm/dd" autocomplete="off" />
+                        <label class="form-group__append" for="input-group-8"><i class="icon icon--down"></i>
+                        </label>
+                      </div>
+                      <div class="form-group__error">
+                        <p class="form-group--error__msg"></p>
+                      </div>
+                    </div>
+                    <pre><code>+input-group({
+  type: 'text',
+  label: 'Input group label',
+  placeholder: 'yyyy/mm/dd',
+  id: 'input-group-1',
+  datepicker: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-checkboxs" aria-labelledby="v-pills-checkboxs-tab">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Checkbox Circle</h5>
+                    <div class="d-flex mb-3">
+                      <div class="form-check custom-checkbox mr-3">
+                        <input class="form-check-input" type="checkbox" name="input-checkbox-1" id="input-checkbox-1" />
+                        <label class="form-check-label" for="input-checkbox-1">Checkbox 1</label>
+                      </div>
+                      <div class="form-check custom-checkbox">
+                        <input class="form-check-input" type="checkbox" name="input-checkbox-1" id="input-checkbox-2" checked="checked" />
+                        <label class="form-check-label" for="input-checkbox-2">Checkbox 2</label>
+                      </div>
+                    </div>
+                    <pre><code>+input-group-checkbox({
+  name: 'input-checkbox-1',
+  id: 'input-checkbox-1',
+  label: 'Checkbox 1',
+})
+
++input-group-checkbox({
+  name: 'input-checkbox-1',
+  id: 'input-checkbox-2',
+  label: 'Checkbox 2',
+  checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Checkbox Circle Disabled</h5>
+                    <div class="d-flex mb-3">
+                      <div class="form-check custom-checkbox form-check--disabled mr-3">
+                        <input class="form-check-input" type="checkbox" name="input-checkbox-2" id="input-checkbox-3" disabled="disabled" />
+                        <label class="form-check-label" for="input-checkbox-3">Checkbox 3</label>
+                      </div>
+                      <div class="form-check custom-checkbox form-check--disabled">
+                        <input class="form-check-input" type="checkbox" name="input-checkbox-2" id="input-checkbox-4" checked="checked" disabled="disabled" />
+                        <label class="form-check-label" for="input-checkbox-4">Checkbox 4</label>
+                      </div>
+                    </div>
+                    <pre><code>+input-group-checkbox({
+  name: 'input-checkbox-2',
+  id: 'input-checkbox-3',
+  label: 'Checkbox 3',
+  checked: true
+})
+
++input-group-checkbox({
+  name: 'input-checkbox-2',
+  id: 'input-checkbox-4',
+  label: 'Checkbox 4',
+  checked: true,
+  disabled: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-radio-buttons" aria-labelledby="v-pills-radio-buttons-tab">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Basic Radio Button</h5>
+                    <div class="d-flex mb-3">
+                      <div class="form-check custom-radio mr-3">
+                        <input class="form-check-input" type="radio" name="input-radio-1" id="input-radio-1" />
+                        <label class="form-check-label" for="input-radio-1">Radio 1
+                        </label>
+                      </div>
+                      <div class="form-check custom-radio">
+                        <input class="form-check-input" type="radio" name="input-radio-1" id="input-radio-2" checked="checked" />
+                        <label class="form-check-label" for="input-radio-2">Radio 2
+                        </label>
+                      </div>
+                    </div>
+                    <pre><code>+input-group-radio({
+&nbsp; name: 'input-radio-1',
+&nbsp; id: 'input-radio-1',
+&nbsp; label: 'Radio 1'
+})
+
++input-group-radio({
+&nbsp; name: 'input-radio-1',
+&nbsp; id: 'input-radio-2',
+&nbsp; label: 'Radio 2',
+&nbsp; checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Radio Button Disabled</h5>
+                    <div class="d-flex mb-3">
+                      <div class="form-check custom-radio form-check--disabled mr-3">
+                        <input class="form-check-input" type="radio" name="input-radio-2" id="input-radio-3" disabled="disabled" />
+                        <label class="form-check-label" for="input-radio-3">Radio 3
+                        </label>
+                      </div>
+                      <div class="form-check custom-radio form-check--disabled">
+                        <input class="form-check-input" type="radio" name="input-radio-2" id="input-radio-4" disabled="disabled" checked="checked" />
+                        <label class="form-check-label" for="input-radio-4">Radio 4
+                        </label>
+                      </div>
+                    </div>
+                    <pre><code>+input-group-radio({
+&nbsp; name: 'input-radio-2',
+&nbsp; id: 'input-radio-3',
+&nbsp; label: 'Radio 3',
+&nbsp; checked: true
+})
+
++input-group-radio({
+&nbsp; name: 'input-radio-2',
+&nbsp; id: 'input-radio-4',
+&nbsp; label: 'Radio 4',
+&nbsp; checked: true,
+&nbsp; disabled: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-textareas" aria-labelledby="v-pills-textareas-tab">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Basic Input Textarea</h5>
+                    <div class="form-textarea mb-3">
+                      <textarea class="form-control" placeholder="Textarea placeholder"></textarea>
+                    </div>
+                    <pre><code>+textarea({
+&nbsp; placeholder: 'Textarea placeholder',
+&nbsp; value: null
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Input Textarea Readonly</h5>
+                    <div class="form-textarea form-textarea--readonly mb-3">
+                      <textarea class="form-control form-control--readonly" placeholder="Textarea placeholder" readonly="readonly"></textarea>
+                    </div>
+                    <pre><code>+textarea({
+&nbsp; placeholder: 'Textarea placeholder',
+&nbsp; value: null,
+&nbsp; readonly: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Input Textarea Disabled</h5>
+                    <div class="form-textarea form-textarea--disabled mb-3">
+                      <textarea class="form-control form-control--disabled" placeholder="Textarea placeholder" disabled="disabled"></textarea>
+                    </div>
+                    <pre><code>+textarea({
+&nbsp; placeholder: 'Textarea placeholder',
+&nbsp; value: null,
+&nbsp; disabled: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-icons" aria-labelledby="v-pills-icons-tab">
+              <h5 class="my-4">Icons</h5>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo"><i class="icon icon--next"></i>
+                    </div>
+                    <pre><code>+icon('next')</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo"><i class="icon icon--prev"></i>
+                    </div>
+                    <pre><code>+icon('prev')</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo"><i class="icon icon--down"></i>
+                    </div>
+                    <pre><code>+icon('down')</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo"><i class="icon icon--setting"></i>
+                    </div>
+                    <pre><code>+icon('setting')</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo"><i class="icon icon--update"></i>
+                    </div>
+                    <pre><code>+icon('update')</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo"><i class="icon icon--check"></i>
+                    </div>
+                    <pre><code>+icon('check')</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo"><i class="icon icon--list"></i>
+                    </div>
+                    <pre><code>+icon('list')</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo"><i class="icon icon--close"></i>
+                    </div>
+                    <pre><code>+icon('close')</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo"><i class="icon icon--barcode"></i>
+                    </div>
+                    <pre><code>+icon('barcode')</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo"><i class="icon icon--users"></i>
+                    </div>
+                    <pre><code>+icon('users')</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo"><i class="icon icon--qrcode"></i>
+                    </div>
+                    <pre><code>+icon('qrcode')</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-selects" aria-labelledby="v-pills-selects-tab">
+              <div class="row bg-light">
+                <h4 class="col-12">Primary Select</h4>
+                <div class="col-4">
+                  <h5 class="my-4">Select basic</h5>
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="form-group form-group--select form-group__select--white">
+                        <label class="form-group__label"><span class="form-group__label-text">Label</span>
+                        </label>
+                        <div class="select-wrapper">
+                          <select class="select select--white">
+                            <option value="potato">Potato</option>
+                            <option value="coconut">Coconut</option>
+                            <option value="carrot">Carrot</option>
+                            <option value="banana">Banana</option>
+                          </select>
+                          <label class="form-group__append"><i class="icon icon--down"></i>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <pre><code>-
+  var option = [
+    { text: 'Potato', value: 'potato' },
+    { text: 'Coconut', value: 'coconut' },
+    { text: 'Carrot', value: 'carrot' },
+    { text: 'Banana', value: 'banana' }
+  ];
++group-select({
+  options: option,
+  label: 'Label',
+  minresultforsearch: -1
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <h5 class="my-4">Select disabled</h5>
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="form-group form-group--select form-group__select--white">
+                        <label class="form-group__label"><span class="form-group__label-text">Label</span>
+                        </label>
+                        <div class="select-wrapper">
+                          <select class="select select--white select--disabled" disabled="disabled">
+                            <option value="potato">Potato</option>
+                            <option value="coconut">Coconut</option>
+                            <option value="carrot">Carrot</option>
+                            <option value="banana">Banana</option>
+                          </select>
+                          <label class="form-group__append"><i class="icon icon--down"></i>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <pre><code>-
+  var option = [
+    { text: 'Potato', value: 'potato' },
+    { text: 'Coconut', value: 'coconut' },
+    { text: 'Carrot', value: 'carrot' },
+    { text: 'Banana', value: 'banana' }
+  ];
++group-select({
+  options: option,
+  disabled: true,
+  label: 'Label',
+  minresultforsearch: -1
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <h5 class="my-4">Select disabled option</h5>
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="form-group form-group--select form-group__select--outline">
+                        <label class="form-group__label"><span class="form-group__label-text">Label</span>
+                        </label>
+                        <div class="select-wrapper">
+                          <select class="select select--outline">
+                            <option value="potato">Potato</option>
+                            <option value="coconut">Coconut</option>
+                            <option value="carrot">Carrot</option>
+                            <option value="banana">Banana</option>
+                          </select>
+                          <label class="form-group__append"><i class="icon icon--down"></i>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <pre><code>-
+  var option2 = [
+    { text: 'Potato', value: 'potato' },
+    { text: 'Coconut', value: 'coconut'},
+    { text: 'Carrot', value: 'carrot' },
+    { text: 'Banana', value: 'banana' }
+  ];
++group-select({
+  options: option2,
+  label: 'Label',
+  minresultforsearch: -1
+}</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-pagings" aria-labelledby="v-pills-pagings-tab">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Paging Start</h5>
+                    <nav class="paging mb-3">
+                      <ul class="pagination">
+                        <li class="page-item prev disabled"><a class="page-link" href="#"><i class="icon icon--prev"></i>前</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item next"><a class="page-link" href="#">次<i class="icon icon--next"></i></a></li>
+                      </ul>
+                    </nav>
+                    <pre><code>+paging()</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-tabs" aria-labelledby="v-pills-tabs-tab">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Tabs Start</h5>
+                    <ul class="nav nav-tabs tab-large d-flex" role="tablist">
+                      <li class="nav-item tab-large__item"><a class="nav-link tab-large__link active" data-toggle="tab" href="#CARTE" role="tab" aria-selected="true">CARTE</a></li>
+                      <li class="nav-item tab-large__item"><a class="nav-link tab-large__link" data-toggle="tab" href="#UPDATE" role="tab" aria-selected="false">UPDATE</a></li>
+                    </ul>
+                    <div class="tab-content tab-large__content">
+                      <div class="tab-pane fade show active" id="CARTE" role="tabpanel">CARTE</div>
+                      <div class="tab-pane fade" id="UPDATE" role="tabpanel">UPDATE</div>
+                    </div>
+                    <pre><code>ul.nav.nav-tabs.tab-large.d-flex(role='tablist')
+ li.nav-item.tab-large__item
+   a.nav-link.tab-large__link.active(data-toggle='tab' href='#CARTE' role='tab' aria-selected='true') CARTE
+ li.nav-item.tab-large__item
+   a.nav-link.tab-large__link(data-toggle='tab' href='#UPDATE' role='tab'  aria-selected='false') UPDATE
+.tab-content
+ #CARTE.tab-pane.fade.show.active(role='tabpanel') CARTE
+ #UPDATE.tab-pane.fade(role='tabpanel') UPDATE</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade show active" role="tabpanel" id="v-pills-accordion" aria-labelledby="v-pills-accordion-tab">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Accordion Start</h5>
+                    <div class="accordion accordion--normal" id="accordionExample">
+                      <div class="card border-0">
+                        <div class="card-header accordion__header p-0" id="headingOne">
+                          <button class="btn--icon-after w-100 btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="btn-text">2019/09/20</span><i class="icon icon--setting"></i>
+                          </button>
+                        </div>
+                        <div class="accordion__content collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
+                          <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="mt-5"><code>.accordion.accordion--normal#accordionExample
+ .card.border-0
+   #headingOne.card-header.accordion__header.p-0
+       button.btn--icon-after.w-100.btn(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+         span.btn-text 2019/09/20
+        +icon('setting')
+   #collapseOne.accordion__content.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+     .card-body
+       | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Accordion blue</h5>
+                    <div class="accordion accordion--normal primary" id="accordionExample1">
+                      <div class="card border-0">
+                        <div class="card-header accordion__header p-0" id="headingOne">
+                          <button class="btn--icon-after w-100 btn" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne"><span class="btn-text">2019/09/20</span><i class="icon icon--setting"></i>
+                          </button>
+                        </div>
+                        <div class="accordion__content collapse show" id="collapseOne1" aria-labelledby="headingOne" data-parent="#accordionExample1">
+                          <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="mt-5"><code>.accordion.accordion--normal#accordionExample
+ .card.border-0
+   #headingOne.card-header.accordion__header.p-0
+       button.btn--blue.btn--icon-after.w-100.btn(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+         span.btn-text 2019/09/20
+        +icon('setting')
+   #collapseOne.accordion__content.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+     .card-body
+       | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Accordion red outline</h5>
+                    <div class="accordion accordion--outline" id="accordionExample3">
+                      <div class="card border-0">
+                        <div class="card-header accordion__header p-0" id="headingOne">
+                          <button class="btn--icon-after w-100 btn" type="button" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne"><span class="btn-text">2019/09/20</span><span class="btn-text pl-4">【リピ・購入】⑦使用目的（旅行・デート・結婚式など）</span><i class="icon icon--plus"></i></button>
+                        </div>
+                        <div class="accordion__content collapse show" id="collapseOne3" aria-labelledby="headingOne" data-parent="#accordionExample3">
+                          <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="mt-5"><code>.accordion.accordion--normal#accordionExample
+ .card.border-0
+   #headingOne.card-header.accordion__header.p-0
+       button.btn--blue.btn--icon-after.w-100.btn(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+         span.btn-text 2019/09/20
+         span.btn-textspan.btn-text.pl-4 【リピ・購入】⑦使用目的（旅行・デート・結婚式など）
+         i.icon.icon--plus
+   #collapseOne.accordion__content.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+     .card-body
+       | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="code-example">
+                    <h5 class="my-4">Accordion blue outline</h5>
+                    <div class="accordion accordion--outline primary-outline" id="accordionExample2">
+                      <div class="card border-0">
+                        <div class="card-header accordion__header p-0" id="headingOne">
+                          <button class="btn--icon-after w-100 btn" type="button" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne"><span class="btn-text">2019/09/20</span><span class="btn-text pl-4">【リピ・購入】⑦使用目的（旅行・デート・結婚式など）</span><i class="icon icon--plus"></i></button>
+                        </div>
+                        <div class="accordion__content collapse show" id="collapseOne2" aria-labelledby="headingOne" data-parent="#accordionExample2">
+                          <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <pre class="mt-5"><code>.accordion.accordion--normal#accordionExample
+ .card.border-0
+   #headingOne.card-header.primary-outline.accordion__header.p-0
+       button.btn--blue.btn--icon-after.w-100.btn(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+         span.btn-text 2019/09/20
+         span.btn-text.pl-4 【リピ・購入】⑦使用目的（旅行・デート・結婚式など）
+        i.icon.icon--plus
+   #collapseOne.accordion__content.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+     .card-body
+       | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
