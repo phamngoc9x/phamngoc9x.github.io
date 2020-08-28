@@ -181,6 +181,7 @@
               console.log('Reset.')
             })
             $(".modal-barcode").on("hide.bs.modal", function() {
+              console.log('close modal')
               codeReader.stop()
               document.getElementById('result').textContent = '';
             });
