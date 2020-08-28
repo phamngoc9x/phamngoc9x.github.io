@@ -97,15 +97,29 @@
           <button class="modal__close close" type="button" data-dismiss="modal" aria-label="Close"><i class="icon icon--close"></i>
           </button>
           <div class="modal-body modal__body">
-            <div class="viewport" id="interactive"></div>
-            <div class="error"></div>
+            <!-- <div class="viewport" id="interactive"></div>
+            <div class="error"></div> -->
+            <div>
+              <a class="button" id="startButton">Start</a>
+              <a class="button" id="resetButton">Reset</a>
+            </div>
+      
+            <div>
+              <video id="video" width="300" height="200" style="border: 1px solid gray"></video>
+            </div>
+      
+            <div id="sourceSelectPanel" style="display:none">
+              <label for="sourceSelect">Change video source:</label>
+              <select id="sourceSelect" style="max-width:400px">
+              </select>
+            </div>
           </div>
           <div class="modal-footer">
             <form class="auth__form px-3" action="/admin/conciergeqr/input_real_shop_card_no" method="post">
               <div class="form-group form-group--large ">
                 <label class="form-group__label"><span class="form-group__label-text">会員ID</span>
                 </label>
-                <input class="form-control form-control--input form-control--lg form-control--full" id="scanner_input"  name="real_shop_card_no" type="text" value="<?=isset($real_shop_card_no) ? $real_shop_card_no : ''?>"/>
+                <input class="form-control form-control--input form-control--lg form-control--full" id="result"  name="real_shop_card_no" type="text" value="<?=isset($real_shop_card_no) ? $real_shop_card_no : ''?>"/>
                 <div class="form-group__error">
                   <p class="form-group--error__msg"></p>
                 </div>
@@ -119,6 +133,58 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="https://unpkg.com/@zxing/library@latest"></script>
+    <script type="text/javascript">
+      window.addEventListener('load', function () {
+        let selectedDeviceId;
+        const codeReader = new ZXing.BrowserMultiFormatReader()
+        console.log('ZXing code reader initialized')
+        codeReader.listVideoInputDevices()
+          .then((videoInputDevices) => {
+            const sourceSelect = document.getElementById('sourceSelect')
+            selectedDeviceId = videoInputDevices[0].deviceId
+            if (videoInputDevices.length >= 1) {
+              videoInputDevices.forEach((element) => {
+                const sourceOption = document.createElement('option')
+                sourceOption.text = element.label
+                sourceOption.value = element.deviceId
+                sourceSelect.appendChild(sourceOption)
+              })
+
+              sourceSelect.onchange = () => {
+                selectedDeviceId = sourceSelect.value;
+              };
+
+              const sourceSelectPanel = document.getElementById('sourceSelectPanel')
+              sourceSelectPanel.style.display = 'block'
+            }
+
+            document.getElementById('startButton').addEventListener('click', () => {
+              codeReader.decodeFromVideoDevice(selectedDeviceId, 'video', (result, err) => {
+                if (result) {
+                  console.log(result)
+                  document.getElementById('result').textContent = result.text
+                }
+                if (err && !(err instanceof ZXing.NotFoundException)) {
+                  console.error(err)
+                  document.getElementById('result').textContent = err
+                }
+              })
+              console.log(`Started continous decode from camera with id ${selectedDeviceId}`)
+            })
+
+            document.getElementById('resetButton').addEventListener('click', () => {
+              codeReader.reset()
+              document.getElementById('result').textContent = '';
+              console.log('Reset.')
+            })
+
+          })
+          .catch((err) => {
+            console.error(err)
+          })
+      })
+    </script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
