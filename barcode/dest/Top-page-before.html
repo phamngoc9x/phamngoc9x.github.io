@@ -144,21 +144,21 @@
           .then((videoInputDevices) => {
             const sourceSelect = document.getElementById('sourceSelect')
             selectedDeviceId = videoInputDevices[0].deviceId
-            if (videoInputDevices.length >= 1) {
-              videoInputDevices.forEach((element) => {
-                const sourceOption = document.createElement('option')
-                sourceOption.text = element.label
-                sourceOption.value = element.deviceId
-                sourceSelect.appendChild(sourceOption)
-              })
+            // if (videoInputDevices.length >= 1) {
+            //   videoInputDevices.forEach((element) => {
+            //     const sourceOption = document.createElement('option')
+            //     sourceOption.text = element.label
+            //     sourceOption.value = element.deviceId
+            //     sourceSelect.appendChild(sourceOption)
+            //   })
 
-              sourceSelect.onchange = () => {
-                selectedDeviceId = sourceSelect.value;
-              };
+            //   sourceSelect.onchange = () => {
+            //     selectedDeviceId = sourceSelect.value;
+            //   };
 
-              const sourceSelectPanel = document.getElementById('sourceSelectPanel')
-              sourceSelectPanel.style.display = 'block'
-            }
+            //   const sourceSelectPanel = document.getElementById('sourceSelectPanel')
+            //   sourceSelectPanel.style.display = 'block'
+            // }
 
             document.getElementById('startButton').addEventListener('click', () => {
               codeReader.decodeFromVideoDevice(selectedDeviceId, 'video', (result, err) => {
@@ -180,15 +180,15 @@
               document.getElementById('result').textContent = '';
               console.log('Reset.')
             })
-            $(".modal-barcode").on("hide.bs.modal", function() {
-              console.log('close modal')
-              codeReader.stop()
-              document.getElementById('result').textContent = '';
-            });
           })
           .catch((err) => {
             console.error(err)
           })
+          $(".modal-barcode").on("hide.bs.modal", function() {
+              console.log('close modal')
+              codeReader.stop()
+              document.getElementById('result').textContent = '';
+            });
       })
     </script>
   </body>
