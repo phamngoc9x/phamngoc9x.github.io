@@ -87,7 +87,7 @@
           <div class="top-page__staff"><img class="top-page__avatar" src="./images/avatar1.png" alt="avatar">
             <div class="top-page__name">伊藤</div>
           </div>
-          <div class="top-page__button"><a class="top-page__scan" href="#" data-toggle="modal" data-target=".modal-barcode"><i class="icon icon--barcode"></i><span class="top-page__button-text">会員バーコードカメラ読み込み</span></a><a class="top-page__id" href="#"><i class="icon icon--users"></i><span class="top-page__button-text">会員ID登録</span></a></div>
+          <div class="top-page__button"><a class="top-page__scan"  id="startButton" href="#" data-toggle="modal" data-target=".modal-barcode"><i class="icon icon--barcode"></i><span class="top-page__button-text">会員バーコードカメラ読み込み</span></a><a class="top-page__id" href="#"><i class="icon icon--users"></i><span class="top-page__button-text">会員ID登録</span></a></div>
         </div>
       </div>
     </div>
@@ -97,8 +97,7 @@
           <button class="modal__close close" type="button" data-dismiss="modal" aria-label="Close"><i class="icon icon--close"></i></button>
           <div class="modal-body modal__body p-2">
             <div class="text-center pt-3 pb-3">
-              <button class="btn btn--blue btn--sm mr-3" id="startButton"><span class="btn-text">Start</span></button>
-              <button class="btn btn--blue-outline btn--sm" id="resetButton"><span class="btn-text">Reset</span></button>
+              <!-- <button class="btn btn--blue btn--sm mr-3" id="startButton"><span class="btn-text">Start</span></button> -->
             </div>
             <div class="text-center">
               <video class="barcode-frame p-3" id="video" width="450" height="480" style="border: 1px solid #dee2e6"></video>
@@ -121,17 +120,17 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@zxing/library@latest"></script>
     <script type="text/javascript">
-      window.addEventListener('load', function()
-      {
-        let selectedDeviceId;
-        const codeReader = new ZXing.BrowserMultiFormatReader()
-        console.log('ZXing code reader initialized')
-        codeReader.listVideoInputDevices()
-          .then((videoInputDevices) =>
-          {
-            document.getElementById('startButton').addEventListener('click', () =>
+      $('.modal-barcode').on('shown.bs.modal', function () {
+        window.addEventListener('load', function()
+        {
+          let selectedDeviceId;
+          const codeReader = new ZXing.BrowserMultiFormatReader()
+          console.log('ZXing code reader initialized')
+          codeReader.listVideoInputDevices()
+            .then((videoInputDevices) =>
             {
               codeReader.decodeFromVideoDevice(selectedDeviceId, 'video', (result, err) =>
               {
@@ -148,22 +147,13 @@
                   document.getElementById('scanner_input').textContent = err
                 }
               })
-              console.log(`Started continous decode from camera with id ${selectedDeviceId}`)
             })
-            document.getElementById('resetButton').addEventListener('click', () =>
+            .catch((err) =>
             {
-              codeReader.reset()
-              document.getElementById('scanner_input').textContent = '';
-              console.log('Reset.')
+              console.error(err)
             })
-          })
-          .catch((err) =>
-          {
-            console.error(err)
-          })
+        })
       })
-
     </script>
-    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
