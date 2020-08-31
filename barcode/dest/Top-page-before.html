@@ -103,17 +103,14 @@
               <video class="barcode-frame p-3" id="video" width="450" height="480" style="border: 1px solid #dee2e6"></video>
             </div>
           </div>
-          <div class="modal-footer border-0">
+          <div class="modal-footer border-0 d-none">
             <form class="auth__form w-100 px-3" action="/admin/conciergeqr/input_real_shop_card_no" method="post">
               <div class="form-group form-group--large">
                 <label class="form-group__label"><span class="form-group__label-text">&#x7D50;&#x679C;</span></label>
                 <input class="form-control form-control--input form-control--lg form-control--full" id="scanner_input" name="real_shop_card_no" type="text">
-                <div class="form-group__error">
-                  <p class="form-group--error__msg"></p>
-                </div>
               </div>
               <div class="form-group text-center">
-                <button class="btn btn--red btn--md auth__button mt-1"><span class="btn-text">&#x767B;&#x9332;</span></button>
+                <button id="barcode-submit" class="btn btn--red btn--md auth__button mt-1"><span class="btn-text">&#x767B;&#x9332;</span></button>
               </div>
             </form>
           </div>
@@ -138,9 +135,10 @@
                     if (result)
                     {
                       console.log(result)
-                      // document.getElementById('result').textContent = result.text
                       document.getElementById('scanner_input').value = result.text
                       document.getElementById('video').style.borderColor = 'green';
+                      $('#barcode-submit').trigger('click')
+                      alert('after trigger')
                     }
                     if (err && !(err instanceof ZXing.NotFoundException))
                     {
@@ -149,7 +147,6 @@
                     }
                   })
                   console.log(`Started continous decode from camera with id ${selectedDeviceId}`)
-                // $('#startButton').trigger('click')
               })
               .catch((err) =>
               {
