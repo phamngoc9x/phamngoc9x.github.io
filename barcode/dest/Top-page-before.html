@@ -133,9 +133,6 @@
               .then((videoInputDevices) =>
               {
                 console.log('after then')
-                document.getElementById('startButton').addEventListener('click', () =>
-                {
-                  console.log('after click')
                   codeReader.decodeFromVideoDevice(selectedDeviceId, 'video', (result, err) =>
                   {
                     if (result)
@@ -152,8 +149,7 @@
                     }
                   })
                   console.log(`Started continous decode from camera with id ${selectedDeviceId}`)
-                })
-                $('#startButton').trigger('click')
+                // $('#startButton').trigger('click')
               })
               .catch((err) =>
               {
