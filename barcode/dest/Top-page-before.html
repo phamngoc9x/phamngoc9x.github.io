@@ -123,36 +123,40 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@zxing/library@latest"></script>
     <script type="text/javascript">
-      $('.modal-barcode').on('shown.bs.modal', function () {
         window.addEventListener('load', function()
         {
-          let selectedDeviceId;
-          const codeReader = new ZXing.BrowserMultiFormatReader()
-          console.log('ZXing code reader initialized')
-          codeReader.listVideoInputDevices()
-            .then((videoInputDevices) =>
-            {
-              codeReader.decodeFromVideoDevice(selectedDeviceId, 'video', (result, err) =>
+          $('.modal-barcode').on('shown.bs.modal', function () {
+            let selectedDeviceId;
+            const codeReader = new ZXing.BrowserMultiFormatReader()
+            console.log('ZXing code reader initialized')
+            codeReader.listVideoInputDevices()
+              .then((videoInputDevices) =>
               {
-                if (result)
+                document.getElementById('startButton').addEventListener('click', () =>
                 {
-                  console.log(result)
-                  // document.getElementById('result').textContent = result.text
-                  document.getElementById('scanner_input').value = result.text
-                  document.getElementById('video').style.borderColor = 'green';
-                }
-                if (err && !(err instanceof ZXing.NotFoundException))
-                {
-                  console.error(err)
-                  document.getElementById('scanner_input').textContent = err
-                }
+                  codeReader.decodeFromVideoDevice(selectedDeviceId, 'video', (result, err) =>
+                  {
+                    if (result)
+                    {
+                      console.log(result)
+                      // document.getElementById('result').textContent = result.text
+                      document.getElementById('scanner_input').value = result.text
+                      document.getElementById('video').style.borderColor = 'green';
+                    }
+                    if (err && !(err instanceof ZXing.NotFoundException))
+                    {
+                      console.error(err)
+                      document.getElementById('scanner_input').textContent = err
+                    }
+                  })
+                  console.log(`Started continous decode from camera with id ${selectedDeviceId}`)
+                })
               })
-            })
-            .catch((err) =>
-            {
-              console.error(err)
-            })
-        })
+              .catch((err) =>
+              {
+                console.error(err)
+              })
+          })
       })
     </script>
   </body>
