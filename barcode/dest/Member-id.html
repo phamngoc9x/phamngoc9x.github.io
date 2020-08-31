@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Member ID</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Member ID" />
+    <meta name="keywords" content="Member ID" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/pages/login.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-default">
+        <div class="tablet-container">
+          <div class="header__content d-flex align-items-center justify-content-between">
+            <div class="header__left">
+              <button class="btn header__toggle js-toggle-menu"><i class="icon icon--list"></i>
+              </button>
+            </div>
+            <div class="header__text">CONCIERGE CARTE</div>
+            <div class="header__right d-flex justify-content-end">
+              <button class="btn btn--white-outline btn--sm header__qrcode js-header-qrcode" data-toggle="modal" data-target=".modal-qr" data-staff="199144"><i class="icon icon--qrcode"></i><span class="btn-text">QR表示</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="menu-list" id="menu-list">
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center active" href="#">
+            <div class="menu-list__link-content"><span>トップ</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>マイ顧客台帳</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>ログアウト</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>管理者メニュー</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item menu-list__item--title">管理者メニュー</li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>設定メッセージ検索</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>FS一覧・登録</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>テンプレートメッセージ一覧・登録</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>カード一覧・登録</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>シリーズ一覧・登録</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="header-overlay"></div>
+      <div class="modal modal-qr fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal__dialog modal-dialog-centered" role="document">
+          <div class="modal-content modal__content">
+            <button class="modal__close close" type="button" data-dismiss="modal" aria-label="Close"><i class="icon icon--close"></i>
+            </button>
+            <div class="modal-body modal__body">
+              <div id="qrcode"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="main-content auth">
+        <div class="auth__content">
+          <div class="page-title text-center">会員ID登録</div>
+          <form class="auth__form">
+            <div class="form-group form-group--large js-validate-input">
+              <label class="form-group__label"><span class="form-group__label-text">会員ID</span>
+              </label>
+              <input class="form-control form-control--input form-control--lg form-control--full" type="text" />
+              <div class="form-group__error">
+                <p class="form-group--error__msg"></p>
+              </div>
+            </div>
+            <div class="form-group text-center">
+              <button class="btn btn--red btn--lg auth__button mt-1"><span class="btn-text">登録</span>
+              </button>
+            </div>
+          </form>
+          <div class="text-center"><a class="auth__link" href="#"><i class="icon icon--prev"></i><span>前のページに戻る</span></a></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

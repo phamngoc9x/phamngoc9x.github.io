@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Login" />
+    <meta name="keywords" content="Login" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/pages/login.css" />
+  </head>
+  <body>
+    <header class="header header--login">
+      <div class="tablet-container">
+        <div class="header__content d-flex align-items-center justify-content-center">
+          <div class="header__text">CONCIERGE CARTE</div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="main-content auth">
+        <div class="auth__content">
+          <div class="auth__logo text-center"><a class="auth__link" href="#"><img src="./images/logo.svg" alt="logo"></a></div>
+          <form class="auth__form auth__form--error">
+            <div class="auth__message-error">ユーザ名かパスワードに誤りがあります</div>
+            <div class="form-group form-group--large">
+              <label class="form-group__label"><span class="form-group__label-text">ID</span>
+              </label>
+              <input class="form-control form-control--input form-control--lg form-control--full" type="text" />
+              <div class="form-group__error">
+                <p class="form-group--error__msg"></p>
+              </div>
+            </div>
+            <div class="form-group form-group--large">
+              <label class="form-group__label"><span class="form-group__label-text">パスワード</span>
+              </label>
+              <input class="form-control form-control--input form-control--lg form-control--full" type="password" />
+              <div class="form-group__error">
+                <p class="form-group--error__msg"></p>
+              </div>
+            </div>
+            <div class="form-group text-center">
+              <button class="btn btn--red-outline btn--lg auth__button"><span class="btn-text">ログイン</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
