@@ -150,13 +150,11 @@
                       console.log(result)
                       document.getElementById('scanner_input').value = result.text
                       document.getElementById('video').style.borderColor = 'green';
-                      $('#barcode-submit').trigger('click')
+                      // $('#barcode-submit').trigger('click')
                     }
                     if (err && !(err instanceof ZXing.NotFoundException))
                     {
                       console.error(err)
-                      document.getElementById('scanner_input').textContent = err
-                      $('#modal-error').trigger('click')
                     }
                   })
                   console.log(`Started continous decode from camera with id ${selectedDeviceId}`)
@@ -164,6 +162,8 @@
               .catch((err) =>
               {
                 console.error(err)
+                document.getElementById('scanner_input').textContent = err
+                $('#modal-error').trigger('click')
               })
           })
       })
