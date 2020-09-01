@@ -101,7 +101,7 @@
             </div>
           </div>
           <div class="form-group text-center d-none">
-            <button class="btn btn--red btn--md auth__button mt-1"><span class="btn-text" data-toggle="modal" data-target=".modal-error">modal error</span></button>
+            <button id ="modal-error" class="btn btn--red btn--md auth__button mt-1"><span class="btn-text" data-toggle="modal" data-target=".modal-error">modal error</span></button>
           </div>
           <div class="modal-footer border-0 d-none">
             <form class="auth__form w-100 px-3" action="/admin/conciergeqr/input_real_shop_card_no" method="post">
@@ -123,8 +123,9 @@
           <button class="modal__close close" type="button" data-dismiss="modal" aria-label="Close"><i class="icon icon--close"></i></button>
           <div class="modal-body modal__body p-4">
             <div class="text-center">
-               text erorr
+              text erorr
             </div>
+            <button class="btn btn--red btn--md auth__button mt-1" type="button" data-dismiss="modal" aria-label="Close"><span class="btn-text">OK</span></button>
           </div>
         </div>
       </div>
@@ -155,6 +156,7 @@
                     {
                       console.error(err)
                       document.getElementById('scanner_input').textContent = err
+                      $('#modal-error').trigger('click')
                     }
                   })
                   console.log(`Started continous decode from camera with id ${selectedDeviceId}`)
