@@ -154,6 +154,7 @@
                     }
                     if (err && !(err instanceof ZXing.NotFoundException))
                     {
+                      alert(err)
                       console.error(err)
                     }
                   })
@@ -162,6 +163,7 @@
               .catch((err) =>
               {
                 console.error(err)
+                alert(err)
                 document.getElementById('scanner_input').textContent = err
                 $('#modal-error').trigger('click')
               })
