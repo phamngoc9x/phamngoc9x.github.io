@@ -100,6 +100,9 @@
               <video class="barcode-frame p-3" id="video" width="450" height="450" style="border: 1px solid #dee2e6"></video>
             </div>
           </div>
+          <div class="form-group text-center d-none">
+            <button class="btn btn--red btn--md auth__button mt-1"><span class="btn-text" data-toggle="modal" data-target=".modal-error">modal error</span></button>
+          </div>
           <div class="modal-footer border-0 d-none">
             <form class="auth__form w-100 px-3" action="/admin/conciergeqr/input_real_shop_card_no" method="post">
               <div class="form-group form-group--large">
@@ -110,6 +113,18 @@
                 <button id="barcode-submit" class="btn btn--red btn--md auth__button mt-1"><span class="btn-text">&#x767B;&#x9332;</span></button>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-error">
+      <div class="modal-dialog modal__dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal__content">
+          <button class="modal__close close" type="button" data-dismiss="modal" aria-label="Close"><i class="icon icon--close"></i></button>
+          <div class="modal-body modal__body p-4">
+            <div class="text-center">
+               text erorr
+            </div>
           </div>
         </div>
       </div>
