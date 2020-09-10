@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Setting Message</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Setting Message" />
+    <meta name="keywords" content="Setting Message" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/pages/default-page.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-default">
+        <div class="tablet-container">
+          <div class="header__content d-flex align-items-center justify-content-between">
+            <div class="header__left">
+              <button class="btn header__toggle js-toggle-menu"><i class="icon icon--list"></i>
+              </button>
+            </div>
+            <div class="header__text">CONCIERGE CARTE</div>
+            <div class="header__right d-flex justify-content-end">
+              <button class="btn btn--white-outline btn--sm header__qrcode js-header-qrcode" data-toggle="modal" data-target=".modal-qr" data-staff="199144"><i class="icon icon--qrcode"></i><span class="btn-text">QR表示</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="menu-list" id="menu-list">
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center active" href="#">
+            <div class="menu-list__link-content"><span>トップ</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>マイ顧客台帳</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>ログアウト</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>管理者メニュー</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item menu-list__item--title">管理者メニュー</li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>設定メッセージ検索</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>FS一覧・登録</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>テンプレートメッセージ一覧・登録</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>カード一覧・登録</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+        <li class="menu-list__item"><a class="menu-list__link d-flex justify-content-between align-items-center" href="#">
+            <div class="menu-list__link-content"><span>シリーズ一覧・登録</span></div><i class="icon icon--next"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="header-overlay"></div>
+      <div class="modal modal-qr fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal__dialog modal-dialog-centered" role="document">
+          <div class="modal-content modal__content">
+            <button class="modal__close close" type="button" data-dismiss="modal" aria-label="Close"><i class="icon icon--close"></i>
+            </button>
+            <div class="modal-body modal__body">
+              <div id="qrcode"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="main-content default-page">
+        <div class="default-page__content">
+          <div class="default-page__title text-center">設定メッセージ検索</div>
+          <form class="box-search">
+            <div class="box-search__row">
+              <div class="box-search__item">
+                <div class="form-group w--88">
+                  <label class="form-group__label"><span class="form-group__label-text">会員ID</span>
+                  </label>
+                  <input class="form-control form-control--input" type="text" value="123456" />
+                  <div class="form-group__error">
+                    <p class="form-group--error__msg"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="box-search__item">
+                <div class="w--135">
+                  <div class="form-group">
+                    <label class="form-group__label" for="input-group-8"><span class="form-group__label-text">来店日（開始）</span>
+                    </label>
+                    <div class="form-group__input-group">
+                      <input class="form-control form-control--input js-datepicker" id="input-group-8" type="text" placeholder="0000/00/00" autocomplete="off" />
+                      <label class="form-group__append" for="input-group-8"><i class="icon icon--down"></i>
+                      </label>
+                    </div>
+                    <div class="form-group__error">
+                      <p class="form-group--error__msg"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-search__item">
+                <div class="w--135">
+                  <div class="form-group">
+                    <label class="form-group__label" for="input-group-9"><span class="form-group__label-text">来店日（終了）</span>
+                    </label>
+                    <div class="form-group__input-group">
+                      <input class="form-control form-control--input js-datepicker" id="input-group-9" type="text" placeholder="0000/00/00" autocomplete="off" />
+                      <label class="form-group__append" for="input-group-9"><i class="icon icon--down"></i>
+                      </label>
+                    </div>
+                    <div class="form-group__error">
+                      <p class="form-group--error__msg"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-search__row">
+              <div class="box-search__item">
+                <div class="form-group form-group--select form-group__select--white w--262">
+                  <label class="form-group__label"><span class="form-group__label-text">店舗名</span>
+                  </label>
+                  <div class="select-wrapper">
+                    <select class="select select--white">
+                      <option value="ジェイアール名古屋タカシマヤ店">ジェイアール名古屋タカシマヤ店</option>
+                      <option value="coconut">Coconut</option>
+                    </select>
+                    <label class="form-group__append"><i class="icon icon--down"></i>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="box-search__item">
+                <div class="form-group form-group--select form-group__select--white w--104">
+                  <label class="form-group__label"><span class="form-group__label-text">FS名</span>
+                  </label>
+                  <div class="select-wrapper">
+                    <select class="select select--white">
+                      <option value="伊藤">伊藤</option>
+                      <option value="coconut">Coconut</option>
+                    </select>
+                    <label class="form-group__append"><i class="icon icon--down"></i>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="box-search__item">
+                <div class="form-group form-group--select form-group__select--white w--242">
+                  <label class="form-group__label"><span class="form-group__label-text">メッセージ名</span>
+                  </label>
+                  <div class="select-wrapper">
+                    <select class="select select--white">
+                      <option value="メッセージ名が入ります">メッセージ名が入ります</option>
+                      <option value="coconut">Coconut</option>
+                    </select>
+                    <label class="form-group__append"><i class="icon icon--down"></i>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-search__row">
+              <div class="box-search__item d-flex align-items-center justify-content-between mb-0 w-100">
+                <div class="d-flex">
+                  <div class="form-check custom-radio mr-4 pr-2">
+                    <input class="form-check-input" type="radio" name="input-radio-1" id="input-radio-1" checked="checked" />
+                    <label class="form-check-label" for="input-radio-1">未設定
+                    </label>
+                  </div>
+                  <div class="form-check custom-radio mr-4 pr-2">
+                    <input class="form-check-input" type="radio" name="input-radio-1" id="input-radio-2" />
+                    <label class="form-check-label" for="input-radio-2">設定済み
+                    </label>
+                  </div>
+                  <div class="form-check custom-radio mr-4">
+                    <input class="form-check-input" type="radio" name="input-radio-1" id="input-radio-3" />
+                    <label class="form-check-label" for="input-radio-3">送信済み
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <button class="btn btn--red-outline mr-3"><span class="btn-text">リセット</span>
+                  </button>
+                  <button class="btn btn--red"><span class="btn-text">検索</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="table-default table-responsive">
+            <table class="table table-border">
+              <thead>
+                <tr>
+                  <th class="w--70">会員ID</th>
+                  <th class="w--108">名前</th>
+                  <th class="w--98">前回来店日</th>
+                  <th class="w--98">店舗名</th>
+                  <th class="w--60">FS名</th>
+                  <th class="w--75">初回来店</th>
+                  <th class="w--75">入荷連絡</th>
+                  <th class="w--112"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>123456</td>
+                  <td>アパレル　花子</td>
+                  <td>2020/03/24</td>
+                  <td>ルミネ新宿店</td>
+                  <td>伊藤</td>
+                  <td><i class="icon icon--check"></i>
+                  </td>
+                  <td><i class="icon icon--check"></i>
+                  </td>
+                  <td>
+                    <button class="btn btn--outline btn--sm mb-2"><span class="btn-text">変更</span>
+                    </button>
+                    <button class="btn btn--outline btn--sm mt-1"><span class="btn-text">削除</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>123456</td>
+                  <td>アパレル　花子</td>
+                  <td>2020/03/24</td>
+                  <td>ルミネ新宿店</td>
+                  <td>伊藤</td>
+                  <td><i class="icon icon--check"></i>
+                  </td>
+                  <td><i class="icon icon--check"></i>
+                  </td>
+                  <td>
+                    <button class="btn btn--outline btn--sm mb-2"><span class="btn-text">変更</span>
+                    </button>
+                    <button class="btn btn--outline btn--sm mt-1"><span class="btn-text">削除</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>123456</td>
+                  <td>アパレル　花子</td>
+                  <td>2020/03/24</td>
+                  <td>ルミネ新宿店</td>
+                  <td>伊藤</td>
+                  <td><i class="icon icon--check"></i>
+                  </td>
+                  <td><i class="icon icon--check"></i>
+                  </td>
+                  <td>
+                    <button class="btn btn--outline btn--sm mb-2"><span class="btn-text">変更</span>
+                    </button>
+                    <button class="btn btn--outline btn--sm mt-1"><span class="btn-text">削除</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>123456</td>
+                  <td>アパレル　花子</td>
+                  <td>2020/03/24</td>
+                  <td>ルミネ新宿店</td>
+                  <td>伊藤</td>
+                  <td><i class="icon icon--check"></i>
+                  </td>
+                  <td><i class="icon icon--check"></i>
+                  </td>
+                  <td>
+                    <button class="btn btn--outline btn--sm mb-2"><span class="btn-text">変更</span>
+                    </button>
+                    <button class="btn btn--outline btn--sm mt-1"><span class="btn-text">削除</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>123456</td>
+                  <td>アパレル　花子</td>
+                  <td>2020/03/24</td>
+                  <td>ルミネ新宿店</td>
+                  <td>伊藤</td>
+                  <td><i class="icon icon--check"></i>
+                  </td>
+                  <td><i class="icon icon--check"></i>
+                  </td>
+                  <td>
+                    <button class="btn btn--outline btn--sm mb-2"><span class="btn-text">変更</span>
+                    </button>
+                    <button class="btn btn--outline btn--sm mt-1"><span class="btn-text">削除</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>123456</td>
+                  <td>アパレル　花子</td>
+                  <td>2020/03/24</td>
+                  <td>ルミネ新宿店</td>
+                  <td>伊藤</td>
+                  <td><i class="icon icon--check"></i>
+                  </td>
+                  <td><i class="icon icon--check"></i>
+                  </td>
+                  <td>
+                    <button class="btn btn--outline btn--sm mb-2"><span class="btn-text">変更</span>
+                    </button>
+                    <button class="btn btn--outline btn--sm mt-1"><span class="btn-text">削除</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>123456</td>
+                  <td>アパレル　花子</td>
+                  <td>2020/03/24</td>
+                  <td>ルミネ新宿店</td>
+                  <td>伊藤</td>
+                  <td><i class="icon icon--check"></i>
+                  </td>
+                  <td><i class="icon icon--check"></i>
+                  </td>
+                  <td>
+                    <button class="btn btn--outline btn--sm mb-2"><span class="btn-text">変更</span>
+                    </button>
+                    <button class="btn btn--outline btn--sm mt-1"><span class="btn-text">削除</span>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="default-page__pagination d-flex justify-content-between align-items-center">
+            <div class="default-page__pagination-text">10 件中 1 から 10 まで表示</div>
+            <nav class="paging">
+              <ul class="pagination">
+                <li class="page-item prev disabled"><a class="page-link" href="#"><i class="icon icon--prev"></i>前</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item next"><a class="page-link" href="#">次<i class="icon icon--next"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
