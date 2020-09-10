@@ -134,7 +134,7 @@
                     document.getElementById('scanner_input').value = result.text
                     document.getElementById('video').style.borderColor = 'green';
                     $(".modal-barcode").modal('hide');
-                    $('#barcode-submit').trigger('click')
+                    // $('#barcode-submit').trigger('click')
                   }
                   if (err && !(err instanceof ZXing.NotFoundException))
                   {
