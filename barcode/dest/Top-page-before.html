@@ -136,7 +136,6 @@
                     document.getElementById('video').style.borderColor = 'green';
                     flag = true;
                     $(".modal-barcode").modal('hide');
-                    // $('#barcode-submit').trigger('click')
                   }
                   if (err && !(err instanceof ZXing.NotFoundException))
                   {
@@ -151,7 +150,6 @@
             })
         })
         $('.modal-barcode').on('hidden.bs.modal', function () {
-          alert('abc');
           $('#barcode-submit').trigger('click');
         });
     })
