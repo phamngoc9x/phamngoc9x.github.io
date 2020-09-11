@@ -119,6 +119,7 @@
     <script type="text/javascript">
       window.addEventListener('load', function()
       {
+        var flag = false;
         $('.modal-barcode').on('shown.bs.modal', function () {
           let selectedDeviceId;
           const codeReader = new ZXing.BrowserMultiFormatReader()
@@ -133,6 +134,7 @@
                     console.log(result)
                     document.getElementById('scanner_input').value = result.text
                     document.getElementById('video').style.borderColor = 'green';
+                    flag = true;
                     $(".modal-barcode").modal('hide');
                     // $('#barcode-submit').trigger('click')
                   }
@@ -148,6 +150,10 @@
               console.error(err)
             })
         })
+        $('.modal-barcode').on('hidden.bs.modal', function () {
+          console.log('abc')
+          $('#barcode-submit').trigger('click');
+        });
     })
   </script>
   </body>
