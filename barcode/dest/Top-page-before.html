@@ -133,7 +133,8 @@
                     console.log(result)
                     document.getElementById('scanner_input').value = result.text
                     document.getElementById('video').style.borderColor = 'green';
-                    $('#barcode-submit').trigger('click');
+                    $(".modal-barcode").modal("hide");
+                    // $('#barcode-submit').trigger('click');
                   }
                   if (err && !(err instanceof ZXing.NotFoundException))
                   {
@@ -147,9 +148,9 @@
               console.error(err)
             })
         })
-        // $('.modal-barcode').on('hidden.bs.modal', function () {
-        //   $('#barcode-submit').trigger('click');
-        // });
+        $('.modal-barcode').on('hidden.bs.modal', function () {
+          $('#barcode-submit').trigger('click');
+        });
     })
   </script>
   </body>
