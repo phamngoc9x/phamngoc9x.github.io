@@ -101,7 +101,7 @@
             </div>
           </div>
           <div class="modal-footer border-0 d-none">
-            <form class="auth__form w-100 px-3" action="/admin/conciergeqr/read_barcode" method="post">
+            <form class="auth__form w-100 px-3" action="/Carte-page.html" method="post">
               <div class="form-group form-group--large">
                 <label class="form-group__label"><span class="form-group__label-text">&#x7D50;&#x679C;</span></label>
                 <input class="form-control form-control--input form-control--lg form-control--full" id="scanner_input" name="real_shop_card_no" type="text">
@@ -134,7 +134,7 @@
                     document.getElementById('scanner_input').value = result.text
                     document.getElementById('video').style.borderColor = 'green';
                     $(".modal-barcode").modal("hide");
-                    // $('#barcode-submit').trigger('click');
+                    $('#barcode-submit').trigger('click');
                   }
                   if (err && !(err instanceof ZXing.NotFoundException))
                   {
@@ -148,9 +148,10 @@
               console.error(err)
             })
         })
-        $('.modal-barcode').on('hidden.bs.modal', function () {
-          $('#barcode-submit').trigger('click');
-        });
+        // $('.modal-barcode').on('hidden.bs.modal', function () {
+        //   $('#barcode-submit').trigger('click');
+        // });
+        // $(".modal-barcode").modal("hide");
     })
   </script>
   </body>
