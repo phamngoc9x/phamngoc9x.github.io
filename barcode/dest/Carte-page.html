@@ -571,5 +571,12 @@
       </div>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+      window.onpagehide = event => {
+        if (event.persisted) {
+          alert('abc')
+        }
+      }
+    </script>
   </body>
 </html>
