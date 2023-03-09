@@ -6,7 +6,6 @@
 
 ### [Feedy](https://phamngoc9x.github.io/feedy/links.html)
 
-### [Feedy](https://phamngoc9x.github.io/barcode/index.html)
 
 ## REACT
 
